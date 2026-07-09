@@ -1,0 +1,42 @@
+name: Refit model + pull odds
+on:
+  schedule:
+    # Every 3 hours, 12:00–03:00 UTC (5am–8pm Arizona) — match windows.
+    # ~4 credits per odds pull x 6 runs/day = ~24/day (free tier: 500/mo).
+    - cron: '0 0,3,12,15,18,21 * * *'
+  workflow_dispatch: {}
+  push:
+    paths:
+      - 'data/match_xg_dataset.json'
+permissions:
+  contents: write
+concurrency:
+  group: update-data
+  cancel-in-progress: true
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install deps
+        run: pip install numpy scipy
+      - name: Refit ratings
+        run: python scripts/refit.py
+      - name: Pull odds
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: python scripts/pull_odds.py
+      - name: Commit updated data.js
+        run: |
+          git config user.name "wc7-bot"
+          git config user.email "actions@github.com"
+          git add data/data.js
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "auto: refit + odds $(date -u +%FT%TZ)"
+            git push
+          fi
