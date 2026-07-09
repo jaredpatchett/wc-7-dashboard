@@ -210,3 +210,78 @@ def handicap_probability(matrix, threshold, side='home'):
 def marginal_distributions(matrix):
     """Return (home_goals_marginal, away_goals_marginal) as 1D arrays."""
     return matrix.sum(axis=1), matrix.sum(axis=0)
+
+
+def fit_ridge(matches, ridge=3.0, rho=RHO_DEFAULT):
+    """
+    Ridge-regularized MLE fit — the 'built right' successor to fit_mle for
+    large, unbalanced match graphs (mixed WC + historical opponents).
+
+    Instead of fitting raw ratings and then shrinking with an exponent
+    (which happens AFTER the optimizer has already let unanchored
+    opponents take extreme values), this adds an L2 penalty on the
+    log-ratings directly inside the objective:
+
+        penalty = ridge * sum(log_alpha**2 + log_beta**2)
+
+    Because a team with few matches contributes little to the likelihood,
+    the penalty dominates for them and pulls their rating toward 1.0 (log 0)
+    automatically — no match-count floor, no post-hoc re-anchoring. Teams
+    with many matches have enough likelihood signal to overcome the penalty
+    and keep a meaningful rating. This is a MAP estimate with a Normal(0,
+    1/sqrt(2*ridge)) prior on log-ratings — i.e. the Bayesian-prior item
+    from the roadmap, in its simplest honest form.
+
+    Returns the same dict shape as fit_mle (attack/defense/raw_*/matches),
+    already on a mean-1.0 footing, so it plugs straight into score_matrix.
+    """
+    teams = sorted(set(t for m in matches for t in m[:2]))
+    N = len(teams)
+    if N < 4:
+        return None
+    t2i = {t: i for i, t in enumerate(teams)}
+    hi = np.array([t2i[m[0]] for m in matches])
+    ai = np.array([t2i[m[1]] for m in matches])
+    xh = np.array([m[2] for m in matches])
+    xa = np.array([m[3] for m in matches])
+
+    def nll(p):
+        la, lb = p[:N], p[N:]
+        lam_h = np.maximum(np.exp(la[hi] + lb[ai]), 1e-6)
+        lam_a = np.maximum(np.exp(la[ai] + lb[hi]), 1e-6)
+        like = np.sum(lam_h - xh * np.log(lam_h)) + \
+               np.sum(lam_a - xa * np.log(lam_a))
+        return like + ridge * (np.sum(la ** 2) + np.sum(lb ** 2))
+
+    def jac(p):
+        la, lb = p[:N], p[N:]
+        lam_h = np.maximum(np.exp(la[hi] + lb[ai]), 1e-6)
+        lam_a = np.maximum(np.exp(la[ai] + lb[hi]), 1e-6)
+        rh, ra = lam_h - xh, lam_a - xa
+        g = np.zeros(2 * N)
+        np.add.at(g[:N], hi, rh)
+        np.add.at(g[:N], ai, ra)
+        np.add.at(g[N:], ai, rh)
+        np.add.at(g[N:], hi, ra)
+        g[:N] += 2 * ridge * la
+        g[N:] += 2 * ridge * lb
+        return g
+
+    res = minimize(nll, np.zeros(2 * N), jac=jac, method='L-BFGS-B',
+                   options={'maxiter': 5000})
+    if not res.success:
+        print(f"WARNING: ridge fit did not converge cleanly: {res.message}")
+
+    # center to exact mean-1.0 footing (penalty makes this nearly true already)
+    la, lb = res.x[:N], res.x[N:]
+    la -= la.mean(); lb -= lb.mean()
+    alpha, beta = np.exp(la), np.exp(lb)
+
+    mc = defaultdict(int)
+    for m in matches:
+        mc[m[0]] += 1; mc[m[1]] += 1
+    return {t: {"attack": round(float(alpha[t2i[t]]), 4),
+                "defense": round(float(beta[t2i[t]]), 4),
+                "raw_attack": round(float(alpha[t2i[t]]), 4),
+                "raw_defense": round(float(beta[t2i[t]]), 4),
+                "matches": mc[t]} for t in teams}
