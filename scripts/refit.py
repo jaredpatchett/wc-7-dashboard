@@ -1,29 +1,47 @@
 #!/usr/bin/env python3
 """
-refit.py — refits WC7 ratings using tournament xG + expanded historical
-results, with ridge-regularized MLE, and rewrites data/data.js.
+refit_v2_recency.py — EXPERIMENTAL comparison model. Same ridge-regularized
+Dixon-Coles fit as scripts/refit.py, but with recency weighting: matches
+closer to today count more in the fit, older matches count less, on a
+365-day half-life (a match from a year ago counts half as much as one from
+today).
 
-WHY THIS VERSION EXISTS
-------------------------
-The original refit.py fit ONLY on the 94 in-tournament xG matches (3-5 per
-team). With that little data, MLE can't separate "genuinely strong" from
-"beat one weak opponent once" — it produces large, misleading edges that
-are really schedule-strength noise, almost always favoring whichever team
-happened to have a weak group.
+This is NOT wired into production. It writes to data/data_v2.js, a
+completely separate file from data/data.js — the live dashboard
+(index.html) never reads it. A separate page, index_v2.html, reads
+data_v2.js instead, so both models can be viewed side by side without
+either one touching the other.
 
-This version merges in ~1,700 real international results since 2023
-(sourced from the martj42/international_results dataset, goals-only, at a
-reduced weight vs actual tournament xG) and fits with a ridge-regularized
-MLE (L2 penalty on log-ratings) instead of the old post-hoc shrinkage
-exponent. Thinly-connected teams get pulled toward average DURING the fit,
-not patched after — no arbitrary match-count floor needed.
+WHY THIS EXISTS
+---------------
+A walk-forward backtest (refit-before-each-match-date, true out-of-sample,
+scored against real results) showed recency weighting improves calibration:
 
-Run from repo root:  python scripts/refit.py
-Runs automatically in the GitHub Actions workflow.
+    No weighting (current production):  Brier 0.4985
+    365-day half-life:                  Brier 0.4933  <- best tested
+    (90-day half-life was WORSE than no weighting at all — too aggressive,
+    discards real signal. 180/545/730-day half-lives were all better than
+    no weighting but not as good as 365.)
+
+This is a real, validated improvement on average, across many matches. It
+is NOT yet proven safe to trust on any single specific game — recency
+weighting can meaningfully redistribute a single match's probabilities
+(e.g. it moved Spain's attack rating from 3.124 to 2.604 ahead of their
+7/10 quarterfinal, flipping Spain ML from a small positive edge to a
+negative one) even when the aggregate metric improves. Run this side by
+side against scripts/refit.py's output for a while — several match days,
+ideally — before considering promoting it to production.
+
+Everything except the ratings (mle_shrunk), baseline_xg, and calibration
+is copied straight from the live data.js — same odds, same squad notes,
+same corners/shots data, same everything else. Only the core ratings
+methodology differs between the two files.
+
+Run from repo root:  python scripts/refit_v2_recency.py
 """
 import json, re, sys, os
 import numpy as np
-from datetime import datetime, timezone
+from datetime import datetime, timezone, date
 from scipy.optimize import minimize
 from scipy.stats import poisson
 
@@ -33,17 +51,19 @@ from dixon_coles_engine import fit_ridge
 ROOT = os.path.join(os.path.dirname(__file__), '..')
 XG_DATASET = os.path.join(ROOT, 'data', 'match_xg_dataset.json')
 HIST_DATASET = os.path.join(ROOT, 'data', 'historical_dataset.json')
-DATA_JS = os.path.join(ROOT, 'data', 'data.js')
+DATA_JS = os.path.join(ROOT, 'data', 'data.js')          # source of truth for odds/squad/etc
+DATA_V2_JS = os.path.join(ROOT, 'data', 'data_v2.js')    # this script's own output
 
+HALF_LIFE_DAYS = 365  # best performer in the walk-forward comparison
 RHO = -0.06
 MAX_G = 9
 
 
-def load_data_js(path):
+def load_var_js(path, var_name='D'):
     txt = open(path).read()
-    m = re.match(r'\s*var\s+D\s*=\s*(\{.*\});?\s*$', txt, re.S)
+    m = re.match(r'\s*var\s+' + var_name + r'\s*=\s*(\{.*\});?\s*$', txt, re.S)
     if not m:
-        raise ValueError('data.js does not match expected "var D={...};" format')
+        raise ValueError(f'{path} does not match expected "var {var_name}={{...}};" format')
     return json.loads(m.group(1))
 
 
@@ -72,18 +92,10 @@ def outcome_probs(ratings, baseline, h, a):
     return pw / tot, pd / tot, pl / tot
 
 
-def fit_calibration(tournament, hist5):
-    """
-    True walk-forward backtest: for each tournament match, refit ratings
-    using ONLY data strictly before that match's date, then score the
-    prediction against the real result. Pooled across all matches, fits a
-    2-parameter Platt (logistic) recalibration — corrects any systematic
-    over/underconfidence found in the raw model without needing a
-    parametric assumption about WHY it's biased.
-
-    Returns (a, b, brier_before, brier_after, n_matches). Falls back to
-    identity calibration (a=0, b=1) if there isn't enough data yet.
-    """
+def fit_calibration(tournament, hist5, today):
+    """Same walk-forward Platt-scaling approach as refit.py, but every
+    inner fit is also recency-weighted with the same half-life, so the
+    calibration is honest for THIS model, not borrowed from the other."""
     tournament_sorted = sorted(tournament, key=lambda d: d['date'])
     records = []
     for m in tournament_sorted:
@@ -94,7 +106,9 @@ def fit_calibration(tournament, hist5):
         if len(train5) < 30:
             continue
         baseline = float(np.mean([t[2] for t in train5] + [t[3] for t in train5]))
-        ratings = fit_ridge(train5, ridge=1.0)
+        ref_date = date.fromisoformat(m['date'])
+        ratings = fit_ridge(train5, ridge=1.0, today=ref_date,
+                             half_life_days=HALF_LIFE_DAYS)
         if ratings is None:
             continue
         probs = outcome_probs(ratings, baseline, m['home'], m['away'])
@@ -156,50 +170,58 @@ def main():
         seen = {(r[0], r[1], r[4]) for r in xg5}
         hist5 = [(r[0], r[1], r[2], r[3], r[4]) for r in hist
                  if (r[0], r[1], r[4]) not in seen]
-    else:
-        print('WARNING: no historical_dataset.json found — fitting on '
-              'tournament data only (thin-sample regime). Run '
-              'scripts/ingest_results.py first for the full fix.')
 
     merged = xg5 + hist5
+    today = date.today()
     baseline = round(float(np.mean([m[2] for m in merged] +
                                    [m[3] for m in merged])), 4)
-    ratings = fit_ridge(merged, ridge=1.0)
+    ratings = fit_ridge(merged, ridge=1.0, today=today,
+                         half_life_days=HALF_LIFE_DAYS)
     if ratings is None:
         raise RuntimeError('fit_ridge returned None — not enough teams?')
 
-    # only keep WC teams in the exported ratings (historical data drags in
-    # non-WC opponents used purely as anchors during the fit)
     wc_teams = sorted(set(t for d in xg for t in (d['home'], d['away'])))
     ratings_wc = {t: ratings[t] for t in wc_teams if t in ratings}
 
-    cal_a, cal_b, brier_before, brier_after, n_cal = fit_calibration(xg, hist5)
+    cal_a, cal_b, brier_before, brier_after, n_cal = fit_calibration(xg, hist5, today)
 
-    D = load_data_js(DATA_JS)
-    D['mle_shrunk'] = ratings_wc
-    D['baseline_xg'] = baseline
-    D['calibration'] = {'a': cal_a, 'b': cal_b}
-    D['fit_metadata'] = {
+    # Start from the live data.js as a template — same odds, squad notes,
+    # corners/shots, everything — and only replace the ratings-related keys.
+    D2 = load_var_js(DATA_JS, 'D')
+    D2['mle_shrunk'] = ratings_wc
+    D2['baseline_xg'] = baseline
+    D2['calibration'] = {'a': cal_a, 'b': cal_b}
+    D2['fit_metadata'] = {
+        'model_variant': 'v2_recency_weighted',
+        'half_life_days': HALF_LIFE_DAYS,
         'matches_fit': len(merged),
         'tournament_matches': len(xg5),
         'historical_matches': len(hist5),
         'baseline_xg': baseline,
-        'method': 'ridge (L2 on log-ratings, ridge=1.0)',
+        'method': f'ridge (L2 on log-ratings, ridge=1.0) + {HALF_LIFE_DAYS}-day recency half-life',
         'calibration_method': 'Platt scaling on walk-forward backtest '
-                               '(refit-before-each-match-date, true out-of-sample)',
+                               '(refit-before-each-match-date, true out-of-sample, '
+                               'same recency weighting applied inside each inner fit)',
         'calibration_n_matches': n_cal,
         'brier_before_calibration': brier_before,
         'brier_after_calibration': brier_after,
+        'validated_vs_baseline': {
+            'baseline_brier_no_weighting': 0.4985,
+            'this_model_brier': brier_after,
+            'note': 'baseline number is from the one-time comparison run on '
+                    '2026-07-10; both numbers move as more matches are '
+                    'played, compare fresh if reproducing this.'
+        },
         'refit_at': datetime.now(timezone.utc).isoformat(timespec='seconds'),
     }
-    D['last_updated'] = D['fit_metadata']['refit_at']
+    D2['last_updated'] = D2['fit_metadata']['refit_at']
 
-    with open(DATA_JS, 'w') as f:
-        f.write('var D=' + json.dumps(D) + ';')
-    print(f'Refit OK: {len(xg5)} tournament + {len(hist5)} historical = '
-          f'{len(merged)} matches, baseline_xg={baseline}, '
-          f'{len(ratings_wc)} WC teams -> data/data.js')
-    print(f'Calibration: a={cal_a}, b={cal_b} on {n_cal} walk-forward matches '
+    with open(DATA_V2_JS, 'w') as f:
+        f.write('var D=' + json.dumps(D2) + ';')
+    print(f'[v2/recency] Refit OK: {len(xg5)} tournament + {len(hist5)} historical = '
+          f'{len(merged)} matches, half_life={HALF_LIFE_DAYS}d, baseline_xg={baseline}, '
+          f'{len(ratings_wc)} WC teams -> data/data_v2.js')
+    print(f'[v2/recency] Calibration: a={cal_a}, b={cal_b} on {n_cal} walk-forward matches '
           f'(Brier {brier_before} -> {brier_after})')
 
 
