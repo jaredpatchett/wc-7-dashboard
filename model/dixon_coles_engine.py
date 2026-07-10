@@ -212,7 +212,7 @@ def marginal_distributions(matrix):
     return matrix.sum(axis=1), matrix.sum(axis=0)
 
 
-def fit_ridge(matches, ridge=3.0, rho=RHO_DEFAULT):
+def fit_ridge(matches, ridge=3.0, rho=RHO_DEFAULT, today=None, half_life_days=None):
     """
     Ridge-regularized MLE fit — the 'built right' successor to fit_mle for
     large, unbalanced match graphs (mixed WC + historical opponents).
@@ -232,6 +232,14 @@ def fit_ridge(matches, ridge=3.0, rho=RHO_DEFAULT):
     1/sqrt(2*ridge)) prior on log-ratings — i.e. the Bayesian-prior item
     from the roadmap, in its simplest honest form.
 
+    Optional recency weighting: if half_life_days is given, each match's
+    contribution to the likelihood (not the ridge penalty) is scaled by
+    0.5**(age_days/half_life_days), where age is measured from `today`
+    (defaults to the latest match date in the set if not given). A match
+    exactly one half-life old counts half as much as one from today. Off
+    by default (half_life_days=None) — existing callers get identical
+    behavior to before this parameter existed.
+
     Returns the same dict shape as fit_mle (attack/defense/raw_*/matches),
     already on a mean-1.0 footing, so it plugs straight into score_matrix.
     """
@@ -245,19 +253,28 @@ def fit_ridge(matches, ridge=3.0, rho=RHO_DEFAULT):
     xh = np.array([m[2] for m in matches])
     xa = np.array([m[3] for m in matches])
 
+    if half_life_days is not None:
+        dates = [date.fromisoformat(m[4]) for m in matches]
+        ref_date = today if today is not None else max(dates)
+        age_days = np.array([(ref_date - d).days for d in dates], dtype=float)
+        age_days = np.clip(age_days, 0, None)  # future-dated matches (shouldn't happen) get full weight
+        w = 0.5 ** (age_days / half_life_days)
+    else:
+        w = np.ones(len(matches))
+
     def nll(p):
         la, lb = p[:N], p[N:]
         lam_h = np.maximum(np.exp(la[hi] + lb[ai]), 1e-6)
         lam_a = np.maximum(np.exp(la[ai] + lb[hi]), 1e-6)
-        like = np.sum(lam_h - xh * np.log(lam_h)) + \
-               np.sum(lam_a - xa * np.log(lam_a))
+        like = np.sum(w * (lam_h - xh * np.log(lam_h))) + \
+               np.sum(w * (lam_a - xa * np.log(lam_a)))
         return like + ridge * (np.sum(la ** 2) + np.sum(lb ** 2))
 
     def jac(p):
         la, lb = p[:N], p[N:]
         lam_h = np.maximum(np.exp(la[hi] + lb[ai]), 1e-6)
         lam_a = np.maximum(np.exp(la[ai] + lb[hi]), 1e-6)
-        rh, ra = lam_h - xh, lam_a - xa
+        rh, ra = w * (lam_h - xh), w * (lam_a - xa)
         g = np.zeros(2 * N)
         np.add.at(g[:N], hi, rh)
         np.add.at(g[:N], ai, ra)
