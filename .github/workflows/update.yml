@@ -29,11 +29,13 @@ jobs:
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: python scripts/pull_odds.py
+      - name: Refit v2 (experimental, recency-weighted)
+        run: python scripts/refit_v2_recency.py
       - name: Commit updated data.js
         run: |
           git config user.name "wc7-bot"
           git config user.email "actions@github.com"
-          git add data/data.js
+          git add data/data.js data/data_v2.js
           if git diff --cached --quiet; then
             echo "No changes."
           else
