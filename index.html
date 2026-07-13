@@ -105,6 +105,12 @@ body{background:var(--bg);color:var(--txt);font-family:var(--body);font-size:15p
 .sig-e{background:#1a1000;color:var(--amber);border:1px solid #4a2800;padding:2px 8px;border-radius:2px;font-size:11px}
 .sig-s{color:var(--txt3);font-size:11px}
 .sig-f{background:#180608;color:var(--red);border:1px solid #4a1010;padding:2px 8px;border-radius:2px;font-size:11px}
+.tier-elite{background:#081808;color:var(--green);border:1px solid #1a5a1a;padding:3px 9px;border-radius:3px;font-size:10.5px;font-weight:700;letter-spacing:.2px}
+.tier-strong{background:#0a1420;color:var(--blue);border:1px solid #1a3a5a;padding:3px 9px;border-radius:3px;font-size:10.5px;font-weight:700;letter-spacing:.2px}
+.tier-lean{background:#1a1000;color:var(--amber);border:1px solid #4a2800;padding:3px 9px;border-radius:3px;font-size:10.5px;font-weight:600;letter-spacing:.2px}
+.tier-watch{background:#14100a;color:#c99a4a;border:1px solid #3a2a10;padding:3px 9px;border-radius:3px;font-size:10.5px;font-weight:600;letter-spacing:.2px}
+.tier-nobet{background:#0f0f0f;color:var(--txt3);border:1px solid #2a2a2a;padding:3px 9px;border-radius:3px;font-size:10.5px;font-weight:500;letter-spacing:.2px}
+.tier-cell{cursor:help}
 .vf-margin{font-size:11px;color:var(--txt2);padding:6px 20px;font-family:var(--mono)}
 .bottom{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--bord)}
 .grid-sec{padding:14px 16px;background:var(--card2);border-right:1px solid var(--bord)}
@@ -346,6 +352,106 @@ select,input,button{font-size:16px !important} /* prevents iOS auto-zoom on focu
 </div>
 
 <script src="data/data.js?v=1"></script>
+<script>
+/*
+  Secondary model loader — fetches the recency-weighted comparison model
+  (data_v2.js) at runtime rather than a second <script src> tag, since both
+  files declare "var D={...}" and a second script tag would silently
+  clobber the primary model. D2 starts null; the play-classifier gates
+  degrade gracefully (treat missing D2 as "can't confirm agreement" rather
+  than crashing) until it loads, then everything re-renders once it's in.
+*/
+var D2 = null;
+function loadD2(){
+  return fetch('data/data_v2.js?v=1').then(function(r){ return r.text(); }).then(function(txt){
+    var m = txt.match(/var D=(\{[\s\S]*\});?\s*$/);
+    if(m){ D2 = JSON.parse(m[1]); }
+  }).catch(function(e){ console.warn('Recency-weighted comparison model unavailable:', e); });
+}
+
+/*
+  Play classifier — the gate system, ported from play_classifier.py.
+  Built from a real week's results, not designed in the abstract: the
+  biggest single-number edge of the week (Morocco ML, +19.8pp, both
+  models agreeing) lost clean. The smaller, cross-confirmed totals edges
+  (Spain-Belgium, Argentina-Switzerland Over 2.5) won. This encodes that
+  as gates a play must clear ALL of, not one edge threshold.
+*/
+var CLASSIFY_MIN_EDGE = 5.0;
+var CLASSIFY_EDGE_CEILING = 15.0;
+var CLASSIFY_MAX_SPREAD = 10.0;
+var CLASSIFY_MAX_DATA_AGE_H = 36.0;
+
+function classifyPlay(opts){
+  // opts: { prodEdgePp, recencyEdgePp (nullable if D2 not loaded),
+  //         isTotals, neighborEdgesPp (array), dataAgeHours }
+  var gates = {};
+  var prod = opts.prodEdgePp, rec = opts.recencyEdgePp;
+  var haveBoth = (rec !== null && rec !== undefined && !isNaN(rec));
+
+  // gate 1: min edge (on the smaller of the two, or prod alone if D2 not loaded)
+  if(!haveBoth){
+    gates.min_edge = {passed: Math.abs(prod)>=CLASSIFY_MIN_EDGE, reason: 'Recency model not loaded yet -- checked against production only'};
+  } else {
+    var sameSign = (prod>=0)===(rec>=0);
+    var smaller = Math.min(Math.abs(prod),Math.abs(rec));
+    if(!sameSign) gates.min_edge = {passed:false, reason:'Models disagree on direction -- treated as 0 edge'};
+    else gates.min_edge = {passed: smaller>=CLASSIFY_MIN_EDGE, reason: smaller.toFixed(1)+'pp on the smaller side vs '+CLASSIFY_MIN_EDGE+'pp floor'};
+  }
+
+  // gate 2: model agreement
+  if(!haveBoth){
+    gates.model_agreement = {passed:true, reason:'Recency model not loaded -- cannot check agreement yet'};
+  } else {
+    var sameSign2 = (prod>=0)===(rec>=0);
+    if(!sameSign2) gates.model_agreement = {passed:false, reason:'Production and recency-weighted models disagree on direction'};
+    else {
+      var spread = Math.abs(prod-rec);
+      gates.model_agreement = {passed: spread<=CLASSIFY_MAX_SPREAD, reason: spread.toFixed(1)+'pp spread between models'};
+    }
+  }
+
+  // gate 3: signal consistency (totals only)
+  if(!opts.isTotals){
+    gates.signal_consistency = {passed:true, reason:'Not a totals market'};
+  } else if(!opts.neighborEdgesPp || opts.neighborEdgesPp.length===0){
+    gates.signal_consistency = {passed:false, reason:'No neighboring-line data entered to confirm this isn\'t a one-line quirk'};
+  } else {
+    var agree = opts.neighborEdgesPp.filter(function(e){ return (e>=0)===(prod>=0); }).length;
+    var frac = agree/opts.neighborEdgesPp.length;
+    gates.signal_consistency = {passed: frac>=0.5, reason: agree+'/'+opts.neighborEdgesPp.length+' neighboring lines agree in direction'};
+  }
+
+  // gate 4: fresh data
+  gates.fresh_data = {passed: opts.dataAgeHours<=CLASSIFY_MAX_DATA_AGE_H, reason: opts.dataAgeHours.toFixed(0)+'h old vs '+CLASSIFY_MAX_DATA_AGE_H+'h limit'};
+
+  // gate 5: edge ceiling
+  var smallerForCeiling = haveBoth ? Math.min(Math.abs(prod),Math.abs(rec)) : Math.abs(prod);
+  gates.edge_ceiling = {passed: smallerForCeiling<=CLASSIFY_EDGE_CEILING, reason: smallerForCeiling.toFixed(1)+'pp vs '+CLASSIFY_EDGE_CEILING+'pp auto-publish ceiling'};
+
+  var corePassed = gates.min_edge.passed && gates.model_agreement.passed && gates.fresh_data.passed;
+  var displayEdge = haveBoth ? Math.min(Math.abs(prod),Math.abs(rec)) : Math.abs(prod);
+  if(haveBoth && (prod<0)!==(rec<0)) displayEdge = 0;
+
+  var tier, tierClass;
+  if(!corePassed){
+    tier = (gates.min_edge.passed || gates.model_agreement.passed) ? 'Watch' : 'No Bet';
+    tierClass = tier==='Watch' ? 'tier-watch' : 'tier-nobet';
+  } else if(!gates.edge_ceiling.passed){
+    tier='Watch'; tierClass='tier-watch';
+  } else if(opts.isTotals && !gates.signal_consistency.passed){
+    tier='Lean'; tierClass='tier-lean';
+  } else if(displayEdge>=10){
+    tier='Elite Edge'; tierClass='tier-elite';
+  } else if(displayEdge>=7){
+    tier='Strong Play'; tierClass='tier-strong';
+  } else {
+    tier='Lean'; tierClass='tier-lean';
+  }
+
+  return {tier:tier, tierClass:tierClass, gates:gates, displayEdge:displayEdge};
+}
+</script>
 <script>var RHO=-0.06, MAX_G=9;
 var FLAGS_MAP={"Spain":"\uD83C\uDDEA\uD83C\uDDF8","Argentina":"\uD83C\uDDE6\uD83C\uDDF7","France":"\uD83C\uDDEB\uD83C\uDDF7","England":"ENG","Brazil":"\uD83C\uDDE7\uD83C\uDDF7","Colombia":"\uD83C\uDDE8\uD83C\uDDF4","Switzerland":"\uD83C\uDDE8\uD83C\uDDED","Norway":"\uD83C\uDDF3\uD83C\uDDF4","Portugal":"\uD83C\uDDF5\uD83C\uDDF9","Morocco":"\uD83C\uDDF2\uD83C\uDDE6","Belgium":"\uD83C\uDDE7\uD83C\uDDEA","Mexico":"\uD83C\uDDF2\uD83C\uDDFD","Canada":"\uD83C\uDDE8\uD83C\uDDE6","USA":"\uD83C\uDDFA\uD83C\uDDF8","Paraguay":"\uD83C\uDDF5\uD83C\uDDFE","Australia":"\uD83C\uDDE6\uD83C\uDDFA","Egypt":"\uD83C\uDDEA\uD83C\uDDEC","Ghana":"\uD83C\uDDEC\uD83C\uDDED","Cabo Verde":"\uD83C\uDDE8\uD83C\uDDFB"};
 var TEAMS_LIST=["Spain","Argentina","France","England","Colombia","Switzerland","Norway","Portugal","Morocco","Belgium","Mexico","USA","Paraguay","Australia","Egypt","Ghana","Cabo Verde"];
@@ -356,17 +462,19 @@ function poi(k,lam){if(k<0||lam<=0)return 0;var l=-lam+k*Math.log(lam);for(var i
 function dcC(i,j,la,lb){if(i===0&&j===0)return 1-la*lb*RHO;if(i===1&&j===0)return 1+lb*RHO;if(i===0&&j===1)return 1+la*RHO;if(i===1&&j===1)return 1-RHO;return 1;}
 function buildMat(la,lb){var m=[],t=0,i,j,v;for(i=0;i<=MAX_G;i++){m.push([]);for(j=0;j<=MAX_G;j++){v=poi(i,la)*poi(j,lb)*dcC(i,j,la,lb);m[i].push(v);t+=v;}}for(i=0;i<=MAX_G;i++)for(j=0;j<=MAX_G;j++)m[i][j]/=t;return m;}
 
-function getMLE(t){
-  var m=D.mle_shrunk[t];
+function getMLE(t,DS){
+  DS=DS||D;
+  var m=DS.mle_shrunk[t];
   if(!m) return {attack:1.0,defense:1.0,matches:0,raw_attack:1.0,raw_defense:1.0};
   return m;
 }
 
-function calcMatch(hk,ak){
-  var h=getMLE(hk),a=getMLE(ak);
-  var sfH=D.squad_adjustments[hk],sfA=D.squad_adjustments[ak];
+function calcMatch(hk,ak,DS){
+  DS=DS||D;
+  var h=getMLE(hk,DS),a=getMLE(ak,DS);
+  var sfH=DS.squad_adjustments[hk],sfA=DS.squad_adjustments[ak];
   var hAdj=(sfH&&sfH.atk_mult)||1, aAdj=(sfA&&sfA.atk_mult)||1;
-  var BXG=(D.baseline_xg||1.2772); var la=h.attack*hAdj*a.defense*BXG, lb=a.attack*aAdj*h.defense*BXG;
+  var BXG=(DS.baseline_xg||1.2772); var la=h.attack*hAdj*a.defense*BXG, lb=a.attack*aAdj*h.defense*BXG;
   var mat=buildMat(la,lb);
   var pw=0,pd=0,pl=0,pm2h=0,pm2a=0,o25=0,o35=0,btts=0,bestP=0,bI=1,bJ=0,i,j,v;
   for(i=0;i<=MAX_G;i++)for(j=0;j<=MAX_G;j++){
@@ -384,27 +492,27 @@ function calcMatch(hk,ak){
   // improved mean Brier from 0.4976 to 0.4940. Applies only to match-result
   // (W/D/L) probabilities, not totals/BTTS/corners/shots, which were not
   // part of this calibration test.
-  if(D.calibration){
-    var CA=D.calibration.a, CB=D.calibration.b;
+  if(DS.calibration){
+    var CA=DS.calibration.a, CB=DS.calibration.b;
     var rw=1/(1+Math.exp(-(CA+CB*Math.log(pw/(1-pw)))));
     var rd=1/(1+Math.exp(-(CA+CB*Math.log(pd/(1-pd)))));
     var rl=1/(1+Math.exp(-(CA+CB*Math.log(pl/(1-pl)))));
     var rs=rw+rd+rl;
     pw=rw/rs; pd=rd/rs; pl=rl/rs;
   }
-  var crH=D.corner_ratings[hk],crA=D.corner_ratings[ak];
+  var crH=DS.corner_ratings[hk],crA=DS.corner_ratings[ak];
   var cLa,cLb;
   if(crH&&crA){
-    cLa=D.corner_league_avg_for*crH.attack*crA.defense;
-    cLb=D.corner_league_avg_for*crA.attack*crH.defense;
+    cLa=DS.corner_league_avg_for*crH.attack*crA.defense;
+    cLb=DS.corner_league_avg_for*crA.attack*crH.defense;
   } else {
     cLa=4.8*la; cLb=4.8*lb;
   }
-  var srH=D.shots_ratings[hk],srA=D.shots_ratings[ak];
+  var srH=DS.shots_ratings[hk],srA=DS.shots_ratings[ak];
   var sLa,sLb;
   if(srH&&srA){
-    sLa=D.shots_league_avg_for*srH.attack*srA.defense;
-    sLb=D.shots_league_avg_for*srA.attack*srH.defense;
+    sLa=DS.shots_league_avg_for*srH.attack*srA.defense;
+    sLb=DS.shots_league_avg_for*srA.attack*srH.defense;
   } else {
     sLa=la/0.105; sLb=lb/0.105;
   }
@@ -414,9 +522,9 @@ function calcMatch(hk,ak){
   for(i=0;i<=45;i++)if(i>cThr)cOver+=poi(i,cTot);
   var sTot=sLa+sLb,sThr=Math.round(sTot)-0.5,sOver=0;
   for(i=0;i<=70;i++)if(i>sThr)sOver+=poi(i,sTot);
-  var pkH=D.pk_rates_v4[hk]||0.5,pkA=D.pk_rates_v4[ak]||0.5;
+  var pkH=DS.pk_rates_v4[hk]||0.5,pkA=DS.pk_rates_v4[ak]||0.5;
   var pkHn=pkH/(pkH+pkA),pkAn=pkA/(pkH+pkA);
-  var fcH=D.finisher_concentration[hk],fcA=D.finisher_concentration[ak];
+  var fcH=DS.finisher_concentration[hk],fcA=DS.finisher_concentration[ak];
   var marginalH=[],marginalA=[];
   for(i=0;i<=MAX_G;i++){
     var sh=0,sa=0;
@@ -731,18 +839,33 @@ function onBookOdds(id,val){
 
 function evBuilderHTML(C,hk,ak){
   var rows=marketRows(C,hk,ak);
+
+  // recency-weighted comparison, if D2 has loaded
+  var rows2map={};
+  if(D2){
+    var C2=calcMatch(hk,ak,D2);
+    var rows2=marketRows(C2,hk,ak);
+    for(var ri=0;ri<rows2.length;ri++){ if(!rows2[ri].div) rows2map[rows2[ri].id]=rows2[ri].p; }
+  }
+
+  // data freshness, from the production model's own refit timestamp
+  var dataAgeHours=0;
+  if(D.last_updated){
+    dataAgeHours=(Date.now()-new Date(D.last_updated).getTime())/3600000;
+  }
+
   var body="",i,filledCount=0,totalPriceable=0;
   for(i=0;i<rows.length;i++){
     var r=rows[i];
     if(r.div){
-      body+="<tr class='div-row'><td colspan='9'>"+r.label+"</td></tr>";
+      body+="<tr class='div-row'><td colspan='10'>"+r.label+"</td></tr>";
       continue;
     }
     totalPriceable++;
     var fair=pToAm(r.p);
     var bookVal=S.odds[r.id];
     var hasBook=(bookVal!==null&&bookVal!==undefined&&!isNaN(bookVal));
-    var impCell="\u2014",edgeCell="\u2014",evCell="\u2014",sigCell="";
+    var impCell="\u2014",edgeCell="\u2014",evCell="\u2014",sigCell="",tierCell="\u2014";
     if(hasBook){
       filledCount++;
       var imp=amToP(bookVal),edge=r.p-imp,ev=evCalc(r.p,bookVal);
@@ -754,6 +877,31 @@ function evBuilderHTML(C,hk,ak){
       else if(edge>=0.02)sigCell="<span class='sig-e'>EDGE</span>"+logBtn;
       else if(edge>=0)sigCell="<span class='sig-s'>SKIP</span>";
       else sigCell="<span class='sig-f'>FADE</span>";
+
+      // ---- play classifier ----
+      var prodEdgePp=edge*100;
+      var recEdgePp=null;
+      if(D2 && r.id in rows2map){
+        var p2=rows2map[r.id];
+        recEdgePp=(p2-imp)*100;
+      }
+      var isTotals = r.id.indexOf('g_o')===0 || r.id.indexOf('g_u')===0;
+      var neighborEdges=[];
+      if(isTotals){
+        for(var rj=0;rj<rows.length;rj++){
+          var r2=rows[rj];
+          if(r2.div || r2.id===r.id) continue;
+          if(r2.id.indexOf('g_o')!==0 && r2.id.indexOf('g_u')!==0) continue;
+          var bv2=S.odds[r2.id];
+          if(bv2===null||bv2===undefined||isNaN(bv2)) continue;
+          var imp2=amToP(bv2);
+          neighborEdges.push((r2.p-imp2)*100);
+        }
+      }
+      var cls=classifyPlay({prodEdgePp:prodEdgePp, recencyEdgePp:recEdgePp, isTotals:isTotals, neighborEdgesPp:neighborEdges, dataAgeHours:dataAgeHours});
+      var gateLines=[];
+      for(var gname in cls.gates){ gateLines.push((cls.gates[gname].passed?'\u2713':'\u2717')+' '+gname+': '+cls.gates[gname].reason); }
+      tierCell="<span class='"+cls.tierClass+" tier-cell' title=\""+gateLines.join('\n').replace(/"/g,'&quot;')+"\">"+cls.tier+"</span>";
     }
     var rowClass = hasBook ? (r.p-amToP(bookVal)>=0.05 ? "ev-row-bet" : "") : "";
     body+="<tr class='"+rowClass+"'>"
@@ -767,16 +915,18 @@ function evBuilderHTML(C,hk,ak){
       +"<td class='r'>"+edgeCell+"</td>"
       +"<td class='r'>"+evCell+"</td>"
       +"<td>"+sigCell+"</td>"
+      +"<td>"+tierCell+"</td>"
       +"</tr>";
   }
   var summary="";
   if(filledCount>0){
-    summary="<div class='ev-builder-summary'>"+filledCount+" of "+totalPriceable+" markets priced \u2014 fill in book odds for any market to see edge instantly</div>";
+    summary="<div class='ev-builder-summary'>"+filledCount+" of "+totalPriceable+" markets priced \u2014 fill in book odds for any market to see edge instantly. Tier column hover shows which gates passed.</div>";
+    if(!D2) summary+="<div class='ev-builder-summary' style='color:var(--amber)'>Recency-weighted comparison model still loading \u2014 Tier badges will refine once it's in.</div>";
   } else {
     summary="<div class='ev-builder-summary'>Enter book odds in any row to calculate edge &amp; EV for that market</div>";
   }
   return "<table class='ev-builder-tbl'><thead><tr>"
-    +"<th>Market</th><th>Outcome</th><th>Model%</th><th class='r'>Fair</th><th>Book Odds</th><th>Kalshi \u00A2</th><th class='r'>Implied</th><th class='r'>Edge</th><th class='r'>EV/$100</th><th>Signal</th>"
+    +"<th>Market</th><th>Outcome</th><th>Model%</th><th class='r'>Fair</th><th>Book Odds</th><th>Kalshi \u00A2</th><th class='r'>Implied</th><th class='r'>Edge</th><th class='r'>EV/$100</th><th>Signal</th><th>Tier</th>"
     +"</tr></thead><tbody>"+body+"</tbody></table>"+summary;
 }
 
@@ -1172,6 +1322,7 @@ function init(){
   renderTeams();
   renderTracker();
   loadMatch("Portugal","Spain");
+  loadD2().then(function(){ renderEVBuilder(); });
 }
 
 if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",init);}else{init();}
