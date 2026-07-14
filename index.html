@@ -562,10 +562,29 @@ function loadMatch(hk,ak){
     S.odds.ml_h=L.ml_h;S.odds.ml_d=L.ml_d;S.odds.ml_a=L.ml_a;
     if(L.adv_h!==undefined)S.odds.adv_h=L.adv_h;
     if(L.adv_a!==undefined)S.odds.adv_a=L.adv_a;
+    // auto-populate any alternate totals lines (over_1.5, over_2.5, etc)
+    // so the play classifier's signal-consistency gate can actually see
+    // real neighboring-line prices without the user retyping them.
+    for(var k in L){
+      if(k.indexOf('over_')===0 || k.indexOf('under_')===0){
+        var pt = k.split('_')[1];
+        var rowId = (k.indexOf('over_')===0 ? 'g_o' : 'g_u') + pt;
+        S.odds[rowId] = L[k];
+      }
+    }
   } else if(Lr){
     S.odds.ml_h=Lr.ml_a;S.odds.ml_d=Lr.ml_d;S.odds.ml_a=Lr.ml_h;
     if(Lr.adv_a!==undefined)S.odds.adv_h=Lr.adv_a;
     if(Lr.adv_h!==undefined)S.odds.adv_a=Lr.adv_h;
+    // totals aren't home/away-relative, so the same over/under keys apply
+    // directly even when reading the reversed fixture key
+    for(var k2 in Lr){
+      if(k2.indexOf('over_')===0 || k2.indexOf('under_')===0){
+        var pt2 = k2.split('_')[1];
+        var rowId2 = (k2.indexOf('over_')===0 ? 'g_o' : 'g_u') + pt2;
+        S.odds[rowId2] = Lr[k2];
+      }
+    }
   }
   document.getElementById("sel-h").value=hk;
   document.getElementById("sel-a").value=ak;
