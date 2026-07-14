@@ -156,16 +156,21 @@ def main():
     D['live_odds'] = live
     D['odds_updated'] = datetime.now(timezone.utc).isoformat(timespec='seconds')
 
-    # keep the app's existing dk_lines panel fresh where fixtures match
+    # keep the app's existing dk_lines panel fresh where fixtures match.
+    # merge PER FIELD across preferred books, not per book -- a book that
+    # has moneyline but not totals (like DraftKings on this pull) shouldn't
+    # block totals data that IS available from Pinnacle/FanDuel for the
+    # same fixture.
     dk = D.get('dk_lines', {})
     for ev in live:
         fkey = f"{ev['home']}_vs_{ev['away']}"
-        book = ev['books'].get('draftkings') or ev['books'].get('pinnacle')
-        if book and any(k in book for k in ('ml_h', 'ml_a')):
-            dk.setdefault(fkey, {})
-            for k in book:
-                if k.startswith('ml_') or k.startswith('over_') or k.startswith('under_'):
-                    dk[fkey][k] = book[k]
+        merged = {}
+        for book_key in reversed(PREFERRED_BOOKS):  # reversed so first-listed wins on conflicts
+            book = ev['books'].get(book_key)
+            if book:
+                merged.update(book)
+        if merged:
+            dk[fkey] = merged
     D['dk_lines'] = dk
 
     with open(DATA_JS, 'w') as f:
