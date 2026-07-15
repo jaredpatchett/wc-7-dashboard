@@ -150,7 +150,24 @@ body{background:var(--bg);color:var(--txt);font-family:var(--body);font-size:15p
 .rank-tbl td.r{text-align:right;font-family:var(--mono);font-size:12px}
 .team-cell{font-weight:700;font-size:14px}
 .mini-warn{font-size:10px;font-family:var(--mono)}
-.bracket-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;padding:16px}
+.bracket-grid{padding:16px}
+.bracket-tree{display:flex;gap:24px;overflow-x:auto;padding-bottom:10px}
+.bracket-col{display:flex;flex-direction:column;gap:14px;min-width:200px;flex-shrink:0}
+.bracket-col-hdr{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--txt3);font-weight:700;text-align:center;padding-bottom:6px;border-bottom:1px solid var(--bord)}
+.bnode{background:var(--card);border:1px solid var(--bord);border-radius:6px;overflow:hidden;font-size:12px}
+.bn-round{font-size:9px;letter-spacing:1px;text-transform:uppercase;color:var(--txt3);background:var(--card3);padding:4px 10px;font-family:var(--mono)}
+.bn-confirm{color:var(--amber)}
+.bn-team{padding:7px 10px;font-weight:600;border-bottom:1px solid var(--bord)}
+.bn-team:last-of-type{border-bottom:none}
+.bn-winner{color:var(--gold2);background:#1a1000}
+.bn-loser{color:var(--txt3);text-decoration:line-through;text-decoration-color:#3a3a3a}
+.bn-foot{padding:5px 10px;min-height:20px;display:flex;align-items:center;justify-content:center}
+.bn-score{font-family:var(--mono);font-size:11px;color:var(--txt2)}
+.bn-live-tag{font-family:var(--mono);font-size:10px;color:var(--red);font-weight:700;animation:pulse 1.5s infinite}
+.bnode-tbd{border-color:#4a3810;border-style:dashed}
+.bnode-live{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold) inset}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.bracket-note{margin:14px 16px 0;padding:10px 14px;background:#1a1000;border:1px solid #4a3810;border-radius:6px;color:var(--amber);font-size:11.5px;line-height:1.5}
 .bcard{background:var(--card);border:1px solid var(--bord);border-radius:4px;overflow:hidden;cursor:pointer;transition:border-color .2s}
 .bcard:hover{border-color:var(--gold)}
 .bcard-hdr{background:var(--card3);padding:9px 14px;border-bottom:1px solid var(--bord);display:flex;justify-content:space-between}
@@ -1053,38 +1070,55 @@ function renderRankings(){
   body.innerHTML=html;
 }
 
+function bracketNodeHTML(m, roundLabel){
+  var isDone = m.winner !== null && m.winner !== undefined;
+  var isLive = m.live === true;
+  var needsConfirm = m.needsConfirm === true;
+  var homeWon = isDone && m.winner === m.home;
+  var awayWon = isDone && m.winner === m.away;
+  var cls = 'bnode' + (needsConfirm ? ' bnode-tbd' : '') + (isLive ? ' bnode-live' : '');
+  var scoreHTML = m.score ? "<span class='bn-score'>"+m.score+"</span>" : (isLive ? "<span class='bn-live-tag'>LIVE</span>" : "");
+  return "<div class='"+cls+"'>"
+    + "<div class='bn-round'>"+roundLabel+(needsConfirm?" &middot; <span class='bn-confirm'>confirm?</span>":"")+"</div>"
+    + "<div class='bn-team"+(homeWon?" bn-winner":isDone?" bn-loser":"")+"'>"+(FLAGS_MAP[m.home]||"")+" "+m.home+"</div>"
+    + "<div class='bn-team"+(awayWon?" bn-winner":isDone?" bn-loser":"")+"'>"+(FLAGS_MAP[m.away]||"")+" "+m.away+"</div>"
+    + "<div class='bn-foot'>"+scoreHTML+"</div>"
+    + "</div>";
+}
+
 function renderBracket(){
   var cont=document.getElementById("bracket-grid");
   if(!cont)return;
-  var html="",k;
-  for(k=0;k<D.r16.length;k++){
-    var m=D.r16[k];
-    var lk=m.home+"_vs_"+m.away,lkr=m.away+"_vs_"+m.home;
-    var L=D.dk_lines[lk],Lr=D.dk_lines[lkr];
-    var mlH=null,mlD=null,mlA=null,advH=null,advA=null;
-    if(L){mlH=L.ml_h;mlD=L.ml_d;mlA=L.ml_a;advH=L.adv_h;advA=L.adv_a;}
-    else if(Lr){mlH=Lr.ml_a;mlD=Lr.ml_d;mlA=Lr.ml_h;advH=Lr.adv_a;advA=Lr.adv_h;}
-    var C2=calcMatch(m.home,m.away);
-    if(!C2)continue;
-    var edgeHTML="";
-    if(advH!==null){
-      var mktAdvH=amToP(advH);
-      var edge=C2.advH-mktAdvH;
-      var edgeTeam=edge>0?m.home:m.away;
-      var edgeVal=Math.abs(edge);
-      if(edgeVal>0.02){
-        edgeHTML="<div class='badv'><span>Model edge: "+edgeTeam+"</span><span class='bet-tag'>"+(edge>0?"+":"\u2212")+(edgeVal*100).toFixed(1)+"pp</span></div>";
-      }
-    }
-    html+="<div class='bcard' onclick='loadMatch(\""+m.home+"\",\""+m.away+"\");showTab(\"predict\",document.querySelectorAll(\".nav-tab\")[1])'>"
-      +"<div class='bcard-hdr'><span class='bcard-stage'>ROUND OF 16</span><span class='bcard-time'>"+m.time+"</span></div>"
-      +"<div class='bteams'><div class='bt'>"+(FLAGS_MAP[m.home]||"")+" "+m.home+"</div><div class='bvs'>vs</div><div class='bt r'>"+m.away+" "+(FLAGS_MAP[m.away]||"")+"</div></div>"
-      +"<div class='bprobs'><div class='bph'>"+(C2.pw*100).toFixed(1)+"% W<br><span class='bxg'>xG "+C2.la.toFixed(2)+"</span></div><div class='bpa'>"+(C2.pl*100).toFixed(1)+"% W<br><span class='bxg'>xG "+C2.lb.toFixed(2)+"</span></div></div>"
-      +(mlH!==null?"<div class='blines'><span>ML "+fmtOdds(mlH)+" / "+fmtOdds(mlD)+" / "+fmtOdds(mlA)+"</span><span>Adv "+fmtOdds(advH)+" / "+fmtOdds(advA)+"</span></div>":"")
-      +edgeHTML
-      +"</div>";
+  if(!D.bracket){
+    cont.innerHTML="<div style='padding:30px;color:var(--txt3)'>Bracket data not available yet.</div>";
+    return;
   }
-  cont.innerHTML=html;
+  var b = D.bracket;
+  var html = "<div class='bracket-tree'>";
+
+  html += "<div class='bracket-col'><div class='bracket-col-hdr'>ROUND OF 16</div>";
+  for(var i=0;i<b.r16.length;i++) html += bracketNodeHTML(b.r16[i], 'R16');
+  html += "</div>";
+
+  html += "<div class='bracket-col'><div class='bracket-col-hdr'>QUARTERFINALS</div>";
+  for(var j=0;j<b.qf.length;j++) html += bracketNodeHTML(b.qf[j], 'QF');
+  html += "</div>";
+
+  html += "<div class='bracket-col'><div class='bracket-col-hdr'>SEMIFINALS</div>";
+  for(var k=0;k<b.sf.length;k++) html += bracketNodeHTML(b.sf[k], 'SF');
+  html += "</div>";
+
+  html += "<div class='bracket-col'><div class='bracket-col-hdr'>FINAL</div>";
+  for(var l=0;l<b.final.length;l++) html += bracketNodeHTML(b.final[l], 'FINAL');
+  html += "</div>";
+
+  html += "</div>";
+
+  if(b.r16.some(function(m){return m.needsConfirm;}) || b.qf.some(function(m){return m.needsConfirm;})){
+    html += "<div class='bracket-note'>&#9888; Some early-round results are marked \"confirm?\" -- these are placeholders I wasn't fully certain of. Let me know the real matchup/score and I'll fix the data.</div>";
+  }
+
+  cont.innerHTML = html;
 }
 
 function renderTeams(){
