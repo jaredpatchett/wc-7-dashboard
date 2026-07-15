@@ -106,6 +106,8 @@ body{background:var(--bg);color:var(--txt);font-family:var(--body);font-size:15p
 .sig-s{color:var(--txt3);font-size:11px}
 .sig-f{background:#180608;color:var(--red);border:1px solid #4a1010;padding:2px 8px;border-radius:2px;font-size:11px}
 .tier-elite{background:#081808;color:var(--green);border:1px solid #1a5a1a;padding:3px 9px;border-radius:3px;font-size:10.5px;font-weight:700;letter-spacing:.2px}
+.tier-flagged{box-shadow:0 0 0 1px var(--amber) inset;position:relative}
+.tier-flagged::after{content:'\26A0';margin-left:4px;color:var(--amber);font-size:9px}
 .tier-strong{background:#0a1420;color:var(--blue);border:1px solid #1a3a5a;padding:3px 9px;border-radius:3px;font-size:10.5px;font-weight:700;letter-spacing:.2px}
 .tier-lean{background:#1a1000;color:var(--amber);border:1px solid #4a2800;padding:3px 9px;border-radius:3px;font-size:10.5px;font-weight:600;letter-spacing:.2px}
 .tier-watch{background:#14100a;color:#c99a4a;border:1px solid #3a2a10;padding:3px 9px;border-radius:3px;font-size:10.5px;font-weight:600;letter-spacing:.2px}
@@ -442,9 +444,16 @@ function classifyPlay(opts){
   // gate 4: fresh data
   gates.fresh_data = {passed: opts.dataAgeHours<=CLASSIFY_MAX_DATA_AGE_H, reason: opts.dataAgeHours.toFixed(0)+'h old vs '+CLASSIFY_MAX_DATA_AGE_H+'h limit'};
 
-  // gate 5: edge ceiling
-  var smallerForCeiling = haveBoth ? Math.min(Math.abs(prod),Math.abs(rec)) : Math.abs(prod);
-  gates.edge_ceiling = {passed: smallerForCeiling<=CLASSIFY_EDGE_CEILING, reason: smallerForCeiling.toFixed(1)+'pp vs '+CLASSIFY_EDGE_CEILING+'pp auto-publish ceiling'};
+  // gate 5: large-edge flag -- NOT a pass/fail gate. Large edges on
+  // heavily-scrutinized markets deserve visible extra scrutiny as a matter
+  // of principle, but this no longer auto-suppresses the tier. Treating
+  // one result (Morocco ML) as proof that big edges are wrong was
+  // overfitting to n=1 -- a 70%+ model probability SHOULD lose ~30% of the
+  // time even from a good model. The flag stays; the automatic downgrade
+  // doesn't.
+  var smallerForFlag = haveBoth ? Math.min(Math.abs(prod),Math.abs(rec)) : Math.abs(prod);
+  var isLargeEdge = smallerForFlag > CLASSIFY_EDGE_CEILING;
+  gates.large_edge_flag = {passed:true, reason: isLargeEdge ? smallerForFlag.toFixed(1)+'pp is unusually large for a heavily-scrutinized market -- flagged for visibility, not excluded' : smallerForFlag.toFixed(1)+'pp is within the typical range'};
 
   var corePassed = gates.min_edge.passed && gates.model_agreement.passed && gates.fresh_data.passed;
   var displayEdge = haveBoth ? Math.min(Math.abs(prod),Math.abs(rec)) : Math.abs(prod);
@@ -454,8 +463,6 @@ function classifyPlay(opts){
   if(!corePassed){
     tier = (gates.min_edge.passed || gates.model_agreement.passed) ? 'Watch' : 'No Bet';
     tierClass = tier==='Watch' ? 'tier-watch' : 'tier-nobet';
-  } else if(!gates.edge_ceiling.passed){
-    tier='Watch'; tierClass='tier-watch';
   } else if(opts.isTotals && !gates.signal_consistency.passed){
     tier='Lean'; tierClass='tier-lean';
   } else if(displayEdge>=10){
@@ -465,8 +472,9 @@ function classifyPlay(opts){
   } else {
     tier='Lean'; tierClass='tier-lean';
   }
+  if(isLargeEdge) tierClass += ' tier-flagged';
 
-  return {tier:tier, tierClass:tierClass, gates:gates, displayEdge:displayEdge};
+  return {tier:tier, tierClass:tierClass, gates:gates, displayEdge:displayEdge, isLargeEdge:isLargeEdge};
 }
 </script>
 <script>var RHO=-0.06, MAX_G=9;
