@@ -1,0 +1,6657 @@
+[
+ {
+  "event_id": "eb2553d10d63dc912b99f8fd0d675721",
+  "commence_time": "2026-08-21T19:00:00Z",
+  "home": "Arsenal",
+  "away": "Coventry City",
+  "snapshot": "2026-08-21T18:50:00Z",
+  "books": {
+   "pinnacle": {
+    "home": 1.21,
+    "draw": 7.15,
+    "away": 16.0
+   },
+   "onexbet": {
+    "home": 1.24,
+    "draw": 7.21,
+    "away": 14.2
+   },
+   "betfair_ex_eu": {
+    "home": 1.23,
+    "draw": 7.6,
+    "away": 17.0
+   },
+   "codere_it": {
+    "home": 1.2,
+    "draw": 6.8,
+    "away": 14.0
+   },
+   "marathonbet": {
+    "home": 1.22,
+    "draw": 7.1,
+    "away": 14.0
+   },
+   "unibet_fr": {
+    "home": 1.19,
+    "draw": 7.5,
+    "away": 15.0
+   },
+   "williamhill": {
+    "home": 1.22,
+    "draw": 6.0,
+    "away": 13.0
+   },
+   "betclic_fr": {
+    "home": 1.2,
+    "draw": 7.0,
+    "away": 15.0
+   },
+   "sport888": {
+    "home": 1.2,
+    "draw": 6.0,
+    "away": 13.0
+   },
+   "tipico_de": {
+    "home": 1.17,
+    "draw": 7.2,
+    "away": 15.0
+   },
+   "winamax_de": {
+    "home": 1.19,
+    "draw": 7.0,
+    "away": 12.5
+   },
+   "winamax_fr": {
+    "home": 1.19,
+    "draw": 7.0,
+    "away": 12.5
+   },
+   "unibet_se": {
+    "home": 1.19,
+    "draw": 7.5,
+    "away": 16.0
+   },
+   "leovegas_se": {
+    "home": 1.17,
+    "draw": 7.0,
+    "away": 16.0
+   },
+   "unibet_nl": {
+    "home": 1.19,
+    "draw": 7.5,
+    "away": 16.0
+   },
+   "coolbet": {
+    "home": 1.22,
+    "draw": 7.25,
+    "away": 16.0
+   },
+   "everygame": {
+    "home": 1.2,
+    "draw": 6.5,
+    "away": 15.0
+   },
+   "betonlineag": {
+    "home": 1.2,
+    "draw": 7.2,
+    "away": 16.0
+   },
+   "nordicbet": {
+    "home": 1.21,
+    "draw": 6.0,
+    "away": 16.0
+   },
+   "betsson": {
+    "home": 1.21,
+    "draw": 6.0,
+    "away": 16.0
+   },
+   "pmu_fr": {
+    "home": 1.18,
+    "draw": 7.5,
+    "away": 15.0
+   },
+   "mybookieag": {
+    "home": 1.2,
+    "draw": 6.7,
+    "away": 13.5
+   },
+   "matchbook": {
+    "home": 1.23,
+    "draw": 7.6,
+    "away": 17.0
+   },
+   "gtbets": {
+    "home": 1.18,
+    "draw": 6.63,
+    "away": 13.17
+   },
+   "betanysports": {
+    "home": 1.2,
+    "draw": 7.2,
+    "away": 16.0
+   }
+  }
+ },
+ {
+  "event_id": "95bb16d19debff3ec39919f361f072a4",
+  "commence_time": "2026-08-22T11:30:00Z",
+  "home": "Hull City",
+  "away": "Manchester United",
+  "snapshot": "2026-08-22T11:20:00Z",
+  "books": {
+   "pinnacle": {
+    "home": 9.15,
+    "draw": 5.35,
+    "away": 1.37
+   },
+   "onexbet": {
+    "home": 9.36,
+    "draw": 5.2,
+    "away": 1.37
+   },
+   "betfair_ex_eu": {
+    "home": 9.8,
+    "draw": 5.4,
+    "away": 1.39
+   },
+   "codere_it": {
+    "home": 8.0,
+    "draw": 5.4,
+    "away": 1.36
+   },
+   "marathonbet": {
+    "home": 9.1,
+    "draw": 5.3,
+    "away": 1.36
+   },
+   "unibet_fr": {
+    "home": 7.8,
+    "draw": 5.2,
+    "away": 1.33
+   },
+   "williamhill": {
+    "home": 8.5,
+    "draw": 5.0,
+    "away": 1.35
+   },
+   "betclic_fr": {
+    "home": 8.75,
+    "draw": 5.0,
+    "away": 1.32
+   },
+   "sport888": {
+    "home": 8.5,
+    "draw": 4.8,
+    "away": 1.33
+   },
+   "tipico_de": {
+    "home": 7.8,
+    "draw": 5.2,
+    "away": 1.35
+   },
+   "winamax_de": {
+    "home": 7.75,
+    "draw": 5.3,
+    "away": 1.34
+   },
+   "winamax_fr": {
+    "home": 7.75,
+    "draw": 5.3,
+    "away": 1.34
+   },
+   "unibet_se": {
+    "home": 9.5,
+    "draw": 5.3,
+    "away": 1.36
+   },
+   "leovegas_se": {
+    "home": 8.5,
+    "draw": 5.1,
+    "away": 1.34
+   },
+   "unibet_nl": {
+    "home": 9.5,
+    "draw": 5.3,
+    "away": 1.36
+   },
+   "coolbet": {
+    "home": 9.5,
+    "draw": 5.4,
+    "away": 1.37
+   },
+   "everygame": {
+    "home": 9.0,
+    "draw": 5.0,
+    "away": 1.33
+   },
+   "betonlineag": {
+    "home": 9.15,
+    "draw": 5.2,
+    "away": 1.36
+   },
+   "nordicbet": {
+    "home": 9.3,
+    "draw": 4.9,
+    "away": 1.35
+   },
+   "betsson": {
+    "home": 9.3,
+    "draw": 4.9,
+    "away": 1.35
+   },
+   "pmu_fr": {
+    "home": 8.5,
+    "draw": 5.0,
+    "away": 1.33
+   },
+   "mybookieag": {
+    "home": 8.0,
+    "draw": 5.3,
+    "away": 1.34
+   },
+   "matchbook": {
+    "home": 9.8,
+    "draw": 5.4,
+    "away": 1.39
+   },
+   "gtbets": {
+    "home": 8.79,
+    "draw": 5.01,
+    "away": 1.35
+   },
+   "betanysports": {
+    "home": 9.15,
+    "draw": 5.2,
+    "away": 1.36
+   }
+  }
+ },
+ {
+  "event_id": "cd1f0173ec061d9b8a8b22ab8f2f8393",
+  "commence_time": "2026-08-22T14:00:00Z",
+  "home": "Everton",
+  "away": "Crystal Palace",
+  "snapshot": "2026-08-22T13:50:00Z",
+  "books": {
+   "pinnacle": {
+    "home": 2.37,
+    "draw": 3.4,
+    "away": 3.21
+   },
+   "onexbet": {
+    "home": 2.31,
+    "draw": 3.39,
+    "away": 3.29
+   },
+   "betfair_ex_eu": {
+    "home": 2.4,
+    "draw": 3.5,
+    "away": 3.3
+   },
+   "codere_it": {
+    "home": 2.31,
+    "draw": 3.35,
+    "away": 3.15
+   },
+   "marathonbet": {
+    "home": 2.35,
+    "draw": 3.4,
+    "away": 3.2
+   },
+   "unibet_fr": {
+    "home": 2.25,
+    "draw": 3.3,
+    "away": 3.1
+   },
+   "williamhill": {
+    "home": 2.3,
+    "draw": 3.25,
+    "away": 3.1
+   },
+   "betclic_fr": {
+    "home": 2.28,
+    "draw": 3.38,
+    "away": 3.17
+   },
+   "sport888": {
+    "home": 2.25,
+    "draw": 3.2,
+    "away": 3.1
+   },
+   "tipico_de": {
+    "home": 2.25,
+    "draw": 3.3,
+    "away": 3.2
+   },
+   "winamax_de": {
+    "home": 2.25,
+    "draw": 3.4,
+    "away": 3.05
+   },
+   "winamax_fr": {
+    "home": 2.25,
+    "draw": 3.35,
+    "away": 3.0
+   },
+   "unibet_se": {
+    "home": 2.35,
+    "draw": 3.45,
+    "away": 3.25
+   },
+   "leovegas_se": {
+    "home": 2.28,
+    "draw": 3.35,
+    "away": 3.15
+   },
+   "unibet_nl": {
+    "home": 2.35,
+    "draw": 3.45,
+    "away": 3.25
+   },
+   "coolbet": {
+    "home": 2.36,
+    "draw": 3.46,
+    "away": 3.25
+   },
+   "everygame": {
+    "home": 2.3,
+    "draw": 3.3,
+    "away": 3.15
+   },
+   "betonlineag": {
+    "home": 2.32,
+    "draw": 3.4,
+    "away": 3.23
+   },
+   "nordicbet": {
+    "home": 2.35,
+    "draw": 3.3,
+    "away": 3.1
+   },
+   "betsson": {
+    "home": 2.35,
+    "draw": 3.3,
+    "away": 3.1
+   },
+   "pmu_fr": {
+    "home": 2.25,
+    "draw": 3.25,
+    "away": 3.1
+   },
+   "mybookieag": {
+    "home": 2.29,
+    "draw": 3.32,
+    "away": 3.12
+   },
+   "matchbook": {
+    "home": 2.38,
+    "draw": 3.5,
+    "away": 3.35
+   },
+   "gtbets": {
+    "home": 2.27,
+    "draw": 3.47,
+    "away": 3.19
+   },
+   "betanysports": {
+    "home": 2.34,
+    "draw": 3.44,
+    "away": 3.23
+   }
+  }
+ },
+ {
+  "event_id": "01615d9573ef1e5aa8c09eb32a4a983b",
+  "commence_time": "2026-08-22T14:00:00Z",
+  "home": "Ipswich Town",
+  "away": "Sunderland",
+  "snapshot": "2026-08-22T13:50:00Z",
+  "books": {
+   "pinnacle": {
+    "home": 2.92,
+    "draw": 3.29,
+    "away": 2.62
+   },
+   "onexbet": {
+    "home": 2.94,
+    "draw": 3.29,
+    "away": 2.69
+   },
+   "betfair_ex_eu": {
+    "home": 2.96,
+    "draw": 3.35,
+    "away": 2.72
+   },
+   "codere_it": {
+    "home": 2.8,
+    "draw": 3.2,
+    "away": 2.6
+   },
+   "marathonbet": {
+    "home": 2.9,
+    "draw": 3.24,
+    "away": 2.64
+   },
+   "unibet_fr": {
+    "home": 2.8,
+    "draw": 3.2,
+    "away": 2.55
+   },
+   "williamhill": {
+    "home": 2.75,
+    "draw": 3.1,
+    "away": 2.62
+   },
+   "betclic_fr": {
+    "home": 2.83,
+    "draw": 3.23,
+    "away": 2.58
+   },
+   "sport888": {
+    "home": 2.75,
+    "draw": 3.0,
+    "away": 2.6
+   },
+   "tipico_de": {
+    "home": 2.9,
+    "draw": 3.1,
+    "away": 2.55
+   },
+   "winamax_de": {
+    "home": 2.7,
+    "draw": 3.25,
+    "away": 2.55
+   },
+   "winamax_fr": {
+    "home": 2.7,
+    "draw": 3.25,
+    "away": 2.5
+   },
+   "unibet_se": {
+    "home": 2.9,
+    "draw": 3.2,
+    "away": 2.7
+   },
+   "leovegas_se": {
+    "home": 2.85,
+    "draw": 3.1,
+    "away": 2.6
+   },
+   "unibet_nl": {
+    "home": 2.9,
+    "draw": 3.2,
+    "away": 2.7
+   },
+   "coolbet": {
+    "home": 2.88,
+    "draw": 3.33,
+    "away": 2.68
+   },
+   "everygame": {
+    "home": 2.8,
+    "draw": 3.2,
+    "away": 2.6
+   },
+   "betonlineag": {
+    "home": 2.87,
+    "draw": 3.27,
+    "away": 2.63
+   },
+   "nordicbet": {
+    "home": 2.85,
+    "draw": 3.2,
+    "away": 2.58
+   },
+   "betsson": {
+    "home": 2.85,
+    "draw": 3.2,
+    "away": 2.58
+   },
+   "pmu_fr": {
+    "home": 2.8,
+    "draw": 3.05,
+    "away": 2.6
+   },
+   "mybookieag": {
+    "home": 2.79,
+    "draw": 3.18,
+    "away": 2.59
+   },
+   "matchbook": {
+    "home": 2.96,
+    "draw": 3.35,
+    "away": 2.72
+   },
+   "gtbets": {
+    "home": 2.73,
+    "draw": 3.16,
+    "away": 2.61
+   },
+   "betanysports": {
+    "home": 2.87,
+    "draw": 3.27,
+    "away": 2.63
+   }
+  }
+ },
+ {
+  "event_id": "ee99154f8db029efcf567c5f7f7a0c0b",
+  "commence_time": "2026-08-22T14:00:00Z",
+  "home": "Nottingham Forest",
+  "away": "Leeds United",
+  "snapshot": "2026-08-22T13:50:00Z",
+  "books": {
+   "pinnacle": {
+    "home": 2.51,
+    "draw": 3.24,
+    "away": 3.12
+   },
+   "onexbet": {
+    "home": 2.53,
+    "draw": 3.3,
+    "away": 3.15
+   },
+   "betfair_ex_eu": {
+    "home": 2.56,
+    "draw": 3.3,
+    "away": 3.15
+   },
+   "codere_it": {
+    "home": 2.46,
+    "draw": 3.2,
+    "away": 3.0
+   },
+   "marathonbet": {
+    "home": 2.5,
+    "draw": 3.25,
+    "away": 3.08
+   },
+   "unibet_fr": {
+    "home": 2.4,
+    "draw": 3.2,
+    "away": 2.95
+   },
+   "williamhill": {
+    "home": 2.45,
+    "draw": 3.1,
+    "away": 2.9
+   },
+   "betclic_fr": {
+    "home": 2.4,
+    "draw": 3.2,
+    "away": 3.0
+   },
+   "sport888": {
+    "home": 2.45,
+    "draw": 3.0,
+    "away": 2.9
+   },
+   "tipico_de": {
+    "home": 2.4,
+    "draw": 3.1,
+    "away": 3.1
+   },
+   "winamax_de": {
+    "home": 2.4,
+    "draw": 3.25,
+    "away": 2.9
+   },
+   "winamax_fr": {
+    "home": 2.4,
+    "draw": 3.25,
+    "away": 2.9
+   },
+   "unibet_se": {
+    "home": 2.6,
+    "draw": 3.15,
+    "away": 3.1
+   },
+   "leovegas_se": {
+    "home": 2.55,
+    "draw": 3.05,
+    "away": 3.0
+   },
+   "unibet_nl": {
+    "home": 2.6,
+    "draw": 3.15,
+    "away": 3.1
+   },
+   "coolbet": {
+    "home": 2.52,
+    "draw": 3.28,
+    "away": 3.13
+   },
+   "everygame": {
+    "home": 2.45,
+    "draw": 3.15,
+    "away": 3.05
+   },
+   "betonlineag": {
+    "home": 2.5,
+    "draw": 3.24,
+    "away": 3.07
+   },
+   "nordicbet": {
+    "home": 2.48,
+    "draw": 3.15,
+    "away": 3.0
+   },
+   "betsson": {
+    "home": 2.48,
+    "draw": 3.15,
+    "away": 3.0
+   },
+   "pmu_fr": {
+    "home": 2.5,
+    "draw": 3.0,
+    "away": 2.95
+   },
+   "mybookieag": {
+    "home": 2.44,
+    "draw": 3.18,
+    "away": 2.98
+   },
+   "matchbook": {
+    "home": 2.56,
+    "draw": 3.3,
+    "away": 3.2
+   },
+   "gtbets": {
+    "home": 2.39,
+    "draw": 3.26,
+    "away": 3.01
+   },
+   "betanysports": {
+    "home": 2.5,
+    "draw": 3.24,
+    "away": 3.07
+   }
+  }
+ },
+ {
+  "event_id": "8b4b033209bb204516cbd1f523614f25",
+  "commence_time": "2026-08-22T16:30:00Z",
+  "home": "Brentford",
+  "away": "Tottenham Hotspur",
+  "snapshot": "2026-08-22T16:20:00Z",
+  "books": {
+   "pinnacle": {
+    "home": 2.09,
+    "draw": 3.84,
+    "away": 3.47
+   },
+   "onexbet": {
+    "home": 2.1,
+    "draw": 3.88,
+    "away": 3.38
+   },
+   "betfair_ex_eu": {
+    "home": 2.08,
+    "draw": 4.0,
+    "away": 3.6
+   },
+   "codere_it": {
+    "home": 2.07,
+    "draw": 3.7,
+    "away": 3.35
+   },
+   "marathonbet": {
+    "home": 2.05,
+    "draw": 3.8,
+    "away": 3.56
+   },
+   "unibet_fr": {
+    "home": 2.0,
+    "draw": 3.7,
+    "away": 3.3
+   },
+   "williamhill": {
+    "home": 2.05,
+    "draw": 3.6,
+    "away": 3.3
+   },
+   "betclic_fr": {
+    "home": 2.03,
+    "draw": 3.7,
+    "away": 3.37
+   },
+   "sport888": {
+    "home": 2.0,
+    "draw": 3.5,
+    "away": 3.3
+   },
+   "tipico_de": {
+    "home": 2.05,
+    "draw": 4.0,
+    "away": 3.1
+   },
+   "winamax_de": {
+    "home": 2.0,
+    "draw": 3.75,
+    "away": 3.35
+   },
+   "winamax_fr": {
+    "home": 1.98,
+    "draw": 3.7,
+    "away": 3.3
+   },
+   "unibet_se": {
+    "home": 2.17,
+    "draw": 3.8,
+    "away": 3.3
+   },
+   "leovegas_se": {
+    "home": 2.12,
+    "draw": 3.7,
+    "away": 3.2
+   },
+   "unibet_nl": {
+    "home": 2.17,
+    "draw": 3.8,
+    "away": 3.3
+   },
+   "coolbet": {
+    "home": 2.07,
+    "draw": 3.95,
+    "away": 3.53
+   },
+   "everygame": {
+    "home": 2.0,
+    "draw": 3.75,
+    "away": 3.4
+   },
+   "betonlineag": {
+    "home": 2.05,
+    "draw": 3.87,
+    "away": 3.46
+   },
+   "nordicbet": {
+    "home": 2.05,
+    "draw": 3.55,
+    "away": 3.55
+   },
+   "betsson": {
+    "home": 2.05,
+    "draw": 3.55,
+    "away": 3.55
+   },
+   "pmu_fr": {
+    "home": 2.08,
+    "draw": 3.6,
+    "away": 3.15
+   },
+   "mybookieag": {
+    "home": 2.06,
+    "draw": 3.65,
+    "away": 3.32
+   },
+   "matchbook": {
+    "home": 2.08,
+    "draw": 3.95,
+    "away": 3.6
+   },
+   "gtbets": {
+    "home": 2.14,
+    "draw": 3.74,
+    "away": 3.41
+   },
+   "betanysports": {
+    "home": 2.05,
+    "draw": 3.87,
+    "away": 3.46
+   }
+  }
+ },
+ {
+  "event_id": "f5086c74d4a767e3ad7ea69bd4a66b76",
+  "commence_time": "2026-08-23T13:00:00Z",
+  "home": "Brighton and Hove Albion",
+  "away": "Aston Villa",
+  "snapshot": "2026-08-23T12:50:00Z",
+  "books": {
+   "pinnacle": {
+    "home": 2.13,
+    "draw": 3.5,
+    "away": 3.66
+   },
+   "onexbet": {
+    "home": 2.17,
+    "draw": 3.51,
+    "away": 3.69
+   },
+   "betfair_ex_eu": {
+    "home": 2.18,
+    "draw": 3.6,
+    "away": 3.75
+   },
+   "codere_it": {
+    "home": 2.12,
+    "draw": 3.45,
+    "away": 3.45
+   },
+   "marathonbet": {
+    "home": 2.14,
+    "draw": 3.46,
+    "away": 3.64
+   },
+   "unibet_fr": {
+    "home": 2.15,
+    "draw": 3.5,
+    "away": 3.2
+   },
+   "williamhill": {
+    "home": 2.1,
+    "draw": 3.3,
+    "away": 3.4
+   },
+   "betclic_fr": {
+    "home": 2.05,
+    "draw": 3.43,
+    "away": 3.43
+   },
+   "sport888": {
+    "home": 2.1,
+    "draw": 3.3,
+    "away": 3.4
+   },
+   "tipico_de": {
+    "home": 2.1,
+    "draw": 3.6,
+    "away": 3.3
+   },
+   "winamax_de": {
+    "home": 2.05,
+    "draw": 3.55,
+    "away": 3.4
+   },
+   "winamax_fr": {
+    "home": 2.0,
+    "draw": 3.5,
+    "away": 3.35
+   },
+   "unibet_se": {
+    "home": 2.16,
+    "draw": 3.6,
+    "away": 3.55
+   },
+   "leovegas_se": {
+    "home": 2.1,
+    "draw": 3.45,
+    "away": 3.45
+   },
+   "unibet_nl": {
+    "home": 2.16,
+    "draw": 3.6,
+    "away": 3.55
+   },
+   "coolbet": {
+    "home": 2.14,
+    "draw": 3.56,
+    "away": 3.67
+   },
+   "everygame": {
+    "home": 2.1,
+    "draw": 3.45,
+    "away": 3.5
+   },
+   "betonlineag": {
+    "home": 2.13,
+    "draw": 3.48,
+    "away": 3.58
+   },
+   "nordicbet": {
+    "home": 2.12,
+    "draw": 3.35,
+    "away": 3.6
+   },
+   "betsson": {
+    "home": 2.12,
+    "draw": 3.35,
+    "away": 3.6
+   },
+   "pmu_fr": {
+    "home": 2.08,
+    "draw": 3.4,
+    "away": 3.35
+   },
+   "mybookieag": {
+    "home": 2.1,
+    "draw": 3.42,
+    "away": 3.42
+   },
+   "matchbook": {
+    "home": 2.18,
+    "draw": 3.6,
+    "away": 3.75
+   },
+   "gtbets": {
+    "home": 2.16,
+    "draw": 3.46,
+    "away": 3.32
+   },
+   "betanysports": {
+    "home": 2.13,
+    "draw": 3.48,
+    "away": 3.58
+   }
+  }
+ },
+ {
+  "event_id": "87c7c9bfd5e3072bded20c702f553c63",
+  "commence_time": "2026-08-23T13:00:00Z",
+  "home": "Manchester City",
+  "away": "Bournemouth",
+  "snapshot": "2026-08-23T12:50:00Z",
+  "books": {
+   "pinnacle": {
+    "home": 1.49,
+    "draw": 4.95,
+    "away": 6.6
+   },
+   "onexbet": {
+    "home": 1.5,
+    "draw": 4.98,
+    "away": 6.66
+   },
+   "codere_it": {
+    "home": 1.47,
+    "draw": 4.8,
+    "away": 6.0
+   },
+   "betfair_ex_eu": {
+    "home": 1.51,
+    "draw": 5.0,
+    "away": 7.2
+   },
+   "marathonbet": {
+    "home": 1.49,
+    "draw": 4.85,
+    "away": 6.45
+   },
+   "unibet_fr": {
+    "home": 1.41,
+    "draw": 4.8,
+    "away": 6.6
+   },
+   "williamhill": {
+    "home": 1.44,
+    "draw": 4.5,
+    "away": 5.8
+   },
+   "betclic_fr": {
+    "home": 1.44,
+    "draw": 4.8,
+    "away": 6.0
+   },
+   "sport888": {
+    "home": 1.44,
+    "draw": 4.5,
+    "away": 5.75
+   },
+   "tipico_de": {
+    "home": 1.45,
+    "draw": 4.9,
+    "away": 6.0
+   },
+   "winamax_de": {
+    "home": 1.45,
+    "draw": 4.8,
+    "away": 5.8
+   },
+   "winamax_fr": {
+    "home": 1.45,
+    "draw": 4.7,
+    "away": 5.8
+   },
+   "unibet_se": {
+    "home": 1.48,
+    "draw": 5.0,
+    "away": 6.5
+   },
+   "leovegas_se": {
+    "home": 1.44,
+    "draw": 4.8,
+    "away": 6.25
+   },
+   "unibet_nl": {
+    "home": 1.48,
+    "draw": 5.0,
+    "away": 6.5
+   },
+   "coolbet": {
+    "home": 1.5,
+    "draw": 4.9,
+    "away": 6.65
+   },
+   "everygame": {
+    "home": 1.45,
+    "draw": 4.75,
+    "away": 6.25
+   },
+   "betonlineag": {
+    "home": 1.48,
+    "draw": 4.85,
+    "away": 6.5
+   },
+   "nordicbet": {
+    "home": 1.46,
+    "draw": 4.5,
+    "away": 6.8
+   },
+   "betsson": {
+    "home": 1.46,
+    "draw": 4.5,
+    "away": 6.8
+   },
+   "pmu_fr": {
+    "home": 1.45,
+    "draw": 5.0,
+    "away": 6.1
+   },
+   "mybookieag": {
+    "home": 1.46,
+    "draw": 4.8,
+    "away": 6.0
+   },
+   "matchbook": {
+    "home": 1.51,
+    "draw": 4.9,
+    "away": 7.0
+   },
+   "gtbets": {
+    "home": 1.46,
+    "draw": 4.73,
+    "away": 6.17
+   },
+   "betanysports": {
+    "home": 1.48,
+    "draw": 4.85,
+    "away": 6.5
+   }
+  }
+ },
+ {
+  "event_id": "ea0bacc4c23f813c6af97ec9b306a850",
+  "commence_time": "2026-08-23T15:30:00Z",
+  "home": "Newcastle United",
+  "away": "Liverpool",
+  "snapshot": "2026-08-23T15:20:00Z",
+  "books": {
+   "pinnacle": {
+    "home": 3.77,
+    "draw": 3.94,
+    "away": 1.94
+   },
+   "onexbet": {
+    "home": 3.98,
+    "draw": 3.98,
+    "away": 1.95
+   },
+   "codere_it": {
+    "home": 3.7,
+    "draw": 4.0,
+    "away": 1.89
+   },
+   "betfair_ex_eu": {
+    "home": 4.1,
+    "draw": 4.0,
+    "away": 1.96
+   },
+   "marathonbet": {
+    "home": 3.92,
+    "draw": 3.92,
+    "away": 1.92
+   },
+   "unibet_fr": {
+    "home": 3.7,
+    "draw": 4.0,
+    "away": 1.83
+   },
+   "williamhill": {
+    "home": 3.75,
+    "draw": 3.7,
+    "away": 1.85
+   },
+   "betclic_fr": {
+    "home": 3.9,
+    "draw": 3.9,
+    "away": 1.82
+   },
+   "sport888": {
+    "home": 3.7,
+    "draw": 3.7,
+    "away": 1.85
+   },
+   "tipico_de": {
+    "home": 3.9,
+    "draw": 3.8,
+    "away": 1.85
+   },
+   "winamax_de": {
+    "home": 3.6,
+    "draw": 4.0,
+    "away": 1.84
+   },
+   "winamax_fr": {
+    "home": 3.55,
+    "draw": 4.0,
+    "away": 1.84
+   },
+   "unibet_se": {
+    "home": 4.0,
+    "draw": 4.0,
+    "away": 1.89
+   },
+   "leovegas_se": {
+    "home": 3.9,
+    "draw": 3.9,
+    "away": 1.85
+   },
+   "unibet_nl": {
+    "home": 4.0,
+    "draw": 4.0,
+    "away": 1.88
+   },
+   "coolbet": {
+    "home": 4.07,
+    "draw": 3.98,
+    "away": 1.91
+   },
+   "everygame": {
+    "home": 3.65,
+    "draw": 3.85,
+    "away": 1.91
+   },
+   "betonlineag": {
+    "home": 3.78,
+    "draw": 3.92,
+    "away": 1.94
+   },
+   "nordicbet": {
+    "home": 3.75,
+    "draw": 3.75,
+    "away": 1.92
+   },
+   "betsson": {
+    "home": 3.75,
+    "draw": 3.75,
+    "away": 1.92
+   },
+   "pmu_fr": {
+    "home": 3.8,
+    "draw": 3.8,
+    "away": 1.83
+   },
+   "mybookieag": {
+    "home": 3.7,
+    "draw": 3.95,
+    "away": 1.86
+   },
+   "matchbook": {
+    "home": 4.1,
+    "draw": 4.0,
+    "away": 1.96
+   },
+   "gtbets": {
+    "home": 3.96,
+    "draw": 3.77,
+    "away": 1.94
+   },
+   "betanysports": {
+    "home": 3.78,
+    "draw": 3.92,
+    "away": 1.94
+   }
+  }
+ },
+ {
+  "event_id": "4e4a813bf4218cc527e6f8ef2351170d",
+  "commence_time": "2026-08-24T19:00:00Z",
+  "home": "Fulham",
+  "away": "Chelsea",
+  "snapshot": "2026-08-24T18:50:00Z",
+  "books": {
+   "pinnacle": {
+    "home": 3.88,
+    "draw": 3.6,
+    "away": 2.05
+   },
+   "onexbet": {
+    "home": 3.77,
+    "draw": 3.63,
+    "away": 2.1
+   },
+   "codere_it": {
+    "home": 3.6,
+    "draw": 3.5,
+    "away": 2.05
+   },
+   "marathonbet": {
+    "home": 3.72,
+    "draw": 3.58,
+    "away": 2.07
+   },
+   "unibet_fr": {
+    "home": 3.8,
+    "draw": 3.6,
+    "away": 1.94
+   },
+   "williamhill": {
+    "home": 3.5,
+    "draw": 3.4,
+    "away": 2.0
+   },
+   "betclic_fr": {
+    "home": 3.75,
+    "draw": 3.55,
+    "away": 1.96
+   },
+   "betfair_ex_eu": {
+    "home": 3.95,
+    "draw": 3.65,
+    "away": 2.1
+   },
+   "sport888": {
+    "home": 3.5,
+    "draw": 3.3,
+    "away": 2.0
+   },
+   "tipico_de": {
+    "home": 3.6,
+    "draw": 3.6,
+    "away": 1.97
+   },
+   "winamax_de": {
+    "home": 3.45,
+    "draw": 3.55,
+    "away": 2.0
+   },
+   "winamax_fr": {
+    "home": 3.45,
+    "draw": 3.5,
+    "away": 2.0
+   },
+   "unibet_se": {
+    "home": 3.8,
+    "draw": 3.65,
+    "away": 2.07
+   },
+   "leovegas_se": {
+    "home": 3.65,
+    "draw": 3.5,
+    "away": 2.02
+   },
+   "unibet_nl": {
+    "home": 3.8,
+    "draw": 3.65,
+    "away": 2.07
+   },
+   "coolbet": {
+    "home": 3.9,
+    "draw": 3.61,
+    "away": 2.05
+   },
+   "everygame": {
+    "home": 3.6,
+    "draw": 3.45,
+    "away": 2.05
+   },
+   "betonlineag": {
+    "home": 3.75,
+    "draw": 3.55,
+    "away": 2.06
+   },
+   "nordicbet": {
+    "home": 3.75,
+    "draw": 3.5,
+    "away": 2.0
+   },
+   "betsson": {
+    "home": 3.75,
+    "draw": 3.5,
+    "away": 2.0
+   },
+   "pmu_fr": {
+    "home": 3.55,
+    "draw": 3.45,
+    "away": 2.0
+   },
+   "mybookieag": {
+    "home": 3.55,
+    "draw": 3.46,
+    "away": 2.04
+   },
+   "matchbook": {
+    "home": 4.0,
+    "draw": 3.6,
+    "away": 2.1
+   },
+   "gtbets": {
+    "home": 3.72,
+    "draw": 3.53,
+    "away": 1.99
+   },
+   "betanysports": {
+    "home": 3.8,
+    "draw": 3.5,
+    "away": 2.0
+   }
+  }
+ },
+ {
+  "event_id": "373cc6e2fb57f471cd2deab9a28a6edb",
+  "commence_time": "2026-08-28T19:00:00Z",
+  "home": "Crystal Palace",
+  "away": "Manchester City",
+  "snapshot": "2026-08-28T18:50:00Z",
+  "books": {
+   "winamax_fr": {
+    "home": 4.7,
+    "draw": 4.2,
+    "away": 1.6
+   },
+   "sport888": {
+    "home": 5.0,
+    "draw": 3.9,
+    "away": 1.61
+   },
+   "gtbets": {
+    "home": 4.86,
+    "draw": 3.97,
+    "away": 1.62
+   },
+   "winamax_de": {
+    "home": 4.8,
+    "draw": 4.2,
+    "away": 1.6
+   },
+   "mybookieag": {
+    "home": 5.0,
+    "draw": 4.1,
+    "away": 1.62
+   },
+   "unibet_fr": {
+    "home": 4.9,
+    "draw": 4.0,
+    "away": 1.6
+   },
+   "betclic_fr": {
+    "home": 5.25,
+    "draw": 4.15,
+    "away": 1.58
+   },
+   "onexbet": {
+    "home": 5.48,
+    "draw": 4.17,
+    "away": 1.69
+   },
+   "williamhill": {
+    "home": 5.0,
+    "draw": 3.9,
+    "away": 1.62
+   },
+   "betfair_ex_eu": {
+    "home": 5.5,
+    "draw": 4.3,
+    "away": 1.69
+   },
+   "matchbook": {
+    "home": 5.6,
+    "draw": 4.3,
+    "away": 1.69
+   },
+   "marathonbet": {
+    "home": 5.35,
+    "draw": 4.1,
+    "away": 1.67
+   },
+   "betsson": {
+    "home": 5.1,
+    "draw": 4.05,
+    "away": 1.65
+   },
+   "nordicbet": {
+    "home": 5.1,
+    "draw": 4.05,
+    "away": 1.65
+   },
+   "pinnacle": {
+    "home": 5.55,
+    "draw": 4.15,
+    "away": 1.65
+   },
+   "leovegas_se": {
+    "home": 5.3,
+    "draw": 4.1,
+    "away": 1.6
+   },
+   "unibet_se": {
+    "home": 5.6,
+    "draw": 4.3,
+    "away": 1.64
+   },
+   "unibet_nl": {
+    "home": 5.6,
+    "draw": 4.3,
+    "away": 1.63
+   },
+   "pmu_fr": {
+    "home": 5.2,
+    "draw": 4.0,
+    "away": 1.57
+   },
+   "everygame": {
+    "home": 5.25,
+    "draw": 4.0,
+    "away": 1.62
+   },
+   "tipico_de": {
+    "home": 5.2,
+    "draw": 4.1,
+    "away": 1.6
+   },
+   "coolbet": {
+    "home": 5.56,
+    "draw": 4.27,
+    "away": 1.65
+   },
+   "codere_it": {
+    "home": 5.0,
+    "draw": 4.2,
+    "away": 1.63
+   },
+   "betanysports": {
+    "home": 5.35,
+    "draw": 4.23,
+    "away": 1.63
+   }
+  }
+ },
+ {
+  "event_id": "feafb731d0307bc91a58e18187aa2eab",
+  "commence_time": "2026-08-29T11:30:00Z",
+  "home": "Liverpool",
+  "away": "Nottingham Forest",
+  "snapshot": "2026-08-29T11:20:00Z",
+  "books": {
+   "winamax_fr": {
+    "home": 1.46,
+    "draw": 4.9,
+    "away": 5.4
+   },
+   "mybookieag": {
+    "home": 1.48,
+    "draw": 4.8,
+    "away": 5.8
+   },
+   "onexbet": {
+    "home": 1.51,
+    "draw": 4.93,
+    "away": 6.55
+   },
+   "unibet_fr": {
+    "home": 1.43,
+    "draw": 4.7,
+    "away": 6.0
+   },
+   "winamax_de": {
+    "home": 1.47,
+    "draw": 4.9,
+    "away": 5.5
+   },
+   "betclic_fr": {
+    "home": 1.42,
+    "draw": 4.9,
+    "away": 6.0
+   },
+   "sport888": {
+    "home": 1.44,
+    "draw": 4.5,
+    "away": 6.0
+   },
+   "williamhill": {
+    "home": 1.44,
+    "draw": 4.6,
+    "away": 6.0
+   },
+   "betfair_ex_eu": {
+    "home": 1.52,
+    "draw": 5.0,
+    "away": 7.0
+   },
+   "betsson": {
+    "home": 1.47,
+    "draw": 4.55,
+    "away": 6.6
+   },
+   "nordicbet": {
+    "home": 1.47,
+    "draw": 4.55,
+    "away": 6.6
+   },
+   "marathonbet": {
+    "home": 1.49,
+    "draw": 4.85,
+    "away": 6.45
+   },
+   "matchbook": {
+    "home": 1.52,
+    "draw": 5.0,
+    "away": 7.0
+   },
+   "pinnacle": {
+    "home": 1.48,
+    "draw": 4.95,
+    "away": 6.75
+   },
+   "unibet_nl": {
+    "home": 1.47,
+    "draw": 4.9,
+    "away": 7.0
+   },
+   "unibet_se": {
+    "home": 1.45,
+    "draw": 4.9,
+    "away": 7.0
+   },
+   "leovegas_se": {
+    "home": 1.43,
+    "draw": 4.7,
+    "away": 6.75
+   },
+   "pmu_fr": {
+    "home": 1.42,
+    "draw": 4.6,
+    "away": 6.5
+   },
+   "gtbets": {
+    "home": 1.5,
+    "draw": 4.82,
+    "away": 6.07
+   },
+   "everygame": {
+    "home": 1.45,
+    "draw": 4.6,
+    "away": 6.25
+   },
+   "tipico_de": {
+    "home": 1.45,
+    "draw": 4.9,
+    "away": 6.0
+   },
+   "betonlineag": {
+    "home": 1.47,
+    "draw": 4.9,
+    "away": 6.75
+   },
+   "codere_it": {
+    "home": 1.47,
+    "draw": 4.9,
+    "away": 6.2
+   },
+   "coolbet": {
+    "home": 1.49,
+    "draw": 4.95,
+    "away": 6.75
+   },
+   "betanysports": {
+    "home": 1.47,
+    "draw": 4.9,
+    "away": 6.75
+   }
+  }
+ },
+ {
+  "event_id": "ff4818bd73fa63c0a1e4c98e50c7a2e5",
+  "commence_time": "2026-08-29T14:00:00Z",
+  "home": "Bournemouth",
+  "away": "Everton",
+  "snapshot": "2026-08-29T13:50:00Z",
+  "books": {
+   "onexbet": {
+    "home": 2.23,
+    "draw": 3.6,
+    "away": 3.48
+   },
+   "betfair_ex_eu": {
+    "home": 2.28,
+    "draw": 3.6,
+    "away": 3.5
+   },
+   "nordicbet": {
+    "home": 2.18,
+    "draw": 3.4,
+    "away": 3.3
+   },
+   "betsson": {
+    "home": 2.18,
+    "draw": 3.4,
+    "away": 3.3
+   },
+   "betclic_fr": {
+    "home": 2.13,
+    "draw": 3.43,
+    "away": 3.23
+   },
+   "unibet_fr": {
+    "home": 2.1,
+    "draw": 3.4,
+    "away": 3.2
+   },
+   "winamax_fr": {
+    "home": 2.1,
+    "draw": 3.5,
+    "away": 3.15
+   },
+   "winamax_de": {
+    "home": 2.1,
+    "draw": 3.55,
+    "away": 3.2
+   },
+   "codere_it": {
+    "home": 2.18,
+    "draw": 3.45,
+    "away": 3.3
+   },
+   "matchbook": {
+    "home": 2.28,
+    "draw": 3.55,
+    "away": 3.5
+   },
+   "mybookieag": {
+    "home": 2.18,
+    "draw": 3.42,
+    "away": 3.22
+   },
+   "sport888": {
+    "home": 2.15,
+    "draw": 3.3,
+    "away": 3.25
+   },
+   "williamhill": {
+    "home": 2.15,
+    "draw": 3.3,
+    "away": 3.3
+   },
+   "marathonbet": {
+    "home": 2.2,
+    "draw": 3.54,
+    "away": 3.4
+   },
+   "everygame": {
+    "home": 2.15,
+    "draw": 3.45,
+    "away": 3.35
+   },
+   "pinnacle": {
+    "home": 2.22,
+    "draw": 3.53,
+    "away": 3.39
+   },
+   "leovegas_se": {
+    "home": 2.1,
+    "draw": 3.4,
+    "away": 3.5
+   },
+   "unibet_nl": {
+    "home": 2.16,
+    "draw": 3.5,
+    "away": 3.6
+   },
+   "unibet_se": {
+    "home": 2.16,
+    "draw": 3.5,
+    "away": 3.6
+   },
+   "pmu_fr": {
+    "home": 2.08,
+    "draw": 3.35,
+    "away": 3.4
+   },
+   "gtbets": {
+    "home": 2.16,
+    "draw": 3.57,
+    "away": 3.37
+   },
+   "tipico_de": {
+    "home": 2.15,
+    "draw": 3.4,
+    "away": 3.3
+   },
+   "betonlineag": {
+    "home": 2.2,
+    "draw": 3.52,
+    "away": 3.38
+   },
+   "coolbet": {
+    "home": 2.22,
+    "draw": 3.62,
+    "away": 3.4
+   },
+   "betanysports": {
+    "home": 2.2,
+    "draw": 3.52,
+    "away": 3.38
+   }
+  }
+ },
+ {
+  "event_id": "374dd92785cc06d6514d275515219c44",
+  "commence_time": "2026-08-29T14:00:00Z",
+  "home": "Coventry City",
+  "away": "Hull City",
+  "snapshot": "2026-08-29T13:50:00Z",
+  "books": {
+   "winamax_fr": {
+    "home": 1.7,
+    "draw": 3.9,
+    "away": 4.3
+   },
+   "betclic_fr": {
+    "home": 1.7,
+    "draw": 3.8,
+    "away": 4.55
+   },
+   "mybookieag": {
+    "home": 1.75,
+    "draw": 3.75,
+    "away": 4.5
+   },
+   "onexbet": {
+    "home": 1.81,
+    "draw": 3.88,
+    "away": 4.88
+   },
+   "winamax_de": {
+    "home": 1.72,
+    "draw": 3.9,
+    "away": 4.3
+   },
+   "betsson": {
+    "home": 1.75,
+    "draw": 3.65,
+    "away": 4.85
+   },
+   "nordicbet": {
+    "home": 1.75,
+    "draw": 3.65,
+    "away": 4.85
+   },
+   "unibet_fr": {
+    "home": 1.7,
+    "draw": 3.7,
+    "away": 4.4
+   },
+   "everygame": {
+    "home": 1.73,
+    "draw": 3.75,
+    "away": 4.75
+   },
+   "sport888": {
+    "home": 1.75,
+    "draw": 3.5,
+    "away": 4.5
+   },
+   "williamhill": {
+    "home": 1.75,
+    "draw": 3.5,
+    "away": 4.6
+   },
+   "betfair_ex_eu": {
+    "home": 1.78,
+    "draw": 3.95,
+    "away": 5.2
+   },
+   "matchbook": {
+    "home": 1.78,
+    "draw": 3.95,
+    "away": 5.1
+   },
+   "marathonbet": {
+    "home": 1.74,
+    "draw": 3.86,
+    "away": 5.05
+   },
+   "pinnacle": {
+    "home": 1.78,
+    "draw": 3.85,
+    "away": 5.0
+   },
+   "pmu_fr": {
+    "home": 1.72,
+    "draw": 3.6,
+    "away": 4.7
+   },
+   "unibet_nl": {
+    "home": 1.78,
+    "draw": 3.8,
+    "away": 5.0
+   },
+   "leovegas_se": {
+    "home": 1.74,
+    "draw": 3.65,
+    "away": 4.8
+   },
+   "unibet_se": {
+    "home": 1.78,
+    "draw": 3.8,
+    "away": 5.0
+   },
+   "gtbets": {
+    "home": 1.79,
+    "draw": 3.74,
+    "away": 4.72
+   },
+   "tipico_de": {
+    "home": 1.72,
+    "draw": 3.9,
+    "away": 4.5
+   },
+   "betonlineag": {
+    "home": 1.76,
+    "draw": 3.76,
+    "away": 5.0
+   },
+   "codere_it": {
+    "home": 1.75,
+    "draw": 3.85,
+    "away": 4.6
+   },
+   "coolbet": {
+    "home": 1.8,
+    "draw": 3.81,
+    "away": 4.92
+   },
+   "betanysports": {
+    "home": 1.76,
+    "draw": 3.76,
+    "away": 5.0
+   }
+  }
+ },
+ {
+  "event_id": "7a8746a45dc76378359a7d9cc5474bc8",
+  "commence_time": "2026-08-29T16:30:00Z",
+  "home": "Tottenham Hotspur",
+  "away": "Newcastle United",
+  "snapshot": "2026-08-29T16:20:00Z",
+  "books": {
+   "onexbet": {
+    "home": 2.23,
+    "draw": 3.81,
+    "away": 3.29
+   },
+   "betfair_ex_eu": {
+    "home": 2.28,
+    "draw": 3.8,
+    "away": 3.25
+   },
+   "betsson": {
+    "home": 2.15,
+    "draw": 3.55,
+    "away": 3.25
+   },
+   "nordicbet": {
+    "home": 2.15,
+    "draw": 3.55,
+    "away": 3.25
+   },
+   "unibet_fr": {
+    "home": 2.1,
+    "draw": 3.6,
+    "away": 3.0
+   },
+   "winamax_fr": {
+    "home": 2.1,
+    "draw": 3.75,
+    "away": 2.95
+   },
+   "betclic_fr": {
+    "home": 2.12,
+    "draw": 3.68,
+    "away": 3.05
+   },
+   "winamax_de": {
+    "home": 2.15,
+    "draw": 3.8,
+    "away": 2.95
+   },
+   "codere_it": {
+    "home": 2.19,
+    "draw": 3.7,
+    "away": 3.1
+   },
+   "mybookieag": {
+    "home": 2.18,
+    "draw": 3.7,
+    "away": 3.04
+   },
+   "matchbook": {
+    "home": 2.26,
+    "draw": 3.8,
+    "away": 3.25
+   },
+   "sport888": {
+    "home": 2.15,
+    "draw": 3.5,
+    "away": 3.0
+   },
+   "williamhill": {
+    "home": 2.15,
+    "draw": 3.6,
+    "away": 3.0
+   },
+   "marathonbet": {
+    "home": 2.19,
+    "draw": 3.78,
+    "away": 3.22
+   },
+   "everygame": {
+    "home": 2.15,
+    "draw": 3.75,
+    "away": 3.1
+   },
+   "pinnacle": {
+    "home": 2.19,
+    "draw": 3.8,
+    "away": 3.25
+   },
+   "unibet_se": {
+    "home": 2.23,
+    "draw": 3.75,
+    "away": 3.25
+   },
+   "leovegas_se": {
+    "home": 2.17,
+    "draw": 3.6,
+    "away": 3.15
+   },
+   "unibet_nl": {
+    "home": 2.23,
+    "draw": 3.75,
+    "away": 3.25
+   },
+   "pmu_fr": {
+    "home": 2.14,
+    "draw": 3.55,
+    "away": 3.1
+   },
+   "gtbets": {
+    "home": 2.22,
+    "draw": 3.61,
+    "away": 3.08
+   },
+   "tipico_de": {
+    "home": 2.1,
+    "draw": 3.7,
+    "away": 3.2
+   },
+   "betonlineag": {
+    "home": 2.24,
+    "draw": 3.8,
+    "away": 3.08
+   },
+   "coolbet": {
+    "home": 2.22,
+    "draw": 3.75,
+    "away": 3.25
+   },
+   "betanysports": {
+    "home": 2.24,
+    "draw": 3.8,
+    "away": 3.08
+   }
+  }
+ },
+ {
+  "event_id": "e479c08421b8549c6959c2b84f6f3f79",
+  "commence_time": "2026-08-30T13:00:00Z",
+  "home": "Leeds United",
+  "away": "Brentford",
+  "snapshot": "2026-08-30T12:50:00Z",
+  "books": {
+   "onexbet": {
+    "home": 2.92,
+    "draw": 3.48,
+    "away": 2.59
+   },
+   "betfair_ex_eu": {
+    "home": 2.92,
+    "draw": 3.55,
+    "away": 2.62
+   },
+   "betsson": {
+    "home": 2.82,
+    "draw": 3.35,
+    "away": 2.5
+   },
+   "nordicbet": {
+    "home": 2.82,
+    "draw": 3.35,
+    "away": 2.5
+   },
+   "unibet_fr": {
+    "home": 2.75,
+    "draw": 3.3,
+    "away": 2.4
+   },
+   "winamax_fr": {
+    "home": 2.7,
+    "draw": 3.4,
+    "away": 2.4
+   },
+   "betclic_fr": {
+    "home": 2.78,
+    "draw": 3.38,
+    "away": 2.42
+   },
+   "winamax_de": {
+    "home": 2.7,
+    "draw": 3.45,
+    "away": 2.45
+   },
+   "codere_it": {
+    "home": 2.8,
+    "draw": 3.4,
+    "away": 2.5
+   },
+   "mybookieag": {
+    "home": 2.77,
+    "draw": 3.38,
+    "away": 2.48
+   },
+   "sport888": {
+    "home": 2.75,
+    "draw": 3.25,
+    "away": 2.45
+   },
+   "williamhill": {
+    "home": 2.75,
+    "draw": 3.25,
+    "away": 2.5
+   },
+   "marathonbet": {
+    "home": 2.88,
+    "draw": 3.44,
+    "away": 2.54
+   },
+   "everygame": {
+    "home": 2.8,
+    "draw": 3.4,
+    "away": 2.5
+   },
+   "pinnacle": {
+    "home": 2.88,
+    "draw": 3.46,
+    "away": 2.55
+   },
+   "pmu_fr": {
+    "home": 2.85,
+    "draw": 3.3,
+    "away": 2.38
+   },
+   "unibet_nl": {
+    "home": 3.0,
+    "draw": 3.5,
+    "away": 2.5
+   },
+   "unibet_se": {
+    "home": 2.95,
+    "draw": 3.45,
+    "away": 2.48
+   },
+   "leovegas_se": {
+    "home": 2.88,
+    "draw": 3.35,
+    "away": 2.43
+   },
+   "tipico_de": {
+    "home": 2.8,
+    "draw": 3.4,
+    "away": 2.45
+   },
+   "matchbook": {
+    "home": 2.92,
+    "draw": 3.55,
+    "away": 2.64
+   },
+   "gtbets": {
+    "home": 2.84,
+    "draw": 3.44,
+    "away": 2.57
+   },
+   "coolbet": {
+    "home": 2.91,
+    "draw": 3.52,
+    "away": 2.54
+   },
+   "betonlineag": {
+    "home": 2.83,
+    "draw": 3.44,
+    "away": 2.56
+   },
+   "betanysports": {
+    "home": 2.83,
+    "draw": 3.44,
+    "away": 2.56
+   }
+  }
+ },
+ {
+  "event_id": "6a4c946a61ddb5ef4703eb4528ccdef1",
+  "commence_time": "2026-08-30T13:00:00Z",
+  "home": "Chelsea",
+  "away": "Brighton and Hove Albion",
+  "snapshot": "2026-08-30T12:50:00Z",
+  "books": {
+   "onexbet": {
+    "home": 1.91,
+    "draw": 3.98,
+    "away": 4.16
+   },
+   "betfair_ex_eu": {
+    "home": 1.91,
+    "draw": 4.0,
+    "away": 4.3
+   },
+   "nordicbet": {
+    "home": 1.85,
+    "draw": 3.75,
+    "away": 4.1
+   },
+   "betsson": {
+    "home": 1.85,
+    "draw": 3.75,
+    "away": 4.1
+   },
+   "unibet_fr": {
+    "home": 1.78,
+    "draw": 3.8,
+    "away": 3.9
+   },
+   "betclic_fr": {
+    "home": 1.8,
+    "draw": 3.9,
+    "away": 3.9
+   },
+   "codere_it": {
+    "home": 1.88,
+    "draw": 3.85,
+    "away": 3.85
+   },
+   "winamax_fr": {
+    "home": 1.82,
+    "draw": 3.9,
+    "away": 3.75
+   },
+   "winamax_de": {
+    "home": 1.84,
+    "draw": 3.9,
+    "away": 3.75
+   },
+   "mybookieag": {
+    "home": 1.87,
+    "draw": 3.8,
+    "away": 3.8
+   },
+   "sport888": {
+    "home": 1.85,
+    "draw": 3.6,
+    "away": 3.9
+   },
+   "williamhill": {
+    "home": 1.85,
+    "draw": 3.7,
+    "away": 3.8
+   },
+   "marathonbet": {
+    "home": 1.88,
+    "draw": 3.92,
+    "away": 4.1
+   },
+   "everygame": {
+    "home": 1.83,
+    "draw": 3.75,
+    "away": 4.1
+   },
+   "pinnacle": {
+    "home": 1.91,
+    "draw": 3.92,
+    "away": 4.09
+   },
+   "unibet_nl": {
+    "home": 1.85,
+    "draw": 4.0,
+    "away": 4.3
+   },
+   "leovegas_se": {
+    "home": 1.81,
+    "draw": 3.85,
+    "away": 4.1
+   },
+   "unibet_se": {
+    "home": 1.83,
+    "draw": 3.95,
+    "away": 4.25
+   },
+   "pmu_fr": {
+    "home": 1.79,
+    "draw": 3.75,
+    "away": 4.0
+   },
+   "tipico_de": {
+    "home": 1.83,
+    "draw": 3.8,
+    "away": 4.0
+   },
+   "matchbook": {
+    "home": 1.93,
+    "draw": 3.95,
+    "away": 4.2
+   },
+   "gtbets": {
+    "home": 1.85,
+    "draw": 3.95,
+    "away": 3.84
+   },
+   "coolbet": {
+    "home": 1.9,
+    "draw": 3.96,
+    "away": 4.12
+   },
+   "betonlineag": {
+    "home": 1.88,
+    "draw": 3.85,
+    "away": 4.1
+   },
+   "betanysports": {
+    "home": 1.87,
+    "draw": 3.85,
+    "away": 4.0
+   }
+  }
+ },
+ {
+  "event_id": "9becb395ad634de55caec620f9d713fa",
+  "commence_time": "2026-08-30T13:00:00Z",
+  "home": "Sunderland",
+  "away": "Fulham",
+  "snapshot": "2026-08-30T12:50:00Z",
+  "books": {
+   "nordicbet": {
+    "home": 2.25,
+    "draw": 3.25,
+    "away": 3.35
+   },
+   "sport888": {
+    "home": 2.25,
+    "draw": 3.1,
+    "away": 3.2
+   },
+   "onexbet": {
+    "home": 2.34,
+    "draw": 3.4,
+    "away": 3.4
+   },
+   "winamax_de": {
+    "home": 2.2,
+    "draw": 3.35,
+    "away": 3.2
+   },
+   "williamhill": {
+    "home": 2.25,
+    "draw": 3.2,
+    "away": 3.2
+   },
+   "betsson": {
+    "home": 2.25,
+    "draw": 3.25,
+    "away": 3.35
+   },
+   "winamax_fr": {
+    "home": 2.15,
+    "draw": 3.3,
+    "away": 3.15
+   },
+   "unibet_fr": {
+    "home": 2.15,
+    "draw": 3.3,
+    "away": 3.2
+   },
+   "betclic_fr": {
+    "home": 2.18,
+    "draw": 3.3,
+    "away": 3.22
+   },
+   "mybookieag": {
+    "home": 2.25,
+    "draw": 3.28,
+    "away": 3.22
+   },
+   "betfair_ex_eu": {
+    "home": 2.34,
+    "draw": 3.4,
+    "away": 3.5
+   },
+   "marathonbet": {
+    "home": 2.29,
+    "draw": 3.35,
+    "away": 3.38
+   },
+   "pinnacle": {
+    "home": 2.29,
+    "draw": 3.37,
+    "away": 3.39
+   },
+   "leovegas_se": {
+    "home": 2.23,
+    "draw": 3.3,
+    "away": 3.25
+   },
+   "unibet_nl": {
+    "home": 2.28,
+    "draw": 3.45,
+    "away": 3.4
+   },
+   "unibet_se": {
+    "home": 2.28,
+    "draw": 3.45,
+    "away": 3.4
+   },
+   "pmu_fr": {
+    "home": 2.2,
+    "draw": 3.25,
+    "away": 3.2
+   },
+   "everygame": {
+    "home": 2.2,
+    "draw": 3.35,
+    "away": 3.3
+   },
+   "tipico_de": {
+    "home": 2.25,
+    "draw": 3.3,
+    "away": 3.2
+   },
+   "matchbook": {
+    "home": 2.34,
+    "draw": 3.4,
+    "away": 3.5
+   },
+   "codere_it": {
+    "home": 2.27,
+    "draw": 3.3,
+    "away": 3.25
+   },
+   "gtbets": {
+    "home": 2.37,
+    "draw": 3.31,
+    "away": 3.2
+   },
+   "coolbet": {
+    "home": 2.32,
+    "draw": 3.38,
+    "away": 3.4
+   },
+   "betonlineag": {
+    "home": 2.32,
+    "draw": 3.3,
+    "away": 3.32
+   },
+   "betanysports": {
+    "home": 2.32,
+    "draw": 3.3,
+    "away": 3.32
+   }
+  }
+ },
+ {
+  "event_id": "5759167055d94ba38e145ab92188abbf",
+  "commence_time": "2026-08-30T15:30:00Z",
+  "home": "Manchester United",
+  "away": "Ipswich Town",
+  "snapshot": "2026-08-30T15:20:00Z",
+  "books": {
+   "winamax_fr": {
+    "home": 1.35,
+    "draw": 5.4,
+    "away": 6.75
+   },
+   "betclic_fr": {
+    "home": 1.32,
+    "draw": 5.5,
+    "away": 8.0
+   },
+   "mybookieag": {
+    "home": 1.36,
+    "draw": 5.4,
+    "away": 7.2
+   },
+   "onexbet": {
+    "home": 1.4,
+    "draw": 5.48,
+    "away": 8.3
+   },
+   "winamax_de": {
+    "home": 1.35,
+    "draw": 5.4,
+    "away": 7.0
+   },
+   "betsson": {
+    "home": 1.38,
+    "draw": 5.05,
+    "away": 7.6
+   },
+   "nordicbet": {
+    "home": 1.38,
+    "draw": 5.05,
+    "away": 7.6
+   },
+   "unibet_fr": {
+    "home": 1.32,
+    "draw": 5.4,
+    "away": 7.3
+   },
+   "sport888": {
+    "home": 1.33,
+    "draw": 5.0,
+    "away": 7.5
+   },
+   "williamhill": {
+    "home": 1.36,
+    "draw": 5.0,
+    "away": 7.5
+   },
+   "betfair_ex_eu": {
+    "home": 1.39,
+    "draw": 5.7,
+    "away": 9.0
+   },
+   "marathonbet": {
+    "home": 1.38,
+    "draw": 5.4,
+    "away": 8.2
+   },
+   "pinnacle": {
+    "home": 1.37,
+    "draw": 5.5,
+    "away": 8.6
+   },
+   "leovegas_se": {
+    "home": 1.3,
+    "draw": 5.5,
+    "away": 9.0
+   },
+   "unibet_nl": {
+    "home": 1.33,
+    "draw": 5.8,
+    "away": 9.5
+   },
+   "unibet_se": {
+    "home": 1.34,
+    "draw": 5.8,
+    "away": 9.5
+   },
+   "pmu_fr": {
+    "home": 1.3,
+    "draw": 5.4,
+    "away": 8.5
+   },
+   "everygame": {
+    "home": 1.36,
+    "draw": 5.25,
+    "away": 8.0
+   },
+   "tipico_de": {
+    "home": 1.33,
+    "draw": 5.5,
+    "away": 7.8
+   },
+   "matchbook": {
+    "home": 1.39,
+    "draw": 5.6,
+    "away": 9.0
+   },
+   "codere_it": {
+    "home": 1.37,
+    "draw": 5.6,
+    "away": 7.4
+   },
+   "gtbets": {
+    "home": 1.36,
+    "draw": 5.21,
+    "away": 7.93
+   },
+   "coolbet": {
+    "home": 1.38,
+    "draw": 5.45,
+    "away": 8.9
+   },
+   "betonlineag": {
+    "home": 1.37,
+    "draw": 5.35,
+    "away": 8.65
+   },
+   "betanysports": {
+    "home": 1.37,
+    "draw": 5.35,
+    "away": 8.65
+   }
+  }
+ },
+ {
+  "event_id": "2c49e9d1ef855f62962b915e773f906d",
+  "commence_time": "2026-08-31T19:00:00Z",
+  "home": "Aston Villa",
+  "away": "Arsenal",
+  "snapshot": "2026-08-31T18:50:00Z",
+  "books": {
+   "betsson": {
+    "home": 6.4,
+    "draw": 4.3,
+    "away": 1.5
+   },
+   "onexbet": {
+    "home": 7.01,
+    "draw": 4.62,
+    "away": 1.52
+   },
+   "nordicbet": {
+    "home": 6.4,
+    "draw": 4.3,
+    "away": 1.5
+   },
+   "betfair_ex_eu": {
+    "home": 7.4,
+    "draw": 4.8,
+    "away": 1.52
+   },
+   "unibet_fr": {
+    "home": 6.7,
+    "draw": 4.6,
+    "away": 1.44
+   },
+   "betclic_fr": {
+    "home": 6.5,
+    "draw": 4.55,
+    "away": 1.45
+   },
+   "codere_it": {
+    "home": 6.4,
+    "draw": 4.6,
+    "away": 1.48
+   },
+   "winamax_fr": {
+    "home": 5.8,
+    "draw": 4.4,
+    "away": 1.48
+   },
+   "mybookieag": {
+    "home": 6.3,
+    "draw": 4.5,
+    "away": 1.48
+   },
+   "winamax_de": {
+    "home": 5.9,
+    "draw": 4.5,
+    "away": 1.49
+   },
+   "marathonbet": {
+    "home": 6.9,
+    "draw": 4.55,
+    "away": 1.5
+   },
+   "pinnacle": {
+    "home": 7.25,
+    "draw": 4.65,
+    "away": 1.48
+   },
+   "sport888": {
+    "home": 6.5,
+    "draw": 4.2,
+    "away": 1.44
+   },
+   "williamhill": {
+    "home": 6.5,
+    "draw": 4.33,
+    "away": 1.44
+   },
+   "unibet_se": {
+    "home": 6.75,
+    "draw": 4.4,
+    "away": 1.54
+   },
+   "leovegas_se": {
+    "home": 6.5,
+    "draw": 4.2,
+    "away": 1.5
+   },
+   "unibet_nl": {
+    "home": 6.75,
+    "draw": 4.4,
+    "away": 1.53
+   },
+   "pmu_fr": {
+    "home": 6.25,
+    "draw": 4.1,
+    "away": 1.49
+   },
+   "tipico_de": {
+    "home": 6.5,
+    "draw": 4.6,
+    "away": 1.45
+   },
+   "coolbet": {
+    "home": 7.25,
+    "draw": 4.7,
+    "away": 1.49
+   },
+   "everygame": {
+    "home": 6.75,
+    "draw": 4.5,
+    "away": 1.45
+   },
+   "betanysports": {
+    "home": 7.0,
+    "draw": 4.45,
+    "away": 1.5
+   },
+   "matchbook": {
+    "home": 7.4,
+    "draw": 4.7,
+    "away": 1.52
+   },
+   "gtbets": {
+    "home": 6.39,
+    "draw": 4.43,
+    "away": 1.53
+   },
+   "betonlineag": {
+    "home": 7.0,
+    "draw": 4.45,
+    "away": 1.5
+   }
+  }
+ },
+ {
+  "event_id": "625c096fabb6047cbeb082dab9affce4",
+  "commence_time": "2026-09-04T19:00:00Z",
+  "home": "Ipswich Town",
+  "away": "Liverpool",
+  "snapshot": "2026-09-04T18:50:00Z",
+  "books": {
+   "onexbet": {
+    "home": 5.18,
+    "draw": 4.57,
+    "away": 1.66
+   },
+   "codere_it": {
+    "home": 4.9,
+    "draw": 4.4,
+    "away": 1.62
+   },
+   "unibet_fr": {
+    "home": 4.9,
+    "draw": 4.5,
+    "away": 1.54
+   },
+   "betclic_fr": {
+    "home": 5.0,
+    "draw": 4.4,
+    "away": 1.56
+   },
+   "mybookieag": {
+    "home": 4.8,
+    "draw": 4.4,
+    "away": 1.61
+   },
+   "winamax_fr": {
+    "home": 4.7,
+    "draw": 4.4,
+    "away": 1.56
+   },
+   "winamax_de": {
+    "home": 4.7,
+    "draw": 4.5,
+    "away": 1.58
+   },
+   "tipico_de": {
+    "home": 5.2,
+    "draw": 4.3,
+    "away": 1.57
+   },
+   "betfair_ex_eu": {
+    "home": 5.4,
+    "draw": 4.5,
+    "away": 1.67
+   },
+   "sport888": {
+    "home": 4.6,
+    "draw": 4.4,
+    "away": 1.57
+   },
+   "williamhill": {
+    "home": 4.6,
+    "draw": 4.5,
+    "away": 1.6
+   },
+   "marathonbet": {
+    "home": 5.1,
+    "draw": 4.5,
+    "away": 1.63
+   },
+   "nordicbet": {
+    "home": 5.0,
+    "draw": 4.25,
+    "away": 1.62
+   },
+   "betsson": {
+    "home": 5.1,
+    "draw": 4.2,
+    "away": 1.62
+   },
+   "pinnacle": {
+    "home": 5.15,
+    "draw": 4.45,
+    "away": 1.65
+   },
+   "leovegas_se": {
+    "home": 5.25,
+    "draw": 4.25,
+    "away": 1.57
+   },
+   "pmu_fr": {
+    "home": 5.1,
+    "draw": 4.2,
+    "away": 1.56
+   },
+   "unibet_se": {
+    "home": 5.5,
+    "draw": 4.4,
+    "away": 1.62
+   },
+   "unibet_nl": {
+    "home": 5.5,
+    "draw": 4.4,
+    "away": 1.62
+   },
+   "matchbook": {
+    "home": 5.4,
+    "draw": 4.5,
+    "away": 1.67
+   },
+   "gtbets": {
+    "home": 4.82,
+    "draw": 4.43,
+    "away": 1.58
+   },
+   "everygame": {
+    "home": 5.0,
+    "draw": 4.33,
+    "away": 1.6
+   },
+   "coolbet": {
+    "home": 5.3,
+    "draw": 4.48,
+    "away": 1.64
+   },
+   "betonlineag": {
+    "home": 5.1,
+    "draw": 4.5,
+    "away": 1.62
+   },
+   "betanysports": {
+    "home": 5.1,
+    "draw": 4.5,
+    "away": 1.62
+   }
+  }
+ },
+ {
+  "event_id": "686358c484cc44fe8e617674c335d531",
+  "commence_time": "2026-09-05T11:30:00Z",
+  "home": "Newcastle United",
+  "away": "Bournemouth",
+  "snapshot": "2026-09-05T11:20:00Z",
+  "books": {
+   "onexbet": {
+    "home": 2.27,
+    "draw": 3.69,
+    "away": 3.29
+   },
+   "winamax_fr": {
+    "home": 2.1,
+    "draw": 3.55,
+    "away": 3.1
+   },
+   "winamax_de": {
+    "home": 2.1,
+    "draw": 3.6,
+    "away": 3.15
+   },
+   "betclic_fr": {
+    "home": 2.07,
+    "draw": 3.58,
+    "away": 3.25
+   },
+   "codere_it": {
+    "home": 2.13,
+    "draw": 3.6,
+    "away": 3.3
+   },
+   "mybookieag": {
+    "home": 2.12,
+    "draw": 3.55,
+    "away": 3.26
+   },
+   "unibet_fr": {
+    "home": 2.05,
+    "draw": 3.6,
+    "away": 3.2
+   },
+   "betfair_ex_eu": {
+    "home": 2.22,
+    "draw": 3.85,
+    "away": 3.4
+   },
+   "tipico_de": {
+    "home": 2.05,
+    "draw": 3.6,
+    "away": 3.4
+   },
+   "sport888": {
+    "home": 2.1,
+    "draw": 3.4,
+    "away": 3.1
+   },
+   "williamhill": {
+    "home": 2.15,
+    "draw": 3.5,
+    "away": 3.2
+   },
+   "marathonbet": {
+    "home": 2.24,
+    "draw": 3.64,
+    "away": 3.22
+   },
+   "betsson": {
+    "home": 2.15,
+    "draw": 3.55,
+    "away": 3.25
+   },
+   "nordicbet": {
+    "home": 2.15,
+    "draw": 3.55,
+    "away": 3.25
+   },
+   "pinnacle": {
+    "home": 2.21,
+    "draw": 3.65,
+    "away": 3.33
+   },
+   "leovegas_se": {
+    "home": 2.07,
+    "draw": 3.6,
+    "away": 3.35
+   },
+   "unibet_nl": {
+    "home": 2.16,
+    "draw": 3.75,
+    "away": 3.4
+   },
+   "pmu_fr": {
+    "home": 2.08,
+    "draw": 3.55,
+    "away": 3.25
+   },
+   "unibet_se": {
+    "home": 2.16,
+    "draw": 3.75,
+    "away": 3.4
+   },
+   "matchbook": {
+    "home": 2.22,
+    "draw": 3.8,
+    "away": 3.45
+   },
+   "gtbets": {
+    "home": 2.15,
+    "draw": 3.62,
+    "away": 3.33
+   },
+   "everygame": {
+    "home": 2.15,
+    "draw": 3.5,
+    "away": 3.25
+   },
+   "coolbet": {
+    "home": 2.17,
+    "draw": 3.78,
+    "away": 3.37
+   },
+   "betonlineag": {
+    "home": 2.18,
+    "draw": 3.7,
+    "away": 3.27
+   },
+   "betanysports": {
+    "home": 2.18,
+    "draw": 3.7,
+    "away": 3.27
+   }
+  }
+ },
+ {
+  "event_id": "29f81160baf6a97d6391d7172fad2425",
+  "commence_time": "2026-09-05T14:00:00Z",
+  "home": "Brentford",
+  "away": "Sunderland",
+  "snapshot": "2026-09-05T13:50:00Z",
+  "books": {
+   "codere_it": {
+    "home": 1.71,
+    "draw": 3.85,
+    "away": 4.9
+   },
+   "mybookieag": {
+    "home": 1.7,
+    "draw": 3.8,
+    "away": 4.8
+   },
+   "unibet_fr": {
+    "home": 1.68,
+    "draw": 3.7,
+    "away": 4.7
+   },
+   "winamax_fr": {
+    "home": 1.66,
+    "draw": 3.9,
+    "away": 4.6
+   },
+   "winamax_de": {
+    "home": 1.68,
+    "draw": 3.95,
+    "away": 4.6
+   },
+   "betclic_fr": {
+    "home": 1.66,
+    "draw": 3.83,
+    "away": 4.85
+   },
+   "tipico_de": {
+    "home": 1.65,
+    "draw": 3.8,
+    "away": 5.2
+   },
+   "betfair_ex_eu": {
+    "home": 1.75,
+    "draw": 4.0,
+    "away": 5.4
+   },
+   "sport888": {
+    "home": 1.7,
+    "draw": 3.6,
+    "away": 4.8
+   },
+   "williamhill": {
+    "home": 1.7,
+    "draw": 3.7,
+    "away": 4.8
+   },
+   "onexbet": {
+    "home": 1.75,
+    "draw": 3.96,
+    "away": 5.18
+   },
+   "marathonbet": {
+    "home": 1.73,
+    "draw": 3.9,
+    "away": 5.1
+   },
+   "betsson": {
+    "home": 1.72,
+    "draw": 3.7,
+    "away": 4.9
+   },
+   "nordicbet": {
+    "home": 1.72,
+    "draw": 3.7,
+    "away": 4.9
+   },
+   "pinnacle": {
+    "home": 1.74,
+    "draw": 3.87,
+    "away": 5.04
+   },
+   "unibet_se": {
+    "home": 1.68,
+    "draw": 4.0,
+    "away": 5.4
+   },
+   "pmu_fr": {
+    "home": 1.64,
+    "draw": 3.8,
+    "away": 5.0
+   },
+   "unibet_nl": {
+    "home": 1.68,
+    "draw": 4.0,
+    "away": 5.4
+   },
+   "leovegas_se": {
+    "home": 1.65,
+    "draw": 3.85,
+    "away": 5.2
+   },
+   "matchbook": {
+    "home": 1.76,
+    "draw": 3.95,
+    "away": 5.5
+   },
+   "gtbets": {
+    "home": 1.68,
+    "draw": 3.93,
+    "away": 4.96
+   },
+   "everygame": {
+    "home": 1.7,
+    "draw": 3.75,
+    "away": 5.0
+   },
+   "coolbet": {
+    "home": 1.72,
+    "draw": 4.0,
+    "away": 5.25
+   },
+   "betonlineag": {
+    "home": 1.71,
+    "draw": 3.88,
+    "away": 5.15
+   },
+   "betanysports": {
+    "home": 1.71,
+    "draw": 3.88,
+    "away": 5.15
+   }
+  }
+ },
+ {
+  "event_id": "3b81531990da7ea3e461c43e8827672b",
+  "commence_time": "2026-09-05T14:00:00Z",
+  "home": "Brighton and Hove Albion",
+  "away": "Leeds United",
+  "snapshot": "2026-09-05T13:50:00Z",
+  "books": {
+   "codere_it": {
+    "home": 1.96,
+    "draw": 3.65,
+    "away": 3.75
+   },
+   "onexbet": {
+    "home": 2.02,
+    "draw": 3.74,
+    "away": 3.94
+   },
+   "mybookieag": {
+    "home": 1.94,
+    "draw": 3.6,
+    "away": 3.75
+   },
+   "unibet_fr": {
+    "home": 1.94,
+    "draw": 3.5,
+    "away": 3.6
+   },
+   "winamax_de": {
+    "home": 1.9,
+    "draw": 3.7,
+    "away": 3.65
+   },
+   "betclic_fr": {
+    "home": 1.9,
+    "draw": 3.63,
+    "away": 3.73
+   },
+   "tipico_de": {
+    "home": 1.9,
+    "draw": 3.8,
+    "away": 3.7
+   },
+   "betfair_ex_eu": {
+    "home": 2.04,
+    "draw": 3.7,
+    "away": 4.0
+   },
+   "sport888": {
+    "home": 1.95,
+    "draw": 3.4,
+    "away": 3.6
+   },
+   "williamhill": {
+    "home": 1.95,
+    "draw": 3.5,
+    "away": 3.6
+   },
+   "winamax_fr": {
+    "home": 1.9,
+    "draw": 3.7,
+    "away": 3.6
+   },
+   "marathonbet": {
+    "home": 1.97,
+    "draw": 3.7,
+    "away": 3.94
+   },
+   "betsson": {
+    "home": 1.98,
+    "draw": 3.55,
+    "away": 3.8
+   },
+   "nordicbet": {
+    "home": 1.98,
+    "draw": 3.5,
+    "away": 3.8
+   },
+   "pinnacle": {
+    "home": 1.97,
+    "draw": 3.68,
+    "away": 4.02
+   },
+   "pmu_fr": {
+    "home": 1.93,
+    "draw": 3.5,
+    "away": 3.7
+   },
+   "leovegas_se": {
+    "home": 1.94,
+    "draw": 3.55,
+    "away": 3.8
+   },
+   "unibet_nl": {
+    "home": 2.0,
+    "draw": 3.7,
+    "away": 3.9
+   },
+   "unibet_se": {
+    "home": 2.0,
+    "draw": 3.7,
+    "away": 3.9
+   },
+   "matchbook": {
+    "home": 2.02,
+    "draw": 3.7,
+    "away": 4.0
+   },
+   "gtbets": {
+    "home": 1.96,
+    "draw": 3.59,
+    "away": 3.72
+   },
+   "everygame": {
+    "home": 1.95,
+    "draw": 3.6,
+    "away": 3.9
+   },
+   "coolbet": {
+    "home": 2.0,
+    "draw": 3.8,
+    "away": 3.87
+   },
+   "betonlineag": {
+    "home": 1.98,
+    "draw": 3.65,
+    "away": 3.9
+   },
+   "betanysports": {
+    "home": 1.98,
+    "draw": 3.65,
+    "away": 3.9
+   }
+  }
+ },
+ {
+  "event_id": "3db5f919507eb8ab0c8c72bddaca8f08",
+  "commence_time": "2026-09-05T14:00:00Z",
+  "home": "Manchester City",
+  "away": "Coventry City",
+  "snapshot": "2026-09-05T13:50:00Z",
+  "books": {
+   "codere_it": {
+    "home": 1.21,
+    "draw": 7.2,
+    "away": 12.0
+   },
+   "onexbet": {
+    "home": 1.24,
+    "draw": 7.5,
+    "away": 13.2
+   },
+   "betclic_fr": {
+    "home": 1.15,
+    "draw": 8.0,
+    "away": 14.0
+   },
+   "unibet_fr": {
+    "home": 1.15,
+    "draw": 8.0,
+    "away": 15.0
+   },
+   "mybookieag": {
+    "home": 1.2,
+    "draw": 7.0,
+    "away": 11.75
+   },
+   "winamax_fr": {
+    "home": 1.19,
+    "draw": 7.0,
+    "away": 11.0
+   },
+   "winamax_de": {
+    "home": 1.19,
+    "draw": 7.25,
+    "away": 11.0
+   },
+   "betfair_ex_eu": {
+    "home": 1.21,
+    "draw": 8.2,
+    "away": 16.5
+   },
+   "tipico_de": {
+    "home": 1.17,
+    "draw": 7.8,
+    "away": 13.0
+   },
+   "sport888": {
+    "home": 1.18,
+    "draw": 7.0,
+    "away": 13.0
+   },
+   "williamhill": {
+    "home": 1.18,
+    "draw": 7.0,
+    "away": 13.0
+   },
+   "marathonbet": {
+    "home": 1.22,
+    "draw": 7.4,
+    "away": 13.0
+   },
+   "betsson": {
+    "home": 1.22,
+    "draw": 6.4,
+    "away": 13.5
+   },
+   "nordicbet": {
+    "home": 1.22,
+    "draw": 6.4,
+    "away": 13.5
+   },
+   "pinnacle": {
+    "home": 1.22,
+    "draw": 7.5,
+    "away": 13.75
+   },
+   "unibet_nl": {
+    "home": 1.19,
+    "draw": 8.0,
+    "away": 15.0
+   },
+   "unibet_se": {
+    "home": 1.2,
+    "draw": 8.0,
+    "away": 15.0
+   },
+   "leovegas_se": {
+    "home": 1.18,
+    "draw": 7.5,
+    "away": 14.0
+   },
+   "pmu_fr": {
+    "home": 1.17,
+    "draw": 7.5,
+    "away": 13.0
+   },
+   "matchbook": {
+    "home": 1.21,
+    "draw": 8.2,
+    "away": 16.5
+   },
+   "gtbets": {
+    "home": 1.21,
+    "draw": 7.17,
+    "away": 12.94
+   },
+   "everygame": {
+    "home": 1.18,
+    "draw": 7.0,
+    "away": 13.0
+   },
+   "coolbet": {
+    "home": 1.2,
+    "draw": 8.0,
+    "away": 16.0
+   },
+   "betonlineag": {
+    "home": 1.2,
+    "draw": 7.6,
+    "away": 14.0
+   },
+   "betanysports": {
+    "home": 1.2,
+    "draw": 7.6,
+    "away": 14.0
+   }
+  }
+ },
+ {
+  "event_id": "8f68612bf47c3193e7fa2d8783e79373",
+  "commence_time": "2026-09-05T14:00:00Z",
+  "home": "Fulham",
+  "away": "Crystal Palace",
+  "snapshot": "2026-09-05T13:50:00Z",
+  "books": {
+   "unibet_fr": {
+    "home": 2.05,
+    "draw": 3.4,
+    "away": 3.4
+   },
+   "betclic_fr": {
+    "home": 2.13,
+    "draw": 3.37,
+    "away": 3.3
+   },
+   "codere_it": {
+    "home": 2.2,
+    "draw": 3.4,
+    "away": 3.3
+   },
+   "mybookieag": {
+    "home": 2.18,
+    "draw": 3.36,
+    "away": 3.3
+   },
+   "winamax_fr": {
+    "home": 2.1,
+    "draw": 3.4,
+    "away": 3.25
+   },
+   "winamax_de": {
+    "home": 2.1,
+    "draw": 3.45,
+    "away": 3.3
+   },
+   "betfair_ex_eu": {
+    "home": 2.24,
+    "draw": 3.45,
+    "away": 3.7
+   },
+   "tipico_de": {
+    "home": 2.15,
+    "draw": 3.3,
+    "away": 3.4
+   },
+   "williamhill": {
+    "home": 2.15,
+    "draw": 3.4,
+    "away": 3.3
+   },
+   "sport888": {
+    "home": 2.1,
+    "draw": 3.3,
+    "away": 3.25
+   },
+   "onexbet": {
+    "home": 2.26,
+    "draw": 3.48,
+    "away": 3.52
+   },
+   "marathonbet": {
+    "home": 2.18,
+    "draw": 3.44,
+    "away": 3.54
+   },
+   "betsson": {
+    "home": 2.15,
+    "draw": 3.3,
+    "away": 3.5
+   },
+   "nordicbet": {
+    "home": 2.15,
+    "draw": 3.3,
+    "away": 3.45
+   },
+   "pinnacle": {
+    "home": 2.19,
+    "draw": 3.43,
+    "away": 3.56
+   },
+   "pmu_fr": {
+    "home": 2.1,
+    "draw": 3.25,
+    "away": 3.45
+   },
+   "leovegas_se": {
+    "home": 2.12,
+    "draw": 3.3,
+    "away": 3.5
+   },
+   "unibet_se": {
+    "home": 2.18,
+    "draw": 3.4,
+    "away": 3.65
+   },
+   "unibet_nl": {
+    "home": 2.18,
+    "draw": 3.4,
+    "away": 3.65
+   },
+   "matchbook": {
+    "home": 2.22,
+    "draw": 3.45,
+    "away": 3.75
+   },
+   "gtbets": {
+    "home": 2.17,
+    "draw": 3.41,
+    "away": 3.45
+   },
+   "everygame": {
+    "home": 2.15,
+    "draw": 3.35,
+    "away": 3.45
+   },
+   "coolbet": {
+    "home": 2.23,
+    "draw": 3.42,
+    "away": 3.58
+   },
+   "betonlineag": {
+    "home": 2.18,
+    "draw": 3.37,
+    "away": 3.58
+   },
+   "betanysports": {
+    "home": 2.2,
+    "draw": 3.36,
+    "away": 3.55
+   }
+  }
+ },
+ {
+  "event_id": "a6f2622727548c33369cc15c88b2aabd",
+  "commence_time": "2026-09-05T14:00:00Z",
+  "home": "Nottingham Forest",
+  "away": "Tottenham Hotspur",
+  "snapshot": "2026-09-05T13:50:00Z",
+  "books": {
+   "codere_it": {
+    "home": 2.65,
+    "draw": 3.3,
+    "away": 2.65
+   },
+   "onexbet": {
+    "home": 2.79,
+    "draw": 3.48,
+    "away": 2.71
+   },
+   "betclic_fr": {
+    "home": 2.63,
+    "draw": 3.27,
+    "away": 2.6
+   },
+   "unibet_fr": {
+    "home": 2.6,
+    "draw": 3.2,
+    "away": 2.6
+   },
+   "mybookieag": {
+    "home": 2.65,
+    "draw": 3.28,
+    "away": 2.65
+   },
+   "winamax_fr": {
+    "home": 2.55,
+    "draw": 3.4,
+    "away": 2.55
+   },
+   "winamax_de": {
+    "home": 2.6,
+    "draw": 3.35,
+    "away": 2.6
+   },
+   "betfair_ex_eu": {
+    "home": 2.8,
+    "draw": 3.45,
+    "away": 2.78
+   },
+   "tipico_de": {
+    "home": 2.75,
+    "draw": 3.2,
+    "away": 2.6
+   },
+   "sport888": {
+    "home": 2.5,
+    "draw": 3.25,
+    "away": 2.62
+   },
+   "williamhill": {
+    "home": 2.5,
+    "draw": 3.3,
+    "away": 2.7
+   },
+   "marathonbet": {
+    "home": 2.74,
+    "draw": 3.42,
+    "away": 2.67
+   },
+   "betsson": {
+    "home": 2.75,
+    "draw": 3.3,
+    "away": 2.62
+   },
+   "nordicbet": {
+    "home": 2.75,
+    "draw": 3.3,
+    "away": 2.62
+   },
+   "pinnacle": {
+    "home": 2.79,
+    "draw": 3.37,
+    "away": 2.67
+   },
+   "unibet_nl": {
+    "home": 2.65,
+    "draw": 3.5,
+    "away": 2.7
+   },
+   "leovegas_se": {
+    "home": 2.6,
+    "draw": 3.4,
+    "away": 2.65
+   },
+   "pmu_fr": {
+    "home": 2.55,
+    "draw": 3.35,
+    "away": 2.6
+   },
+   "unibet_se": {
+    "home": 2.65,
+    "draw": 3.5,
+    "away": 2.7
+   },
+   "matchbook": {
+    "home": 2.8,
+    "draw": 3.45,
+    "away": 2.8
+   },
+   "gtbets": {
+    "home": 2.67,
+    "draw": 3.37,
+    "away": 2.77
+   },
+   "everygame": {
+    "home": 2.7,
+    "draw": 3.3,
+    "away": 2.6
+   },
+   "coolbet": {
+    "home": 2.75,
+    "draw": 3.46,
+    "away": 2.71
+   },
+   "betonlineag": {
+    "home": 2.73,
+    "draw": 3.4,
+    "away": 2.67
+   },
+   "betanysports": {
+    "home": 2.73,
+    "draw": 3.4,
+    "away": 2.67
+   }
+  }
+ },
+ {
+  "event_id": "21fd24ad6732df00774304a046d84fe9",
+  "commence_time": "2026-09-05T16:30:00Z",
+  "home": "Hull City",
+  "away": "Aston Villa",
+  "snapshot": "2026-09-05T16:20:00Z",
+  "books": {
+   "onexbet": {
+    "home": 4.26,
+    "draw": 3.88,
+    "away": 1.91
+   },
+   "winamax_fr": {
+    "home": 3.9,
+    "draw": 3.7,
+    "away": 1.82
+   },
+   "winamax_de": {
+    "home": 3.95,
+    "draw": 3.75,
+    "away": 1.82
+   },
+   "codere_it": {
+    "home": 4.1,
+    "draw": 3.7,
+    "away": 1.86
+   },
+   "mybookieag": {
+    "home": 4.1,
+    "draw": 3.65,
+    "away": 1.85
+   },
+   "betclic_fr": {
+    "home": 4.1,
+    "draw": 3.65,
+    "away": 1.81
+   },
+   "unibet_fr": {
+    "home": 3.8,
+    "draw": 3.7,
+    "away": 1.83
+   },
+   "tipico_de": {
+    "home": 4.3,
+    "draw": 3.7,
+    "away": 1.8
+   },
+   "betfair_ex_eu": {
+    "home": 4.4,
+    "draw": 3.85,
+    "away": 1.93
+   },
+   "sport888": {
+    "home": 4.0,
+    "draw": 3.5,
+    "away": 1.85
+   },
+   "williamhill": {
+    "home": 4.0,
+    "draw": 3.6,
+    "away": 1.85
+   },
+   "marathonbet": {
+    "home": 4.25,
+    "draw": 3.8,
+    "away": 1.88
+   },
+   "nordicbet": {
+    "home": 4.15,
+    "draw": 3.6,
+    "away": 1.85
+   },
+   "betsson": {
+    "home": 4.15,
+    "draw": 3.6,
+    "away": 1.85
+   },
+   "pinnacle": {
+    "home": 4.15,
+    "draw": 3.74,
+    "away": 1.94
+   },
+   "unibet_se": {
+    "home": 4.6,
+    "draw": 3.8,
+    "away": 1.83
+   },
+   "unibet_nl": {
+    "home": 4.6,
+    "draw": 3.8,
+    "away": 1.83
+   },
+   "pmu_fr": {
+    "home": 4.35,
+    "draw": 3.6,
+    "away": 1.78
+   },
+   "leovegas_se": {
+    "home": 4.4,
+    "draw": 3.65,
+    "away": 1.8
+   },
+   "matchbook": {
+    "home": 4.4,
+    "draw": 3.8,
+    "away": 1.95
+   },
+   "gtbets": {
+    "home": 4.33,
+    "draw": 3.56,
+    "away": 1.85
+   },
+   "everygame": {
+    "home": 4.1,
+    "draw": 3.65,
+    "away": 1.85
+   },
+   "coolbet": {
+    "home": 4.2,
+    "draw": 3.8,
+    "away": 1.92
+   },
+   "betonlineag": {
+    "home": 4.28,
+    "draw": 3.79,
+    "away": 1.86
+   },
+   "betanysports": {
+    "home": 4.28,
+    "draw": 3.79,
+    "away": 1.86
+   }
+  }
+ },
+ {
+  "event_id": "8ea6c863f1852654399073b518b0a1f8",
+  "commence_time": "2026-09-06T13:00:00Z",
+  "home": "Everton",
+  "away": "Manchester United",
+  "snapshot": "2026-09-06T12:50:00Z",
+  "books": {
+   "unibet_fr": {
+    "home": 3.5,
+    "draw": 3.7,
+    "away": 1.88
+   },
+   "onexbet": {
+    "home": 3.86,
+    "draw": 3.92,
+    "away": 1.99
+   },
+   "betclic_fr": {
+    "home": 3.65,
+    "draw": 3.7,
+    "away": 1.9
+   },
+   "codere_it": {
+    "home": 3.7,
+    "draw": 3.85,
+    "away": 1.93
+   },
+   "mybookieag": {
+    "home": 3.65,
+    "draw": 3.8,
+    "away": 1.92
+   },
+   "betfair_ex_eu": {
+    "home": 3.95,
+    "draw": 4.0,
+    "away": 2.0
+   },
+   "winamax_fr": {
+    "home": 3.5,
+    "draw": 3.85,
+    "away": 1.88
+   },
+   "winamax_de": {
+    "home": 3.55,
+    "draw": 3.9,
+    "away": 1.9
+   },
+   "tipico_de": {
+    "home": 3.8,
+    "draw": 3.7,
+    "away": 1.9
+   },
+   "sport888": {
+    "home": 3.5,
+    "draw": 3.7,
+    "away": 1.91
+   },
+   "williamhill": {
+    "home": 3.6,
+    "draw": 3.7,
+    "away": 1.91
+   },
+   "marathonbet": {
+    "home": 3.8,
+    "draw": 3.86,
+    "away": 1.96
+   },
+   "nordicbet": {
+    "home": 3.75,
+    "draw": 3.7,
+    "away": 1.95
+   },
+   "betsson": {
+    "home": 3.75,
+    "draw": 3.7,
+    "away": 1.95
+   },
+   "pinnacle": {
+    "home": 3.82,
+    "draw": 3.98,
+    "away": 1.96
+   },
+   "pmu_fr": {
+    "home": 3.6,
+    "draw": 3.65,
+    "away": 1.92
+   },
+   "unibet_se": {
+    "home": 3.7,
+    "draw": 3.8,
+    "away": 2.0
+   },
+   "unibet_nl": {
+    "home": 3.7,
+    "draw": 3.8,
+    "away": 2.0
+   },
+   "leovegas_se": {
+    "home": 3.65,
+    "draw": 3.75,
+    "away": 1.93
+   },
+   "everygame": {
+    "home": 3.75,
+    "draw": 3.75,
+    "away": 1.91
+   },
+   "coolbet": {
+    "home": 3.88,
+    "draw": 3.94,
+    "away": 1.96
+   },
+   "matchbook": {
+    "home": 3.95,
+    "draw": 4.0,
+    "away": 2.0
+   },
+   "betonlineag": {
+    "home": 3.76,
+    "draw": 3.89,
+    "away": 1.95
+   },
+   "gtbets": {
+    "home": 3.61,
+    "draw": 3.6,
+    "away": 2.01
+   },
+   "betanysports": {
+    "home": 3.65,
+    "draw": 3.85,
+    "away": 1.95
+   }
+  }
+ },
+ {
+  "event_id": "78d4dfda8c2dc27bdc3ec26c2654f8fc",
+  "commence_time": "2026-09-06T15:30:00Z",
+  "home": "Arsenal",
+  "away": "Chelsea",
+  "snapshot": "2026-09-06T15:20:00Z",
+  "books": {
+   "mybookieag": {
+    "home": 1.71,
+    "draw": 3.85,
+    "away": 4.6
+   },
+   "codere_it": {
+    "home": 1.7,
+    "draw": 3.95,
+    "away": 4.8
+   },
+   "onexbet": {
+    "home": 1.77,
+    "draw": 3.94,
+    "away": 5.12
+   },
+   "unibet_fr": {
+    "home": 1.67,
+    "draw": 3.7,
+    "away": 4.5
+   },
+   "betclic_fr": {
+    "home": 1.66,
+    "draw": 3.85,
+    "away": 4.9
+   },
+   "betfair_ex_eu": {
+    "home": 1.76,
+    "draw": 4.0,
+    "away": 5.3
+   },
+   "winamax_fr": {
+    "home": 1.68,
+    "draw": 3.95,
+    "away": 4.5
+   },
+   "winamax_de": {
+    "home": 1.68,
+    "draw": 3.95,
+    "away": 4.5
+   },
+   "tipico_de": {
+    "home": 1.67,
+    "draw": 3.9,
+    "away": 4.9
+   },
+   "sport888": {
+    "home": 1.7,
+    "draw": 3.6,
+    "away": 4.6
+   },
+   "williamhill": {
+    "home": 1.7,
+    "draw": 3.7,
+    "away": 4.75
+   },
+   "marathonbet": {
+    "home": 1.74,
+    "draw": 3.88,
+    "away": 5.05
+   },
+   "nordicbet": {
+    "home": 1.72,
+    "draw": 3.85,
+    "away": 4.8
+   },
+   "betsson": {
+    "home": 1.72,
+    "draw": 3.85,
+    "away": 4.8
+   },
+   "pinnacle": {
+    "home": 1.74,
+    "draw": 3.95,
+    "away": 5.0
+   },
+   "unibet_se": {
+    "home": 1.73,
+    "draw": 3.95,
+    "away": 5.1
+   },
+   "pmu_fr": {
+    "home": 1.67,
+    "draw": 3.7,
+    "away": 4.9
+   },
+   "unibet_nl": {
+    "home": 1.72,
+    "draw": 3.95,
+    "away": 5.1
+   },
+   "leovegas_se": {
+    "home": 1.68,
+    "draw": 3.8,
+    "away": 5.0
+   },
+   "everygame": {
+    "home": 1.7,
+    "draw": 3.85,
+    "away": 4.75
+   },
+   "coolbet": {
+    "home": 1.75,
+    "draw": 3.9,
+    "away": 5.2
+   },
+   "matchbook": {
+    "home": 1.77,
+    "draw": 4.0,
+    "away": 5.3
+   },
+   "betonlineag": {
+    "home": 1.74,
+    "draw": 3.9,
+    "away": 5.0
+   },
+   "gtbets": {
+    "home": 1.7,
+    "draw": 3.75,
+    "away": 4.83
+   },
+   "betanysports": {
+    "home": 1.71,
+    "draw": 3.75,
+    "away": 5.15
+   }
+  }
+ },
+ {
+  "event_id": "d09677edcf1fb82ad75a8df58bb26eab",
+  "commence_time": "2026-09-12T14:00:00Z",
+  "home": "Aston Villa",
+  "away": "Nottingham Forest",
+  "snapshot": "2026-09-12T13:50:00Z",
+  "books": {
+   "tipico_de": {
+    "home": 2.2,
+    "draw": 3.3,
+    "away": 3.3
+   },
+   "winamax_fr": {
+    "home": 2.15,
+    "draw": 3.4,
+    "away": 3.05
+   },
+   "mybookieag": {
+    "home": 2.22,
+    "draw": 3.36,
+    "away": 3.2
+   },
+   "codere_it": {
+    "home": 2.24,
+    "draw": 3.4,
+    "away": 3.2
+   },
+   "unibet_fr": {
+    "home": 2.1,
+    "draw": 3.3,
+    "away": 3.1
+   },
+   "winamax_de": {
+    "home": 2.15,
+    "draw": 3.45,
+    "away": 3.15
+   },
+   "betclic_fr": {
+    "home": 2.12,
+    "draw": 3.32,
+    "away": 3.15
+   },
+   "marathonbet": {
+    "home": 2.26,
+    "draw": 3.45,
+    "away": 3.34
+   },
+   "sport888": {
+    "home": 2.2,
+    "draw": 3.25,
+    "away": 3.2
+   },
+   "onexbet": {
+    "home": 2.29,
+    "draw": 3.5,
+    "away": 3.42
+   },
+   "williamhill": {
+    "home": 2.2,
+    "draw": 3.25,
+    "away": 3.2
+   },
+   "betfair_ex_eu": {
+    "home": 2.32,
+    "draw": 3.55,
+    "away": 3.4
+   },
+   "pinnacle": {
+    "home": 2.3,
+    "draw": 3.45,
+    "away": 3.3
+   },
+   "pmu_fr": {
+    "home": 2.14,
+    "draw": 3.3,
+    "away": 3.3
+   },
+   "unibet_se": {
+    "home": 2.2,
+    "draw": 3.45,
+    "away": 3.45
+   },
+   "leovegas_se": {
+    "home": 2.16,
+    "draw": 3.35,
+    "away": 3.35
+   },
+   "unibet_nl": {
+    "home": 2.23,
+    "draw": 3.5,
+    "away": 3.5
+   },
+   "betsson": {
+    "home": 2.22,
+    "draw": 3.35,
+    "away": 3.25
+   },
+   "nordicbet": {
+    "home": 2.22,
+    "draw": 3.35,
+    "away": 3.25
+   },
+   "matchbook": {
+    "home": 2.3,
+    "draw": 3.5,
+    "away": 3.4
+   },
+   "gtbets": {
+    "home": 2.2,
+    "draw": 3.39,
+    "away": 3.23
+   },
+   "betonlineag": {
+    "home": 2.25,
+    "draw": 3.42,
+    "away": 3.35
+   },
+   "everygame": {
+    "home": 2.2,
+    "draw": 3.35,
+    "away": 3.3
+   },
+   "coolbet": {
+    "home": 2.3,
+    "draw": 3.44,
+    "away": 3.38
+   },
+   "betanysports": {
+    "home": 2.25,
+    "draw": 3.42,
+    "away": 3.35
+   }
+  }
+ },
+ {
+  "event_id": "d856d4353db0b4cca2a49b96dfd19c92",
+  "commence_time": "2026-09-12T14:00:00Z",
+  "home": "Bournemouth",
+  "away": "Brentford",
+  "snapshot": "2026-09-12T13:50:00Z",
+  "books": {
+   "tipico_de": {
+    "home": 2.25,
+    "draw": 3.5,
+    "away": 3.0
+   },
+   "winamax_fr": {
+    "home": 2.2,
+    "draw": 3.55,
+    "away": 2.85
+   },
+   "winamax_de": {
+    "home": 2.25,
+    "draw": 3.65,
+    "away": 2.9
+   },
+   "codere_it": {
+    "home": 2.35,
+    "draw": 3.55,
+    "away": 2.9
+   },
+   "unibet_fr": {
+    "home": 2.15,
+    "draw": 3.5,
+    "away": 2.9
+   },
+   "mybookieag": {
+    "home": 2.28,
+    "draw": 3.55,
+    "away": 2.96
+   },
+   "betclic_fr": {
+    "home": 2.18,
+    "draw": 3.47,
+    "away": 2.9
+   },
+   "marathonbet": {
+    "home": 2.35,
+    "draw": 3.6,
+    "away": 3.04
+   },
+   "betfair_ex_eu": {
+    "home": 2.42,
+    "draw": 3.7,
+    "away": 3.1
+   },
+   "sport888": {
+    "home": 2.3,
+    "draw": 3.4,
+    "away": 2.9
+   },
+   "onexbet": {
+    "home": 2.39,
+    "draw": 3.66,
+    "away": 3.09
+   },
+   "williamhill": {
+    "home": 2.3,
+    "draw": 3.4,
+    "away": 2.9
+   },
+   "pinnacle": {
+    "home": 2.39,
+    "draw": 3.6,
+    "away": 3.02
+   },
+   "unibet_se": {
+    "home": 2.35,
+    "draw": 3.55,
+    "away": 2.8
+   },
+   "pmu_fr": {
+    "home": 2.35,
+    "draw": 3.55,
+    "away": 2.8
+   },
+   "unibet_nl": {
+    "home": 2.35,
+    "draw": 3.55,
+    "away": 2.8
+   },
+   "leovegas_se": {
+    "home": 2.35,
+    "draw": 3.55,
+    "away": 2.8
+   },
+   "betsson": {
+    "home": 2.3,
+    "draw": 3.5,
+    "away": 3.0
+   },
+   "nordicbet": {
+    "home": 2.3,
+    "draw": 3.5,
+    "away": 3.0
+   },
+   "matchbook": {
+    "home": 2.42,
+    "draw": 3.65,
+    "away": 3.15
+   },
+   "gtbets": {
+    "home": 2.31,
+    "draw": 3.51,
+    "away": 2.93
+   },
+   "betonlineag": {
+    "home": 2.35,
+    "draw": 3.62,
+    "away": 3.0
+   },
+   "everygame": {
+    "home": 2.25,
+    "draw": 3.6,
+    "away": 3.0
+   },
+   "coolbet": {
+    "home": 2.41,
+    "draw": 3.65,
+    "away": 3.0
+   },
+   "betanysports": {
+    "home": 2.35,
+    "draw": 3.62,
+    "away": 3.0
+   }
+  }
+ },
+ {
+  "event_id": "5163190733dcaaea80474e43cbe20a51",
+  "commence_time": "2026-09-12T14:00:00Z",
+  "home": "Chelsea",
+  "away": "Hull City",
+  "snapshot": "2026-09-12T13:50:00Z",
+  "books": {
+   "betclic_fr": {
+    "home": 1.16,
+    "draw": 7.0,
+    "away": 12.5
+   },
+   "mybookieag": {
+    "home": 1.22,
+    "draw": 6.7,
+    "away": 11.25
+   },
+   "codere_it": {
+    "home": 1.22,
+    "draw": 6.8,
+    "away": 11.0
+   },
+   "unibet_fr": {
+    "home": 1.16,
+    "draw": 6.5,
+    "away": 13.0
+   },
+   "winamax_fr": {
+    "home": 1.2,
+    "draw": 6.0,
+    "away": 11.0
+   },
+   "tipico_de": {
+    "home": 1.18,
+    "draw": 7.5,
+    "away": 13.0
+   },
+   "winamax_de": {
+    "home": 1.21,
+    "draw": 6.5,
+    "away": 11.5
+   },
+   "marathonbet": {
+    "home": 1.24,
+    "draw": 6.9,
+    "away": 12.5
+   },
+   "sport888": {
+    "home": 1.22,
+    "draw": 6.0,
+    "away": 11.0
+   },
+   "onexbet": {
+    "home": 1.26,
+    "draw": 7.01,
+    "away": 12.6
+   },
+   "williamhill": {
+    "home": 1.22,
+    "draw": 6.0,
+    "away": 11.0
+   },
+   "betfair_ex_eu": {
+    "home": 1.24,
+    "draw": 7.6,
+    "away": 14.0
+   },
+   "pinnacle": {
+    "home": 1.22,
+    "draw": 7.4,
+    "away": 13.5
+   },
+   "unibet_se": {
+    "home": 1.23,
+    "draw": 7.0,
+    "away": 14.0
+   },
+   "unibet_nl": {
+    "home": 1.21,
+    "draw": 7.5,
+    "away": 15.0
+   },
+   "leovegas_se": {
+    "home": 1.19,
+    "draw": 7.0,
+    "away": 14.0
+   },
+   "pmu_fr": {
+    "home": 1.18,
+    "draw": 6.75,
+    "away": 13.0
+   },
+   "betsson": {
+    "home": 1.22,
+    "draw": 6.2,
+    "away": 14.5
+   },
+   "nordicbet": {
+    "home": 1.22,
+    "draw": 6.2,
+    "away": 14.5
+   },
+   "matchbook": {
+    "home": 1.24,
+    "draw": 7.4,
+    "away": 14.5
+   },
+   "gtbets": {
+    "home": 1.26,
+    "draw": 6.79,
+    "away": 12.64
+   },
+   "betonlineag": {
+    "home": 1.22,
+    "draw": 7.25,
+    "away": 13.5
+   },
+   "everygame": {
+    "home": 1.2,
+    "draw": 6.75,
+    "away": 12.0
+   },
+   "coolbet": {
+    "home": 1.23,
+    "draw": 7.35,
+    "away": 13.75
+   },
+   "betanysports": {
+    "home": 1.22,
+    "draw": 7.25,
+    "away": 13.5
+   }
+  }
+ },
+ {
+  "event_id": "14f6639178a943ac614c7b872bf6e4d6",
+  "commence_time": "2026-09-12T14:00:00Z",
+  "home": "Crystal Palace",
+  "away": "Ipswich Town",
+  "snapshot": "2026-09-12T13:50:00Z",
+  "books": {
+   "tipico_de": {
+    "home": 2.1,
+    "draw": 3.5,
+    "away": 3.4
+   },
+   "winamax_fr": {
+    "home": 2.05,
+    "draw": 3.6,
+    "away": 3.1
+   },
+   "winamax_de": {
+    "home": 2.1,
+    "draw": 3.65,
+    "away": 3.15
+   },
+   "codere_it": {
+    "home": 2.08,
+    "draw": 3.65,
+    "away": 3.35
+   },
+   "unibet_fr": {
+    "home": 1.97,
+    "draw": 3.5,
+    "away": 3.2
+   },
+   "mybookieag": {
+    "home": 2.14,
+    "draw": 3.6,
+    "away": 3.18
+   },
+   "betclic_fr": {
+    "home": 2.0,
+    "draw": 3.53,
+    "away": 3.25
+   },
+   "betfair_ex_eu": {
+    "home": 2.24,
+    "draw": 3.65,
+    "away": 3.5
+   },
+   "marathonbet": {
+    "home": 2.17,
+    "draw": 3.68,
+    "away": 3.35
+   },
+   "sport888": {
+    "home": 2.1,
+    "draw": 3.4,
+    "away": 3.25
+   },
+   "onexbet": {
+    "home": 2.19,
+    "draw": 3.69,
+    "away": 3.46
+   },
+   "williamhill": {
+    "home": 2.1,
+    "draw": 3.4,
+    "away": 3.25
+   },
+   "pinnacle": {
+    "home": 2.16,
+    "draw": 3.62,
+    "away": 3.47
+   },
+   "unibet_se": {
+    "home": 2.1,
+    "draw": 3.7,
+    "away": 3.55
+   },
+   "pmu_fr": {
+    "home": 2.04,
+    "draw": 3.55,
+    "away": 3.35
+   },
+   "leovegas_se": {
+    "home": 2.06,
+    "draw": 3.6,
+    "away": 3.45
+   },
+   "unibet_nl": {
+    "home": 2.1,
+    "draw": 3.7,
+    "away": 3.55
+   },
+   "betsson": {
+    "home": 2.12,
+    "draw": 3.5,
+    "away": 3.35
+   },
+   "nordicbet": {
+    "home": 2.18,
+    "draw": 3.45,
+    "away": 3.25
+   },
+   "matchbook": {
+    "home": 2.22,
+    "draw": 3.65,
+    "away": 3.55
+   },
+   "gtbets": {
+    "home": 2.11,
+    "draw": 3.82,
+    "away": 3.42
+   },
+   "betonlineag": {
+    "home": 2.16,
+    "draw": 3.55,
+    "away": 3.45
+   },
+   "everygame": {
+    "home": 2.1,
+    "draw": 3.5,
+    "away": 3.35
+   },
+   "coolbet": {
+    "home": 2.2,
+    "draw": 3.6,
+    "away": 3.45
+   },
+   "betanysports": {
+    "home": 2.16,
+    "draw": 3.55,
+    "away": 3.45
+   }
+  }
+ },
+ {
+  "event_id": "63da4075a4ae406575fd3086b839fe49",
+  "commence_time": "2026-09-12T14:00:00Z",
+  "home": "Liverpool",
+  "away": "Fulham",
+  "snapshot": "2026-09-12T13:50:00Z",
+  "books": {
+   "codere_it": {
+    "home": 1.53,
+    "draw": 4.7,
+    "away": 5.6
+   },
+   "winamax_fr": {
+    "home": 1.49,
+    "draw": 4.5,
+    "away": 5.1
+   },
+   "winamax_de": {
+    "home": 1.5,
+    "draw": 4.6,
+    "away": 5.3
+   },
+   "mybookieag": {
+    "home": 1.53,
+    "draw": 4.6,
+    "away": 5.3
+   },
+   "tipico_de": {
+    "home": 1.47,
+    "draw": 4.6,
+    "away": 6.2
+   },
+   "unibet_fr": {
+    "home": 1.47,
+    "draw": 4.5,
+    "away": 5.2
+   },
+   "betclic_fr": {
+    "home": 1.46,
+    "draw": 4.5,
+    "away": 5.75
+   },
+   "marathonbet": {
+    "home": 1.55,
+    "draw": 4.7,
+    "away": 5.75
+   },
+   "sport888": {
+    "home": 1.5,
+    "draw": 4.33,
+    "away": 5.5
+   },
+   "onexbet": {
+    "home": 1.57,
+    "draw": 4.78,
+    "away": 5.84
+   },
+   "williamhill": {
+    "home": 1.5,
+    "draw": 4.33,
+    "away": 5.5
+   },
+   "betfair_ex_eu": {
+    "home": 1.56,
+    "draw": 4.7,
+    "away": 6.6
+   },
+   "pinnacle": {
+    "home": 1.54,
+    "draw": 4.6,
+    "away": 6.2
+   },
+   "pmu_fr": {
+    "home": 1.47,
+    "draw": 4.5,
+    "away": 6.0
+   },
+   "unibet_se": {
+    "home": 1.5,
+    "draw": 4.8,
+    "away": 6.4
+   },
+   "leovegas_se": {
+    "home": 1.48,
+    "draw": 4.6,
+    "away": 6.1
+   },
+   "unibet_nl": {
+    "home": 1.5,
+    "draw": 4.8,
+    "away": 6.4
+   },
+   "betsson": {
+    "home": 1.52,
+    "draw": 4.35,
+    "away": 5.9
+   },
+   "nordicbet": {
+    "home": 1.52,
+    "draw": 4.35,
+    "away": 5.9
+   },
+   "matchbook": {
+    "home": 1.56,
+    "draw": 4.7,
+    "away": 6.8
+   },
+   "gtbets": {
+    "home": 1.46,
+    "draw": 4.71,
+    "away": 5.53
+   },
+   "betonlineag": {
+    "home": 1.53,
+    "draw": 4.5,
+    "away": 6.32
+   },
+   "everygame": {
+    "home": 1.5,
+    "draw": 4.5,
+    "away": 6.0
+   },
+   "coolbet": {
+    "home": 1.54,
+    "draw": 4.67,
+    "away": 6.32
+   },
+   "betanysports": {
+    "home": 1.51,
+    "draw": 4.55,
+    "away": 5.85
+   }
+  }
+ },
+ {
+  "event_id": "cbbc88759fe3e2f1677a0c6ee40955af",
+  "commence_time": "2026-09-12T16:30:00Z",
+  "home": "Tottenham Hotspur",
+  "away": "Everton",
+  "snapshot": "2026-09-12T16:20:00Z",
+  "books": {
+   "tipico_de": {
+    "home": 1.95,
+    "draw": 3.7,
+    "away": 3.6
+   },
+   "winamax_fr": {
+    "home": 1.94,
+    "draw": 3.6,
+    "away": 3.45
+   },
+   "winamax_de": {
+    "home": 1.96,
+    "draw": 3.7,
+    "away": 3.5
+   },
+   "codere_it": {
+    "home": 1.98,
+    "draw": 3.65,
+    "away": 3.65
+   },
+   "unibet_fr": {
+    "home": 1.9,
+    "draw": 3.6,
+    "away": 3.5
+   },
+   "mybookieag": {
+    "home": 1.97,
+    "draw": 3.65,
+    "away": 3.6
+   },
+   "betclic_fr": {
+    "home": 1.89,
+    "draw": 3.58,
+    "away": 3.55
+   },
+   "marathonbet": {
+    "home": 2.01,
+    "draw": 3.72,
+    "away": 3.76
+   },
+   "onexbet": {
+    "home": 2.04,
+    "draw": 3.78,
+    "away": 3.82
+   },
+   "sport888": {
+    "home": 1.95,
+    "draw": 3.4,
+    "away": 3.5
+   },
+   "betfair_ex_eu": {
+    "home": 2.08,
+    "draw": 3.75,
+    "away": 3.85
+   },
+   "williamhill": {
+    "home": 1.95,
+    "draw": 3.4,
+    "away": 3.5
+   },
+   "pinnacle": {
+    "home": 2.02,
+    "draw": 3.77,
+    "away": 3.81
+   },
+   "unibet_se": {
+    "home": 1.93,
+    "draw": 3.85,
+    "away": 4.0
+   },
+   "pmu_fr": {
+    "home": 1.87,
+    "draw": 3.65,
+    "away": 3.8
+   },
+   "leovegas_se": {
+    "home": 1.88,
+    "draw": 3.7,
+    "away": 3.85
+   },
+   "unibet_nl": {
+    "home": 1.93,
+    "draw": 3.85,
+    "away": 4.0
+   },
+   "betsson": {
+    "home": 2.02,
+    "draw": 3.5,
+    "away": 3.65
+   },
+   "nordicbet": {
+    "home": 2.02,
+    "draw": 3.5,
+    "away": 3.7
+   },
+   "matchbook": {
+    "home": 2.08,
+    "draw": 3.75,
+    "away": 3.85
+   },
+   "gtbets": {
+    "home": 2.01,
+    "draw": 3.71,
+    "away": 3.53
+   },
+   "betonlineag": {
+    "home": 2.04,
+    "draw": 3.68,
+    "away": 3.66
+   },
+   "everygame": {
+    "home": 2.0,
+    "draw": 3.6,
+    "away": 3.65
+   },
+   "coolbet": {
+    "home": 2.04,
+    "draw": 3.75,
+    "away": 3.8
+   },
+   "betanysports": {
+    "home": 2.04,
+    "draw": 3.68,
+    "away": 3.66
+   }
+  }
+ },
+ {
+  "event_id": "082f74fe6a8bc5826555b76e9e114dab",
+  "commence_time": "2026-09-12T19:00:00Z",
+  "home": "Sunderland",
+  "away": "Arsenal",
+  "snapshot": "2026-09-12T18:50:00Z",
+  "books": {
+   "winamax_fr": {
+    "home": 5.3,
+    "draw": 3.75,
+    "away": 1.58
+   },
+   "winamax_de": {
+    "home": 5.5,
+    "draw": 3.85,
+    "away": 1.6
+   },
+   "unibet_fr": {
+    "home": 5.7,
+    "draw": 3.7,
+    "away": 1.52
+   },
+   "codere_it": {
+    "home": 5.8,
+    "draw": 3.8,
+    "away": 1.63
+   },
+   "tipico_de": {
+    "home": 6.5,
+    "draw": 3.7,
+    "away": 1.57
+   },
+   "mybookieag": {
+    "home": 5.8,
+    "draw": 3.75,
+    "away": 1.61
+   },
+   "betclic_fr": {
+    "home": 6.25,
+    "draw": 3.75,
+    "away": 1.55
+   },
+   "marathonbet": {
+    "home": 6.15,
+    "draw": 3.8,
+    "away": 1.65
+   },
+   "onexbet": {
+    "home": 6.25,
+    "draw": 3.86,
+    "away": 1.68
+   },
+   "sport888": {
+    "home": 5.75,
+    "draw": 3.6,
+    "away": 1.6
+   },
+   "betfair_ex_eu": {
+    "home": 7.2,
+    "draw": 3.9,
+    "away": 1.64
+   },
+   "williamhill": {
+    "home": 5.8,
+    "draw": 3.6,
+    "away": 1.6
+   },
+   "pinnacle": {
+    "home": 6.4,
+    "draw": 3.8,
+    "away": 1.65
+   },
+   "unibet_se": {
+    "home": 7.0,
+    "draw": 4.0,
+    "away": 1.57
+   },
+   "pmu_fr": {
+    "home": 6.5,
+    "draw": 3.75,
+    "away": 1.53
+   },
+   "leovegas_se": {
+    "home": 6.75,
+    "draw": 3.85,
+    "away": 1.55
+   },
+   "unibet_nl": {
+    "home": 7.0,
+    "draw": 4.0,
+    "away": 1.57
+   },
+   "nordicbet": {
+    "home": 6.0,
+    "draw": 3.6,
+    "away": 1.62
+   },
+   "betsson": {
+    "home": 6.0,
+    "draw": 3.6,
+    "away": 1.62
+   },
+   "matchbook": {
+    "home": 7.2,
+    "draw": 3.9,
+    "away": 1.65
+   },
+   "gtbets": {
+    "home": 5.94,
+    "draw": 3.73,
+    "away": 1.6
+   },
+   "betonlineag": {
+    "home": 6.45,
+    "draw": 3.8,
+    "away": 1.62
+   },
+   "everygame": {
+    "home": 6.25,
+    "draw": 3.65,
+    "away": 1.6
+   },
+   "coolbet": {
+    "home": 7.0,
+    "draw": 3.9,
+    "away": 1.62
+   },
+   "betanysports": {
+    "home": 6.45,
+    "draw": 3.8,
+    "away": 1.62
+   }
+  }
+ },
+ {
+  "event_id": "c97a93b915115f2b4659fb88262b71f8",
+  "commence_time": "2026-09-13T13:00:00Z",
+  "home": "Coventry City",
+  "away": "Brighton and Hove Albion",
+  "snapshot": "2026-09-13T12:50:00Z",
+  "books": {
+   "tipico_de": {
+    "home": 3.8,
+    "draw": 3.9,
+    "away": 1.85
+   },
+   "unibet_fr": {
+    "home": 3.6,
+    "draw": 3.7,
+    "away": 1.8
+   },
+   "codere_it": {
+    "home": 3.75,
+    "draw": 3.8,
+    "away": 1.93
+   },
+   "winamax_de": {
+    "home": 3.65,
+    "draw": 3.9,
+    "away": 1.88
+   },
+   "winamax_fr": {
+    "home": 3.55,
+    "draw": 3.8,
+    "away": 1.84
+   },
+   "betclic_fr": {
+    "home": 3.65,
+    "draw": 3.68,
+    "away": 1.84
+   },
+   "mybookieag": {
+    "home": 3.7,
+    "draw": 3.75,
+    "away": 1.91
+   },
+   "marathonbet": {
+    "home": 3.88,
+    "draw": 3.88,
+    "away": 1.94
+   },
+   "onexbet": {
+    "home": 3.94,
+    "draw": 3.94,
+    "away": 1.97
+   },
+   "sport888": {
+    "home": 3.7,
+    "draw": 3.6,
+    "away": 1.91
+   },
+   "williamhill": {
+    "home": 3.75,
+    "draw": 3.5,
+    "away": 1.91
+   },
+   "betfair_ex_eu": {
+    "home": 4.0,
+    "draw": 4.0,
+    "away": 1.97
+   },
+   "pinnacle": {
+    "home": 3.86,
+    "draw": 3.87,
+    "away": 1.95
+   },
+   "pmu_fr": {
+    "home": 3.8,
+    "draw": 3.7,
+    "away": 1.85
+   },
+   "unibet_se": {
+    "home": 4.0,
+    "draw": 3.9,
+    "away": 1.93
+   },
+   "leovegas_se": {
+    "home": 3.9,
+    "draw": 3.75,
+    "away": 1.88
+   },
+   "unibet_nl": {
+    "home": 4.0,
+    "draw": 3.9,
+    "away": 1.93
+   },
+   "nordicbet": {
+    "home": 3.75,
+    "draw": 3.75,
+    "away": 1.92
+   },
+   "betsson": {
+    "home": 3.75,
+    "draw": 3.75,
+    "away": 1.92
+   },
+   "everygame": {
+    "home": 3.75,
+    "draw": 3.75,
+    "away": 1.91
+   },
+   "coolbet": {
+    "home": 4.0,
+    "draw": 3.9,
+    "away": 1.94
+   },
+   "matchbook": {
+    "home": 4.0,
+    "draw": 3.95,
+    "away": 1.97
+   },
+   "gtbets": {
+    "home": 3.91,
+    "draw": 3.77,
+    "away": 1.9
+   },
+   "betonlineag": {
+    "home": 3.95,
+    "draw": 3.8,
+    "away": 1.94
+   },
+   "betanysports": {
+    "home": 3.8,
+    "draw": 3.8,
+    "away": 1.91
+   }
+  }
+ },
+ {
+  "event_id": "e40d0fb44319f7bd0ebe1ffbc61fa661",
+  "commence_time": "2026-09-13T15:30:00Z",
+  "home": "Manchester United",
+  "away": "Manchester City",
+  "snapshot": "2026-09-13T15:20:00Z",
+  "books": {
+   "tipico_de": {
+    "home": 3.0,
+    "draw": 3.8,
+    "away": 2.15
+   },
+   "winamax_de": {
+    "home": 2.9,
+    "draw": 3.95,
+    "away": 2.1
+   },
+   "unibet_fr": {
+    "home": 3.1,
+    "draw": 3.85,
+    "away": 2.05
+   },
+   "codere_it": {
+    "home": 3.0,
+    "draw": 3.75,
+    "away": 2.23
+   },
+   "winamax_fr": {
+    "home": 2.85,
+    "draw": 3.85,
+    "away": 2.05
+   },
+   "betclic_fr": {
+    "home": 3.0,
+    "draw": 3.75,
+    "away": 2.05
+   },
+   "mybookieag": {
+    "home": 2.98,
+    "draw": 3.7,
+    "away": 2.2
+   },
+   "onexbet": {
+    "home": 3.04,
+    "draw": 3.8,
+    "away": 2.23
+   },
+   "betfair_ex_eu": {
+    "home": 3.2,
+    "draw": 3.9,
+    "away": 2.3
+   },
+   "sport888": {
+    "home": 2.9,
+    "draw": 3.6,
+    "away": 2.2
+   },
+   "williamhill": {
+    "home": 2.9,
+    "draw": 3.6,
+    "away": 2.2
+   },
+   "marathonbet": {
+    "home": 3.05,
+    "draw": 3.78,
+    "away": 2.28
+   },
+   "pinnacle": {
+    "home": 3.0,
+    "draw": 3.86,
+    "away": 2.29
+   },
+   "leovegas_se": {
+    "home": 2.95,
+    "draw": 3.7,
+    "away": 2.23
+   },
+   "unibet_nl": {
+    "home": 3.05,
+    "draw": 3.85,
+    "away": 2.28
+   },
+   "pmu_fr": {
+    "home": 2.9,
+    "draw": 3.65,
+    "away": 2.2
+   },
+   "unibet_se": {
+    "home": 3.05,
+    "draw": 3.85,
+    "away": 2.28
+   },
+   "nordicbet": {
+    "home": 3.0,
+    "draw": 3.7,
+    "away": 2.22
+   },
+   "betsson": {
+    "home": 3.0,
+    "draw": 3.7,
+    "away": 2.22
+   },
+   "everygame": {
+    "home": 3.05,
+    "draw": 3.65,
+    "away": 2.2
+   },
+   "coolbet": {
+    "home": 3.15,
+    "draw": 3.87,
+    "away": 2.24
+   },
+   "matchbook": {
+    "home": 3.2,
+    "draw": 3.85,
+    "away": 2.32
+   },
+   "gtbets": {
+    "home": 3.13,
+    "draw": 3.8,
+    "away": 2.14
+   },
+   "betonlineag": {
+    "home": 3.12,
+    "draw": 3.83,
+    "away": 2.23
+   },
+   "betanysports": {
+    "home": 3.12,
+    "draw": 3.83,
+    "away": 2.23
+   }
+  }
+ },
+ {
+  "event_id": "b7a2cad26d908a943a27340b4b607068",
+  "commence_time": "2026-09-14T19:00:00Z",
+  "home": "Leeds United",
+  "away": "Newcastle United",
+  "snapshot": "2026-09-14T18:50:00Z",
+  "books": {
+   "winamax_fr": {
+    "home": 2.25,
+    "draw": 3.45,
+    "away": 2.8
+   },
+   "winamax_de": {
+    "home": 2.3,
+    "draw": 3.5,
+    "away": 2.85
+   },
+   "unibet_fr": {
+    "home": 2.35,
+    "draw": 3.5,
+    "away": 2.75
+   },
+   "codere_it": {
+    "home": 2.35,
+    "draw": 3.5,
+    "away": 2.95
+   },
+   "tipico_de": {
+    "home": 2.35,
+    "draw": 3.6,
+    "away": 2.8
+   },
+   "mybookieag": {
+    "home": 2.33,
+    "draw": 3.46,
+    "away": 2.92
+   },
+   "betclic_fr": {
+    "home": 2.23,
+    "draw": 3.4,
+    "away": 2.88
+   },
+   "marathonbet": {
+    "home": 2.38,
+    "draw": 3.48,
+    "away": 3.08
+   },
+   "onexbet": {
+    "home": 2.42,
+    "draw": 3.58,
+    "away": 3.1
+   },
+   "sport888": {
+    "home": 2.3,
+    "draw": 3.3,
+    "away": 2.9
+   },
+   "williamhill": {
+    "home": 2.3,
+    "draw": 3.3,
+    "away": 2.9
+   },
+   "betfair_ex_eu": {
+    "home": 2.44,
+    "draw": 3.6,
+    "away": 3.15
+   },
+   "pinnacle": {
+    "home": 2.39,
+    "draw": 3.45,
+    "away": 3.12
+   },
+   "pmu_fr": {
+    "home": 2.38,
+    "draw": 3.3,
+    "away": 2.88
+   },
+   "unibet_se": {
+    "home": 2.48,
+    "draw": 3.45,
+    "away": 3.0
+   },
+   "leovegas_se": {
+    "home": 2.4,
+    "draw": 3.35,
+    "away": 2.9
+   },
+   "unibet_nl": {
+    "home": 2.48,
+    "draw": 3.45,
+    "away": 3.0
+   },
+   "nordicbet": {
+    "home": 2.38,
+    "draw": 3.4,
+    "away": 2.95
+   },
+   "betsson": {
+    "home": 2.38,
+    "draw": 3.4,
+    "away": 2.95
+   },
+   "everygame": {
+    "home": 2.35,
+    "draw": 3.35,
+    "away": 3.05
+   },
+   "matchbook": {
+    "home": 2.44,
+    "draw": 3.6,
+    "away": 3.15
+   },
+   "gtbets": {
+    "home": 2.3,
+    "draw": 3.49,
+    "away": 2.99
+   },
+   "betonlineag": {
+    "home": 2.38,
+    "draw": 3.44,
+    "away": 3.09
+   },
+   "betanysports": {
+    "home": 2.38,
+    "draw": 3.44,
+    "away": 3.09
+   }
+  }
+ },
+ {
+  "event_id": "82d8b6a005d78bac0b1508abc17a7d39",
+  "commence_time": "2026-09-18T19:00:00Z",
+  "home": "Brentford",
+  "away": "Chelsea",
+  "snapshot": "2026-09-18T18:50:00Z",
+  "books": {
+   "winamax_de": {
+    "home": 2.45,
+    "draw": 3.7,
+    "away": 2.55
+   },
+   "winamax_fr": {
+    "home": 2.4,
+    "draw": 3.65,
+    "away": 2.5
+   },
+   "unibet_fr": {
+    "home": 2.6,
+    "draw": 3.7,
+    "away": 2.4
+   },
+   "codere_it": {
+    "home": 2.55,
+    "draw": 3.65,
+    "away": 2.6
+   },
+   "onexbet": {
+    "home": 2.63,
+    "draw": 3.67,
+    "away": 2.75
+   },
+   "betclic_fr": {
+    "home": 2.5,
+    "draw": 3.65,
+    "away": 2.5
+   },
+   "betfair_ex_eu": {
+    "home": 2.66,
+    "draw": 3.75,
+    "away": 2.76
+   },
+   "sport888": {
+    "home": 2.6,
+    "draw": 3.4,
+    "away": 2.5
+   },
+   "williamhill": {
+    "home": 2.62,
+    "draw": 3.4,
+    "away": 2.5
+   },
+   "marathonbet": {
+    "home": 2.59,
+    "draw": 3.62,
+    "away": 2.71
+   },
+   "tipico_de": {
+    "home": 2.55,
+    "draw": 3.6,
+    "away": 2.55
+   },
+   "nordicbet": {
+    "home": 2.55,
+    "draw": 3.55,
+    "away": 2.65
+   },
+   "betsson": {
+    "home": 2.54,
+    "draw": 3.57,
+    "away": 2.65
+   },
+   "pinnacle": {
+    "home": 2.57,
+    "draw": 3.65,
+    "away": 2.74
+   },
+   "unibet_se": {
+    "home": 2.65,
+    "draw": 3.7,
+    "away": 2.65
+   },
+   "leovegas_se": {
+    "home": 2.6,
+    "draw": 3.55,
+    "away": 2.55
+   },
+   "unibet_nl": {
+    "home": 2.65,
+    "draw": 3.7,
+    "away": 2.65
+   },
+   "pmu_fr": {
+    "home": 2.55,
+    "draw": 3.5,
+    "away": 2.55
+   },
+   "matchbook": {
+    "home": 2.66,
+    "draw": 3.7,
+    "away": 2.78
+   },
+   "gtbets": {
+    "home": 2.63,
+    "draw": 3.66,
+    "away": 2.54
+   },
+   "betonlineag": {
+    "home": 2.61,
+    "draw": 3.65,
+    "away": 2.65
+   },
+   "everygame": {
+    "home": 2.5,
+    "draw": 3.6,
+    "away": 2.65
+   },
+   "coolbet": {
+    "home": 2.57,
+    "draw": 3.72,
+    "away": 2.75
+   },
+   "betanysports": {
+    "home": 2.55,
+    "draw": 3.6,
+    "away": 2.65
+   }
+  }
+ },
+ {
+  "event_id": "d02ff636f652d5b5bb65f6b24330c4fe",
+  "commence_time": "2026-09-19T11:30:00Z",
+  "home": "Tottenham Hotspur",
+  "away": "Aston Villa",
+  "snapshot": "2026-09-19T11:20:00Z",
+  "books": {
+   "codere_it": {
+    "home": 1.88,
+    "draw": 3.85,
+    "away": 3.85
+   },
+   "onexbet": {
+    "home": 1.96,
+    "draw": 3.9,
+    "away": 4.0
+   },
+   "winamax_fr": {
+    "home": 1.82,
+    "draw": 3.6,
+    "away": 3.85
+   },
+   "betclic_fr": {
+    "home": 1.87,
+    "draw": 3.35,
+    "away": 3.9
+   },
+   "unibet_fr": {
+    "home": 1.84,
+    "draw": 3.6,
+    "away": 3.6
+   },
+   "winamax_de": {
+    "home": 1.84,
+    "draw": 3.7,
+    "away": 3.95
+   },
+   "betfair_ex_eu": {
+    "home": 1.95,
+    "draw": 3.95,
+    "away": 4.2
+   },
+   "sport888": {
+    "home": 1.91,
+    "draw": 3.6,
+    "away": 3.75
+   },
+   "williamhill": {
+    "home": 1.91,
+    "draw": 3.6,
+    "away": 3.8
+   },
+   "marathonbet": {
+    "home": 1.93,
+    "draw": 3.76,
+    "away": 3.95
+   },
+   "tipico_de": {
+    "home": 1.85,
+    "draw": 3.9,
+    "away": 3.8
+   },
+   "nordicbet": {
+    "home": 1.9,
+    "draw": 3.6,
+    "away": 4.0
+   },
+   "betsson": {
+    "home": 1.88,
+    "draw": 3.66,
+    "away": 4.02
+   },
+   "pinnacle": {
+    "home": 1.88,
+    "draw": 3.86,
+    "away": 4.2
+   },
+   "unibet_nl": {
+    "home": 1.91,
+    "draw": 3.95,
+    "away": 4.1
+   },
+   "pmu_fr": {
+    "home": 1.85,
+    "draw": 3.7,
+    "away": 3.85
+   },
+   "leovegas_se": {
+    "home": 1.85,
+    "draw": 3.8,
+    "away": 3.9
+   },
+   "unibet_se": {
+    "home": 1.91,
+    "draw": 3.95,
+    "away": 4.1
+   },
+   "matchbook": {
+    "home": 1.97,
+    "draw": 3.95,
+    "away": 4.1
+   },
+   "gtbets": {
+    "home": 1.89,
+    "draw": 3.79,
+    "away": 3.9
+   },
+   "betonlineag": {
+    "home": 1.89,
+    "draw": 3.83,
+    "away": 4.06
+   },
+   "everygame": {
+    "home": 1.83,
+    "draw": 3.75,
+    "away": 4.1
+   },
+   "coolbet": {
+    "home": 1.94,
+    "draw": 3.83,
+    "away": 4.1
+   },
+   "betanysports": {
+    "home": 1.89,
+    "draw": 3.83,
+    "away": 4.06
+   }
+  }
+ },
+ {
+  "event_id": "b5b058d0a95f9742548f789d1c564a78",
+  "commence_time": "2026-09-19T14:00:00Z",
+  "home": "Brighton and Hove Albion",
+  "away": "Arsenal",
+  "snapshot": "2026-09-19T13:50:00Z",
+  "books": {
+   "winamax_de": {
+    "home": 4.7,
+    "draw": 4.0,
+    "away": 1.66
+   },
+   "williamhill": {
+    "home": 4.8,
+    "draw": 3.8,
+    "away": 1.67
+   },
+   "winamax_fr": {
+    "home": 4.6,
+    "draw": 3.9,
+    "away": 1.64
+   },
+   "onexbet": {
+    "home": 5.28,
+    "draw": 3.98,
+    "away": 1.74
+   },
+   "codere_it": {
+    "home": 5.0,
+    "draw": 3.9,
+    "away": 1.69
+   },
+   "sport888": {
+    "home": 4.8,
+    "draw": 3.75,
+    "away": 1.67
+   },
+   "unibet_fr": {
+    "home": 4.7,
+    "draw": 3.7,
+    "away": 1.64
+   },
+   "betclic_fr": {
+    "home": 5.0,
+    "draw": 3.9,
+    "away": 1.62
+   },
+   "betfair_ex_eu": {
+    "home": 5.5,
+    "draw": 4.1,
+    "away": 1.72
+   },
+   "marathonbet": {
+    "home": 5.25,
+    "draw": 3.95,
+    "away": 1.7
+   },
+   "tipico_de": {
+    "home": 5.2,
+    "draw": 3.8,
+    "away": 1.65
+   },
+   "nordicbet": {
+    "home": 5.3,
+    "draw": 3.75,
+    "away": 1.68
+   },
+   "betsson": {
+    "home": 5.28,
+    "draw": 3.8,
+    "away": 1.67
+   },
+   "pinnacle": {
+    "home": 5.35,
+    "draw": 3.9,
+    "away": 1.71
+   },
+   "unibet_se": {
+    "home": 5.4,
+    "draw": 4.0,
+    "away": 1.7
+   },
+   "leovegas_se": {
+    "home": 5.2,
+    "draw": 3.85,
+    "away": 1.65
+   },
+   "unibet_nl": {
+    "home": 5.3,
+    "draw": 4.0,
+    "away": 1.68
+   },
+   "pmu_fr": {
+    "home": 5.0,
+    "draw": 3.8,
+    "away": 1.64
+   },
+   "matchbook": {
+    "home": 5.5,
+    "draw": 4.0,
+    "away": 1.73
+   },
+   "gtbets": {
+    "home": 4.95,
+    "draw": 3.8,
+    "away": 1.69
+   },
+   "everygame": {
+    "home": 5.25,
+    "draw": 3.85,
+    "away": 1.65
+   },
+   "coolbet": {
+    "home": 5.42,
+    "draw": 3.92,
+    "away": 1.72
+   },
+   "betonlineag": {
+    "home": 5.25,
+    "draw": 3.92,
+    "away": 1.69
+   },
+   "betanysports": {
+    "home": 5.25,
+    "draw": 3.92,
+    "away": 1.69
+   }
+  }
+ },
+ {
+  "event_id": "88519a51012811476c9b4724eafc96c5",
+  "commence_time": "2026-09-19T14:00:00Z",
+  "home": "Everton",
+  "away": "Ipswich Town",
+  "snapshot": "2026-09-19T13:50:00Z",
+  "books": {
+   "codere_it": {
+    "home": 1.79,
+    "draw": 3.85,
+    "away": 4.3
+   },
+   "onexbet": {
+    "home": 1.85,
+    "draw": 3.95,
+    "away": 4.51
+   },
+   "winamax_fr": {
+    "home": 1.72,
+    "draw": 3.75,
+    "away": 4.1
+   },
+   "betclic_fr": {
+    "home": 1.71,
+    "draw": 3.73,
+    "away": 4.2
+   },
+   "unibet_fr": {
+    "home": 1.69,
+    "draw": 3.7,
+    "away": 4.2
+   },
+   "winamax_de": {
+    "home": 1.76,
+    "draw": 3.85,
+    "away": 4.2
+   },
+   "betfair_ex_eu": {
+    "home": 1.83,
+    "draw": 4.0,
+    "away": 4.8
+   },
+   "sport888": {
+    "home": 1.8,
+    "draw": 3.6,
+    "away": 4.2
+   },
+   "williamhill": {
+    "home": 1.8,
+    "draw": 3.6,
+    "away": 4.2
+   },
+   "marathonbet": {
+    "home": 1.8,
+    "draw": 3.85,
+    "away": 4.4
+   },
+   "tipico_de": {
+    "home": 1.72,
+    "draw": 3.9,
+    "away": 4.5
+   },
+   "betsson": {
+    "home": 1.79,
+    "draw": 3.71,
+    "away": 4.5
+   },
+   "nordicbet": {
+    "home": 1.78,
+    "draw": 3.7,
+    "away": 4.5
+   },
+   "pinnacle": {
+    "home": 1.81,
+    "draw": 3.87,
+    "away": 4.52
+   },
+   "unibet_se": {
+    "home": 1.83,
+    "draw": 3.8,
+    "away": 4.6
+   },
+   "leovegas_se": {
+    "home": 1.78,
+    "draw": 3.65,
+    "away": 4.5
+   },
+   "unibet_nl": {
+    "home": 1.82,
+    "draw": 3.8,
+    "away": 4.6
+   },
+   "pmu_fr": {
+    "home": 1.76,
+    "draw": 3.6,
+    "away": 4.4
+   },
+   "matchbook": {
+    "home": 1.82,
+    "draw": 3.95,
+    "away": 4.8
+   },
+   "gtbets": {
+    "home": 1.79,
+    "draw": 3.72,
+    "away": 4.53
+   },
+   "betonlineag": {
+    "home": 1.8,
+    "draw": 3.85,
+    "away": 4.57
+   },
+   "everygame": {
+    "home": 1.8,
+    "draw": 3.75,
+    "away": 4.4
+   },
+   "coolbet": {
+    "home": 1.81,
+    "draw": 3.9,
+    "away": 4.7
+   },
+   "betanysports": {
+    "home": 1.8,
+    "draw": 3.85,
+    "away": 4.57
+   }
+  }
+ },
+ {
+  "event_id": "f65c4eaf0f94a569f06d768f737dad2e",
+  "commence_time": "2026-09-19T14:00:00Z",
+  "home": "Newcastle United",
+  "away": "Hull City",
+  "snapshot": "2026-09-19T13:50:00Z",
+  "books": {
+   "winamax_de": {
+    "home": 1.58,
+    "draw": 4.3,
+    "away": 5.0
+   },
+   "williamhill": {
+    "home": 1.6,
+    "draw": 4.0,
+    "away": 5.0
+   },
+   "winamax_fr": {
+    "home": 1.56,
+    "draw": 4.1,
+    "away": 4.9
+   },
+   "onexbet": {
+    "home": 1.64,
+    "draw": 4.51,
+    "away": 5.39
+   },
+   "codere_it": {
+    "home": 1.61,
+    "draw": 4.3,
+    "away": 5.0
+   },
+   "sport888": {
+    "home": 1.6,
+    "draw": 4.0,
+    "away": 5.0
+   },
+   "unibet_fr": {
+    "home": 1.55,
+    "draw": 4.1,
+    "away": 4.8
+   },
+   "betclic_fr": {
+    "home": 1.58,
+    "draw": 4.05,
+    "away": 4.75
+   },
+   "betfair_ex_eu": {
+    "home": 1.65,
+    "draw": 4.5,
+    "away": 5.7
+   },
+   "marathonbet": {
+    "home": 1.6,
+    "draw": 4.4,
+    "away": 5.25
+   },
+   "tipico_de": {
+    "home": 1.55,
+    "draw": 4.4,
+    "away": 5.3
+   },
+   "betsson": {
+    "home": 1.63,
+    "draw": 4.08,
+    "away": 5.18
+   },
+   "nordicbet": {
+    "home": 1.62,
+    "draw": 4.1,
+    "away": 5.2
+   },
+   "pinnacle": {
+    "home": 1.62,
+    "draw": 4.35,
+    "away": 5.45
+   },
+   "unibet_nl": {
+    "home": 1.61,
+    "draw": 4.4,
+    "away": 5.4
+   },
+   "pmu_fr": {
+    "home": 1.56,
+    "draw": 4.2,
+    "away": 5.2
+   },
+   "unibet_se": {
+    "home": 1.62,
+    "draw": 4.4,
+    "away": 5.4
+   },
+   "leovegas_se": {
+    "home": 1.57,
+    "draw": 4.3,
+    "away": 5.3
+   },
+   "matchbook": {
+    "home": 1.65,
+    "draw": 4.5,
+    "away": 5.7
+   },
+   "gtbets": {
+    "home": 1.57,
+    "draw": 4.41,
+    "away": 5.07
+   },
+   "everygame": {
+    "home": 1.6,
+    "draw": 4.2,
+    "away": 5.25
+   },
+   "coolbet": {
+    "home": 1.64,
+    "draw": 4.42,
+    "away": 5.4
+   },
+   "betonlineag": {
+    "home": 1.6,
+    "draw": 4.38,
+    "away": 5.55
+   },
+   "betanysports": {
+    "home": 1.6,
+    "draw": 4.38,
+    "away": 5.55
+   }
+  }
+ },
+ {
+  "event_id": "75133fdcd4fc3067b303a8f166f974e4",
+  "commence_time": "2026-09-19T16:30:00Z",
+  "home": "Nottingham Forest",
+  "away": "Coventry City",
+  "snapshot": "2026-09-19T16:20:00Z",
+  "books": {
+   "codere_it": {
+    "home": 1.64,
+    "draw": 4.0,
+    "away": 5.2
+   },
+   "winamax_fr": {
+    "home": 1.58,
+    "draw": 3.95,
+    "away": 4.9
+   },
+   "betclic_fr": {
+    "home": 1.54,
+    "draw": 3.95,
+    "away": 5.4
+   },
+   "unibet_fr": {
+    "home": 1.57,
+    "draw": 3.9,
+    "away": 5.0
+   },
+   "winamax_de": {
+    "home": 1.6,
+    "draw": 4.0,
+    "away": 5.1
+   },
+   "mybookieag": {
+    "home": 1.63,
+    "draw": 3.95,
+    "away": 5.1
+   },
+   "betfair_ex_eu": {
+    "home": 1.67,
+    "draw": 4.1,
+    "away": 6.2
+   },
+   "marathonbet": {
+    "home": 1.65,
+    "draw": 3.85,
+    "away": 5.65
+   },
+   "onexbet": {
+    "home": 1.7,
+    "draw": 3.96,
+    "away": 5.8
+   },
+   "sport888": {
+    "home": 1.61,
+    "draw": 3.8,
+    "away": 5.0
+   },
+   "williamhill": {
+    "home": 1.62,
+    "draw": 3.8,
+    "away": 5.0
+   },
+   "tipico_de": {
+    "home": 1.6,
+    "draw": 3.9,
+    "away": 5.7
+   },
+   "betsson": {
+    "home": 1.64,
+    "draw": 3.81,
+    "away": 5.57
+   },
+   "nordicbet": {
+    "home": 1.62,
+    "draw": 3.8,
+    "away": 5.6
+   },
+   "pinnacle": {
+    "home": 1.65,
+    "draw": 3.95,
+    "away": 6.05
+   },
+   "unibet_se": {
+    "home": 1.65,
+    "draw": 4.0,
+    "away": 5.75
+   },
+   "leovegas_se": {
+    "home": 1.61,
+    "draw": 3.85,
+    "away": 5.75
+   },
+   "unibet_nl": {
+    "home": 1.64,
+    "draw": 4.0,
+    "away": 5.75
+   },
+   "pmu_fr": {
+    "home": 1.6,
+    "draw": 3.8,
+    "away": 5.6
+   },
+   "matchbook": {
+    "home": 1.67,
+    "draw": 4.1,
+    "away": 6.2
+   },
+   "gtbets": {
+    "home": 1.59,
+    "draw": 3.97,
+    "away": 5.45
+   },
+   "betonlineag": {
+    "home": 1.63,
+    "draw": 3.91,
+    "away": 6.0
+   },
+   "betanysports": {
+    "home": 1.63,
+    "draw": 3.91,
+    "away": 6.0
+   }
+  }
+ },
+ {
+  "event_id": "784f777f5181e1efdad7a6ecb2cfde15",
+  "commence_time": "2026-09-20T13:00:00Z",
+  "home": "Bournemouth",
+  "away": "Liverpool",
+  "snapshot": "2026-09-20T12:50:00Z",
+  "books": {
+   "onexbet": {
+    "home": 3.14,
+    "draw": 3.75,
+    "away": 2.32
+   },
+   "mybookieag": {
+    "home": 2.97,
+    "draw": 3.65,
+    "away": 2.23
+   },
+   "unibet_fr": {
+    "home": 3.0,
+    "draw": 3.6,
+    "away": 2.05
+   },
+   "winamax_fr": {
+    "home": 2.9,
+    "draw": 3.7,
+    "away": 2.1
+   },
+   "codere_it": {
+    "home": 3.05,
+    "draw": 3.65,
+    "away": 2.24
+   },
+   "winamax_de": {
+    "home": 2.95,
+    "draw": 3.8,
+    "away": 2.15
+   },
+   "betclic_fr": {
+    "home": 3.0,
+    "draw": 3.7,
+    "away": 2.08
+   },
+   "betfair_ex_eu": {
+    "home": 3.25,
+    "draw": 3.8,
+    "away": 2.28
+   },
+   "sport888": {
+    "home": 3.0,
+    "draw": 3.4,
+    "away": 2.2
+   },
+   "williamhill": {
+    "home": 3.0,
+    "draw": 3.5,
+    "away": 2.2
+   },
+   "marathonbet": {
+    "home": 3.16,
+    "draw": 3.64,
+    "away": 2.21
+   },
+   "tipico_de": {
+    "home": 3.1,
+    "draw": 3.7,
+    "away": 2.15
+   },
+   "betsson": {
+    "home": 3.1,
+    "draw": 3.62,
+    "away": 2.21
+   },
+   "nordicbet": {
+    "home": 3.1,
+    "draw": 3.6,
+    "away": 2.2
+   },
+   "pinnacle": {
+    "home": 3.09,
+    "draw": 3.75,
+    "away": 2.28
+   },
+   "unibet_nl": {
+    "home": 3.2,
+    "draw": 3.6,
+    "away": 2.28
+   },
+   "pmu_fr": {
+    "home": 3.05,
+    "draw": 3.45,
+    "away": 2.2
+   },
+   "unibet_se": {
+    "home": 3.2,
+    "draw": 3.6,
+    "away": 2.28
+   },
+   "leovegas_se": {
+    "home": 3.1,
+    "draw": 3.5,
+    "away": 2.23
+   },
+   "everygame": {
+    "home": 3.1,
+    "draw": 3.6,
+    "away": 2.2
+   },
+   "coolbet": {
+    "home": 3.12,
+    "draw": 3.77,
+    "away": 2.3
+   },
+   "matchbook": {
+    "home": 3.3,
+    "draw": 3.75,
+    "away": 2.28
+   },
+   "betonlineag": {
+    "home": 3.02,
+    "draw": 3.75,
+    "away": 2.29
+   },
+   "gtbets": {
+    "home": 3.01,
+    "draw": 3.64,
+    "away": 2.22
+   },
+   "betanysports": {
+    "home": 3.02,
+    "draw": 3.75,
+    "away": 2.29
+   }
+  }
+ },
+ {
+  "event_id": "b63aef4291a066e32644e591c19a235a",
+  "commence_time": "2026-09-20T13:00:00Z",
+  "home": "Leeds United",
+  "away": "Crystal Palace",
+  "snapshot": "2026-09-20T12:50:00Z",
+  "books": {
+   "betclic_fr": {
+    "home": 1.64,
+    "draw": 3.85,
+    "away": 4.55
+   },
+   "unibet_fr": {
+    "home": 1.64,
+    "draw": 3.8,
+    "away": 4.5
+   },
+   "winamax_de": {
+    "home": 1.66,
+    "draw": 4.0,
+    "away": 4.5
+   },
+   "winamax_fr": {
+    "home": 1.64,
+    "draw": 3.95,
+    "away": 4.4
+   },
+   "codere_it": {
+    "home": 1.7,
+    "draw": 3.95,
+    "away": 4.7
+   },
+   "mybookieag": {
+    "home": 1.69,
+    "draw": 3.9,
+    "away": 4.7
+   },
+   "betfair_ex_eu": {
+    "home": 1.73,
+    "draw": 4.1,
+    "away": 5.5
+   },
+   "onexbet": {
+    "home": 1.75,
+    "draw": 4.02,
+    "away": 5.08
+   },
+   "sport888": {
+    "home": 1.67,
+    "draw": 3.75,
+    "away": 4.8
+   },
+   "williamhill": {
+    "home": 1.7,
+    "draw": 3.75,
+    "away": 4.75
+   },
+   "tipico_de": {
+    "home": 1.65,
+    "draw": 4.0,
+    "away": 4.9
+   },
+   "pinnacle": {
+    "home": 1.72,
+    "draw": 3.95,
+    "away": 5.1
+   },
+   "marathonbet": {
+    "home": 1.69,
+    "draw": 3.94,
+    "away": 5.05
+   },
+   "pmu_fr": {
+    "home": 1.66,
+    "draw": 3.75,
+    "away": 4.9
+   },
+   "unibet_se": {
+    "home": 1.72,
+    "draw": 4.0,
+    "away": 5.25
+   },
+   "leovegas_se": {
+    "home": 1.68,
+    "draw": 3.85,
+    "away": 5.0
+   },
+   "unibet_nl": {
+    "home": 1.71,
+    "draw": 4.0,
+    "away": 5.25
+   },
+   "betsson": {
+    "home": 1.69,
+    "draw": 3.75,
+    "away": 5.18
+   },
+   "nordicbet": {
+    "home": 1.68,
+    "draw": 3.75,
+    "away": 5.2
+   },
+   "everygame": {
+    "home": 1.7,
+    "draw": 3.85,
+    "away": 5.0
+   },
+   "coolbet": {
+    "home": 1.73,
+    "draw": 3.96,
+    "away": 5.25
+   },
+   "matchbook": {
+    "home": 1.72,
+    "draw": 4.1,
+    "away": 5.5
+   },
+   "betonlineag": {
+    "home": 1.71,
+    "draw": 3.9,
+    "away": 5.1
+   },
+   "gtbets": {
+    "home": 1.77,
+    "draw": 3.95,
+    "away": 4.63
+   },
+   "betanysports": {
+    "home": 1.71,
+    "draw": 3.9,
+    "away": 5.1
+   }
+  }
+ },
+ {
+  "event_id": "f923236e69ed946fdc55163494ee88db",
+  "commence_time": "2026-09-20T13:00:00Z",
+  "home": "Manchester City",
+  "away": "Sunderland",
+  "snapshot": "2026-09-20T12:50:00Z",
+  "books": {
+   "mybookieag": {
+    "home": 1.34,
+    "draw": 5.2,
+    "away": 8.1
+   },
+   "winamax_de": {
+    "home": 1.32,
+    "draw": 5.3,
+    "away": 8.5
+   },
+   "williamhill": {
+    "home": 1.35,
+    "draw": 5.0,
+    "away": 8.0
+   },
+   "winamax_fr": {
+    "home": 1.3,
+    "draw": 5.5,
+    "away": 8.5
+   },
+   "onexbet": {
+    "home": 1.38,
+    "draw": 5.43,
+    "away": 9.25
+   },
+   "codere_it": {
+    "home": 1.35,
+    "draw": 5.2,
+    "away": 8.4
+   },
+   "sport888": {
+    "home": 1.33,
+    "draw": 5.0,
+    "away": 8.0
+   },
+   "unibet_fr": {
+    "home": 1.28,
+    "draw": 5.1,
+    "away": 8.0
+   },
+   "betclic_fr": {
+    "home": 1.28,
+    "draw": 5.5,
+    "away": 8.5
+   },
+   "betfair_ex_eu": {
+    "home": 1.37,
+    "draw": 5.7,
+    "away": 10.0
+   },
+   "tipico_de": {
+    "home": 1.3,
+    "draw": 5.5,
+    "away": 9.0
+   },
+   "pinnacle": {
+    "home": 1.35,
+    "draw": 5.5,
+    "away": 9.5
+   },
+   "marathonbet": {
+    "home": 1.36,
+    "draw": 5.35,
+    "away": 9.1
+   },
+   "leovegas_se": {
+    "home": 1.33,
+    "draw": 5.1,
+    "away": 9.0
+   },
+   "unibet_se": {
+    "home": 1.36,
+    "draw": 5.4,
+    "away": 9.5
+   },
+   "unibet_nl": {
+    "home": 1.36,
+    "draw": 5.4,
+    "away": 9.5
+   },
+   "pmu_fr": {
+    "home": 1.32,
+    "draw": 5.0,
+    "away": 8.5
+   },
+   "betsson": {
+    "home": 1.35,
+    "draw": 4.85,
+    "away": 9.43
+   },
+   "nordicbet": {
+    "home": 1.35,
+    "draw": 4.85,
+    "away": 9.5
+   },
+   "everygame": {
+    "home": 1.33,
+    "draw": 5.25,
+    "away": 9.0
+   },
+   "coolbet": {
+    "home": 1.36,
+    "draw": 5.55,
+    "away": 9.45
+   },
+   "matchbook": {
+    "home": 1.37,
+    "draw": 5.7,
+    "away": 10.0
+   },
+   "betonlineag": {
+    "home": 1.35,
+    "draw": 5.35,
+    "away": 9.45
+   },
+   "gtbets": {
+    "home": 1.31,
+    "draw": 5.27,
+    "away": 8.21
+   },
+   "betanysports": {
+    "home": 1.35,
+    "draw": 5.35,
+    "away": 9.45
+   }
+  }
+ },
+ {
+  "event_id": "182b81a9e220b2347235107c42802fd8",
+  "commence_time": "2026-09-20T15:30:00Z",
+  "home": "Fulham",
+  "away": "Manchester United",
+  "snapshot": "2026-09-20T15:20:00Z",
+  "books": {
+   "onexbet": {
+    "home": 3.69,
+    "draw": 3.88,
+    "away": 2.05
+   },
+   "mybookieag": {
+    "home": 3.46,
+    "draw": 3.7,
+    "away": 1.99
+   },
+   "unibet_fr": {
+    "home": 3.4,
+    "draw": 3.6,
+    "away": 1.92
+   },
+   "winamax_fr": {
+    "home": 3.35,
+    "draw": 3.75,
+    "away": 1.92
+   },
+   "codere_it": {
+    "home": 3.55,
+    "draw": 3.75,
+    "away": 1.98
+   },
+   "winamax_de": {
+    "home": 3.45,
+    "draw": 3.85,
+    "away": 1.94
+   },
+   "betclic_fr": {
+    "home": 3.5,
+    "draw": 3.63,
+    "away": 1.91
+   },
+   "betfair_ex_eu": {
+    "home": 3.75,
+    "draw": 3.95,
+    "away": 2.06
+   },
+   "sport888": {
+    "home": 3.4,
+    "draw": 3.6,
+    "away": 1.95
+   },
+   "williamhill": {
+    "home": 3.4,
+    "draw": 3.6,
+    "away": 2.0
+   },
+   "marathonbet": {
+    "home": 3.68,
+    "draw": 3.84,
+    "away": 2.0
+   },
+   "tipico_de": {
+    "home": 3.6,
+    "draw": 3.7,
+    "away": 1.95
+   },
+   "betsson": {
+    "home": 3.54,
+    "draw": 3.67,
+    "away": 2.01
+   },
+   "nordicbet": {
+    "home": 3.55,
+    "draw": 3.65,
+    "away": 2.02
+   },
+   "pinnacle": {
+    "home": 3.67,
+    "draw": 3.85,
+    "away": 2.02
+   },
+   "unibet_nl": {
+    "home": 3.9,
+    "draw": 3.8,
+    "away": 1.97
+   },
+   "pmu_fr": {
+    "home": 3.7,
+    "draw": 3.6,
+    "away": 1.92
+   },
+   "unibet_se": {
+    "home": 3.9,
+    "draw": 3.8,
+    "away": 1.97
+   },
+   "leovegas_se": {
+    "home": 3.75,
+    "draw": 3.65,
+    "away": 1.93
+   },
+   "everygame": {
+    "home": 3.6,
+    "draw": 3.75,
+    "away": 1.95
+   },
+   "coolbet": {
+    "home": 3.66,
+    "draw": 3.9,
+    "away": 2.04
+   },
+   "matchbook": {
+    "home": 3.75,
+    "draw": 3.95,
+    "away": 2.04
+   },
+   "betonlineag": {
+    "home": 3.55,
+    "draw": 3.85,
+    "away": 2.03
+   },
+   "gtbets": {
+    "home": 3.49,
+    "draw": 3.76,
+    "away": 2.01
+   },
+   "betanysports": {
+    "home": 3.55,
+    "draw": 3.85,
+    "away": 2.03
+   }
+  }
+ }
+]
